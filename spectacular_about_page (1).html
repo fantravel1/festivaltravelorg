@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About FestivalTravel.org | A Guide to Female-Friendly Festivals</title>
+    <meta name="description" content="Learn about FestivalTravel.org - a curated guide to festivals that prioritize safety, inclusivity, and positive experiences for women travelers.">
+    <meta name="keywords" content="about festival travel, women's festival safety, female-friendly events, festival guide">
+    <meta property="og:title" content="About FestivalTravel.org">
+    <meta property="og:description" content="A curated guide to festivals that prioritize safety, inclusivity, and positive experiences for women travelers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.festivaltravel.org/about.html">
+    <link rel="canonical" href="https://www.festivaltravel.org/about.html">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #007bff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%236366f1" width="1920" height="1080"/><circle fill="%23a855f7" cx="400" cy="200" r="100" opacity="0.3"/><circle fill="%23ec4899" cx="1200" cy="400" r="150" opacity="0.2"/><circle fill="%236366f1" cx="800" cy="600" r="120" opacity="0.25"/><circle fill="%23f59e0b" cx="1600" cy="800" r="80" opacity="0.3"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            margin-top: 80px;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            line-height: 1.7;
+        }
+
+        /* Main Content */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin: 2rem 0 1rem;
+        }
+
+        .content ul {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Simple Cards */
+        .simple-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .simple-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
+        }
+
+        .simple-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .simple-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 3rem 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #007bff;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+
+            .simple-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+
+            .simple-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">FestivalTravel.org</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="festival.html">Festivals</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="#safety">Safety</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>About FestivalTravel.org</h1>
+                <p class="hero-subtitle">A curated guide to festivals that prioritize safety, diversity and inclusivity for women.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <h2>What We Do</h2>
+            <div class="content">
+                <p>FestivalTravel.org is a resource for women looking to attend music festivals safely and confidently. Whether you're traveling solo or with friends, we provide information to help you plan your festival experiences.</p>
+
+                <p>We focus on festivals that have good safety records, inclusive atmospheres, and positive reputations within the music community. Our goal is to help you make informed decisions about which events might be right for you.</p>
+
+                <h3>What You'll Find Here</h3>
+                <ul>
+                    <li>Information about festivals known for their safety and inclusive environments</li>
+                    <li>Details about venues, stages, and facilities</li>
+                    <li>Accommodation recommendations near festival sites</li>
+                    <li>Emergency contact information for each location</li>
+                    <li>Accessibility information for venues and facilities</li>
+                    <li>Basic safety tips and travel advice</li>
+                </ul>
+
+                <p>We cover a range of festivals from different genres and locations - from established events like Glastonbury and WOMAD to newer festivals making positive changes in the industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Choose -->
+    <section class="section">
+        <div class="container">
+            <h2>How We Choose Festivals</h2>
+            <div class="content">
+                <p>We look for festivals that demonstrate a commitment to creating safe, welcoming environments. This includes:</p>
+
+                <ul>
+                    <li>Clear anti-harassment policies and enforcement</li>
+                    <li>Adequate security and medical facilities</li>
+                    <li>Good accessibility provisions</li>
+                    <li>Positive reputation among attendees</li>
+                    <li>Transparent communication about safety measures</li>
+                    <li>Inclusive programming and diverse lineups</li>
+                </ul>
+
+                <p>We research each festival's safety measures, read reviews from previous attendees, and look at how organizers handle issues when they arise. We also consider the festival's location, local safety infrastructure, and available support services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Note -->
+    <section class="section">
+        <div class="container">
+            <div class="simple-grid">
+                <div class="simple-card">
+                    <h3>🛡️ Safety First</h3>
+                    <p>While we research festivals carefully, your safety is ultimately your responsibility. Always trust your instincts, stay aware of your surroundings, and don't hesitate to seek help if you need it.</p>
+                </div>
+                <div class="simple-card">
+                    <h3>📍 Local Research</h3>
+                    <p>We encourage you to do additional research about specific locations, check current travel advisories, and familiarize yourself with local emergency services before traveling.</p>
+                </div>
+                <div class="simple-card">
+                    <h3>🤝 Community</h3>
+                    <p>Consider connecting with other festival-goers through official forums or social media groups. Having a network can enhance both safety and enjoyment of your experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="section">
+        <div class="container">
+            <h2>Our Approach</h2>
+            <div class="content">
+                <p>We believe that everyone should be able to enjoy live music in environments where they feel safe and welcome. While we can't guarantee any experience will be perfect, we aim to highlight festivals that are actively working to create positive, inclusive spaces.</p>
+
+                <p>This site is a starting point for your research, not the final word. We encourage you to:</p>
+
+                <ul>
+                    <li>Read multiple sources and recent reviews</li>
+                    <li>Check official festival websites for current policies</li>
+                    <li>Research accommodation options thoroughly</li>
+                    <li>Plan your transportation in advance</li>
+                    <li>Share your plans with trusted friends or family</li>
+                </ul>
+
+                <p>Festival experiences can be transformative and joyful. Our hope is to provide information that helps you feel more confident in choosing events that align with your comfort level and interests.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <div class="container">
+        <div class="cta-section">
+            <h2>Ready to Explore?</h2>
+            <p>Browse our curated list of festivals and start planning your next musical adventure.</p>
+            <a href="index.html" class="btn">View Festivals</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 FestivalTravel.org. A resource for safer festival experiences.</p>
+    </footer>
+
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
