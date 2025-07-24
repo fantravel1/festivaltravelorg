@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FestivalTravel.org | Top Female-Friendly Festivals Worldwide</title>
+    <meta name="description" content="Discover the world's best female-friendly festivals with safe venues, trusted accommodations, and inclusive experiences. Your guide to celebrating safely worldwide.">
+    <meta name="keywords" content="female-friendly festivals, women's safety, music festivals, cultural events, safe travel, festival guide">
+    <meta property="og:title" content="Top Female-Friendly Festivals Worldwide">
+    <meta property="og:description" content="Discover the world's best female-friendly festivals with safe venues, trusted accommodations, and inclusive experiences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.festivaltravel.org">
+    <link rel="canonical" href="https://www.festivaltravel.org">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        main {
+            margin-top: 80px;
+            padding: 2rem 0;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a6f);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(238, 90, 111, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(238, 90, 111, 0.6);
+        }
+
+        .festivals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .festival-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .festival-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .festival-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .festival-content {
+            padding: 1.5rem;
+        }
+
+        .festival-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .festival-location {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .festival-description {
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .safety-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .stars {
+            color: #ffd700;
+        }
+
+        .safety-label {
+            font-size: 0.9rem;
+            color: #28a745;
+            font-weight: 500;
+        }
+
+        .festival-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .festivals-grid {
+                grid-template-columns: 1fr;
+                padding: 1rem 0;
+            }
+
+            .festival-card {
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 2rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .cta-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">FestivalTravel.org</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#festivals">Festivals</a></li>
+                <li><a href="#safety">Safety Guide</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Celebrate Safely Worldwide</h1>
+                <p>Discover the most female-friendly festivals with trusted venues, safe accommodations, and inclusive experiences</p>
+                <a href="#festivals" class="cta-button">Explore Festivals</a>
+            </div>
+        </section>
+
+        <section id="festivals" class="container">
+            <h2 class="section-title">Top Female-Friendly Festivals</h2>
+            <p class="section-subtitle">Carefully curated events prioritizing safety, inclusivity, and unforgettable experiences</p>
+            
+            <div id="loading" class="loading">
+                <p>Loading amazing festivals...</p>
+            </div>
+            
+            <div id="festivals-container" class="festivals-grid" style="display: none;">
+                <!-- Festivals will be populated here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FestivalTravel.org. Empowering women to explore the world safely.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Festival data will be loaded from festivals-data.js
+        // Main homepage functionality
+        
+        function createFestivalCard(festival) {
+            const stars = '★'.repeat(festival.safetyRating) + '☆'.repeat(5 - festival.safetyRating);
+            const tags = festival.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('');
+            
+            return `
+                <div class="festival-card" onclick="goToFestival('${festival.id}')">
+                    <div class="festival-image">
+                        🎵
+                    </div>
+                    <div class="festival-content">
+                        <h3 class="festival-title">${festival.name}</h3>
+                        <p class="festival-location">📍 ${festival.location}</p>
+                        <p class="festival-description">${festival.description.substring(0, 150)}...</p>
+                        <div class="safety-rating">
+                            <span class="stars">${stars}</span>
+                            <span class="safety-label">Safety Rating: ${festival.safetyRating}/5</span>
+                        </div>
+                        <div class="festival-tags">
+                            ${tags}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function goToFestival(festivalId) {
+            window.location.href = `festival.html#${festivalId}`;
+        }
+
+        function loadFestivals() {
+            // Check if FESTIVALS_DATA is available
+            if (typeof FESTIVALS_DATA === 'undefined') {
+                console.error('Festival data not loaded');
+                document.getElementById('loading').innerHTML = '<p>Error loading festivals. Please refresh the page.</p>';
+                return;
+            }
+
+            const container = document.getElementById('festivals-container');
+            const loading = document.getElementById('loading');
+            
+            setTimeout(() => {
+                const festivalsHTML = FESTIVALS_DATA.festivals.map(createFestivalCard).join('');
+                container.innerHTML = festivalsHTML;
+                loading.style.display = 'none';
+                container.style.display = 'grid';
+            }, 1000);
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // SEO structured data
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "FestivalTravel.org - Female-Friendly Festivals Worldwide",
+            "description": "Discover the world's best female-friendly festivals with safe venues, trusted accommodations, and inclusive experiences.",
+            "url": "https://www.festivaltravel.org"
+        };
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(structuredData);
+        document.head.appendChild(script);
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait for festivals-data.js to load
+            if (typeof FESTIVALS_DATA !== 'undefined') {
+                loadFestivals();
+            } else {
+                // Retry loading festivals after a short delay
+                setTimeout(() => {
+                    if (typeof FESTIVALS_DATA !== 'undefined') {
+                        loadFestivals();
+                    } else {
+                        document.getElementById('loading').innerHTML = '<p>Please make sure festivals-data.js is loaded correctly.</p>';
+                    }
+                }, 2000);
+            }
+        });
+    </script>
+
+    <!-- Load festival data -->
+    <script src="assets/js/festivals-data.js"></script>
+</body>
+</html>
