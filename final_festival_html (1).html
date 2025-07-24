@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Festival Guide | FestivalTravel.org</title>
+    <meta id="page-description" name="description" content="Complete festival guide with female-friendly venues, safe accommodations, trusted bars, and local attractions.">
+    <meta id="page-keywords" name="keywords" content="festival, female-friendly, safe venues, festival accommodation">
+    <meta id="og-title" property="og:title" content="Festival Guide">
+    <meta id="og-description" property="og:description" content="Complete festival safety guide">
+    <meta id="og-url" property="og:url" content="https://www.festivaltravel.org/festival">
+    
+    <link rel="canonical" id="canonical-url" href="https://www.festivaltravel.org/festival">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        @media (max-width: 380px) {
+            .facts-grid {
+                grid-template-columns: 1fr;
+                gap: 0.8rem;
+            }
+
+            .fact-item {
+                padding: 0.8rem 0.5rem;
+            }
+
+            .fact-value {
+                font-size: 1.3rem;
+            }
+
+            .emergency-contacts {
+                gap: 0.8rem;
+            }
+
+            .contact-item {
+                padding: 1rem;
+            }
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .loading-screen.hidden {
+            display: none;
+        }
+
+        .back-nav {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
+        }
+
+        .back-nav:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%236366f1" width="1920" height="1080"/><circle fill="%23a855f7" cx="400" cy="200" r="100" opacity="0.3"/><circle fill="%23ec4899" cx="1200" cy="400" r="150" opacity="0.2"/><circle fill="%236366f1" cx="800" cy="600" r="120" opacity="0.25"/><circle fill="%23f59e0b" cx="1600" cy="800" r="80" opacity="0.3"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+            position: relative;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .hero-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hero-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .safety-rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 1.5rem;
+        }
+
+        .main-content {
+            padding: 4rem 0;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+        }
+
+        .section h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .section-intro {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: #007bff;
+        }
+
+        .card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .card-meta span {
+            background: #e9ecef;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            color: #495057;
+            font-weight: 500;
+            border: 1px solid #dee2e6;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .features-list li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .features-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .safety-features {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border: 2px solid #28a745;
+        }
+
+        .emergency-info {
+            background: linear-gradient(135deg, #f8d7da, #f1c2c7);
+            border: 2px solid #dc3545;
+            margin-bottom: 2rem;
+        }
+
+        .emergency-info h3 {
+            color: #721c24;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .emergency-contacts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #721c24;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .contact-item .contact-number {
+            color: #333;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .quick-facts {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .quick-facts h3 {
+            color: #856404;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .fact-item {
+            text-align: center;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .fact-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .fact-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #007bff;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .fact-label {
+            font-size: 0.85rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+            border: 1px solid #e9ecef;
+        }
+
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 1rem;
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            font-size: 0.9rem;
+            min-width: 120px;
+            font-weight: 500;
+        }
+
+        .tab.active {
+            background: #007bff;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #007bff;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .error-message {
+            background: linear-gradient(135deg, #f8d7da, #f1c2c7);
+            border: 2px solid #dc3545;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            color: #721c24;
+            margin: 2rem 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-info {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab {
+                min-width: auto;
+            }
+
+            .back-nav {
+                top: 10px;
+                left: 10px;
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .facts-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .fact-item {
+                padding: 0.8rem;
+            }
+
+            .fact-value {
+                font-size: 1.5rem;
+            }
+
+            .fact-label {
+                font-size: 0.8rem;
+            }
+
+            .emergency-contacts {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .contact-item {
+                padding: 1.2rem;
+            }
+
+            .contact-item strong {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 4rem 0 3rem;
+                min-height: 50vh;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .main-content {
+                padding: 3rem 0;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <div>Loading festival information...</div>
+    </div>
+
+    <a href="index.html" class="back-nav">← Back to All Festivals</a>
+
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1 id="festival-name">Loading Festival...</h1>
+            <p class="hero-subtitle" id="festival-subtitle">Please wait while we load the festival information</p>
+            
+            <div class="hero-info" id="hero-info">
+                <!-- Dynamic hero cards will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container main-content" id="main-content">
+        <!-- Dynamic content will be populated here -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 FestivalTravel.org. Empowering women travelers worldwide.</p>
+    </footer>
+
+    <script>
+        // Get festival ID from URL hash
+        function getFestivalId() {
+            const hash = window.location.hash.substring(1);
+            const urlParams = new URLSearchParams(window.location.search);
+            const queryParam = urlParams.get('festival');
+            
+            return hash || queryParam || 'womad'; // Default fallback
+        }
+
+        // Generate hero section
+        function generateHeroSection(festival) {
+            const heroInfo = document.getElementById('hero-info');
+            const stars = '★'.repeat(festival.safetyRating) + '☆'.repeat(5 - festival.safetyRating);
+            
+            heroInfo.innerHTML = `
+                <div class="hero-card">
+                    <h3>🎵 ${festival.tags[0]}</h3>
+                    <p>${festival.tags.slice(0, 2).join(' & ')}</p>
+                </div>
+                <div class="hero-card">
+                    <h3>📍 ${festival.country}</h3>
+                    <p>${festival.location}</p>
+                </div>
+                <div class="hero-card">
+                    <h3>📅 ${festival.dates}</h3>
+                    <p>Founded ${festival.founded}</p>
+                </div>
+                <div class="hero-card">
+                    <h3>🛡️ Safety First</h3>
+                    <div class="safety-rating">
+                        <span class="stars">${stars}</span>
+                        <span>Rating: ${festival.safetyRating}/5</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Generate quick facts section
+        function generateQuickFacts(festival) {
+            return `
+                <div class="quick-facts">
+                    <h3>🚀 Quick Festival Facts</h3>
+                    <div class="facts-grid">
+                        <div class="fact-item">
+                            <span class="fact-value">${festival.capacity.toLocaleString()}</span>
+                            <span class="fact-label">Capacity</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-value">${festival.ticketPrice}</span>
+                            <span class="fact-label">Ticket Price</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-value">${new Date().getFullYear() - festival.founded}+</span>
+                            <span class="fact-label">Years Running</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-value">${festival.safetyRating}/5</span>
+                            <span class="fact-label">Safety Rating</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-value">${festival.attendeeRating}/5</span>
+                            <span class="fact-label">Attendee Rating</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-value">${festival.tags.length}</span>
+                            <span class="fact-label">Music Genres</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Generate emergency information section
+        function generateEmergencyInfo(festival) {
+            if (!festival.emergencyContacts || festival.emergencyContacts.length === 0) {
+                return '';
+            }
+
+            const contactsHTML = festival.emergencyContacts.map(contact => `
+                <div class="contact-item">
+                    <strong>${contact.service}</strong>
+                    <div class="contact-number">${contact.number}</div>
+                </div>
+            `).join('');
+
+            return `
+                <div class="emergency-info">
+                    <h3>🚨 Emergency Information</h3>
+                    <p>Save these important contacts before you go:</p>
+                    <div class="emergency-contacts">
+                        ${contactsHTML}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Generate venues section
+        function generateVenuesSection(festivalId) {
+            if (!window.FESTIVALS_DATA || !window.FESTIVALS_DATA.venues || !window.FESTIVALS_DATA.venues[festivalId]) {
+                return `
+                    <div class="section">
+                        <h2>🎪 Safe Venues & Stages</h2>
+                        <div class="no-data">Venue information for this festival will be available soon!</div>
+                    </div>
+                `;
+            }
+
+            const venues = window.FESTIVALS_DATA.venues[festivalId];
+            const venuesHTML = venues.map(venue => `
+                <div class="card safety-features">
+                    <h3>🎵 ${venue.name}</h3>
+                    <div class="card-meta">
+                        <span>Capacity: ${venue.capacity.toLocaleString()}</span>
+                        <span>Type: ${venue.type.replace('_', ' ')}</span>
+                    </div>
+                    <p>${venue.description}</p>
+                    <h4>Safety Features:</h4>
+                    <ul class="features-list">
+                        ${venue.safetyFeatures.map(feature => `<li>${feature}</li>`).join('')}
+                    </ul>
+                    <h4>Accessibility:</h4>
+                    <ul class="features-list">
+                        ${venue.accessibility.map(feature => `<li>${feature}</li>`).join('')}
+                    </ul>
+                </div>
+            `).join('');
+
+            return `
+                <div class="section">
+                    <h2>🎪 Safe Venues & Stages</h2>
+                    <p class="section-intro">All venues feature excellent safety measures and female-friendly facilities</p>
+                    <div class="grid">
+                        ${venuesHTML}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Generate hotels section
+        function generateHotelsSection(festivalId) {
+            if (!window.FESTIVALS_DATA || !window.FESTIVALS_DATA.hotels || !window.FESTIVALS_DATA.hotels[festivalId]) {
+                return `
+                    <div class="section">
+                        <h2>🏨 Female-Friendly Accommodations</h2>
+                        <div class="no-data">Accommodation information for this festival will be available soon!</div>
+                    </div>
+                `;
+            }
+
+            const hotels = window.FESTIVALS_DATA.hotels[festivalId];
+            const hotelsHTML = hotels.map(hotel => {
+                const stars = '⭐'.repeat(hotel.safetyRating);
+                return `
+                    <div class="card">
+                        <h3>🏨 ${hotel.name}</h3>
+                        <div class="card-meta">
+                            <span>${hotel.distance}</span>
+                            <span>${hotel.priceRange}</span>
+                            <span>${hotel.type.replace('_', ' ')}</span>
+                            <span>${stars}</span>
+                        </div>
+                        <p>${hotel.description}</p>
+                        <h4>Female-Friendly Features:</h4>
+                        <ul class="features-list">
+                            ${hotel.femaleFeatures.map(feature => `<li>${feature}</li>`).join('')}
+                        </ul>
+                        <h4>Amenities:</h4>
+                        <ul class="features-list">
+                            ${hotel.amenities.map(amenity => `<li>${amenity}</li>`).join('')}
+                        </ul>
+                        ${hotel.contact ? `<p><strong>Contact:</strong> ${hotel.contact}</p>` : ''}
+                    </div>
+                `;
+            }).join('');
+
+            return `
+                <div class="section">
+                    <h2>🏨 Female-Friendly Accommodations</h2>
+                    <p class="section-intro">Carefully selected hotels and accommodations prioritizing safety and comfort</p>
+                    <div class="grid">
+                        ${hotelsHTML}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Generate CTA section
+        function generateCTASection(festival) {
+            return `
+                <div class="cta-section">
+                    <h2>Ready for an Amazing, Safe Festival Experience?</h2>
+                    <p>Join thousands of music lovers at ${festival.name} with confidence and peace of mind</p>
+                    <div class="cta-buttons">
+                        <a href="${festival.website}" target="_blank" class="btn btn-primary">Get Festival Tickets</a>
+                        <a href="#safety" class="btn btn-secondary">Download Safety Guide</a>
+                        <a href="index.html" class="btn btn-secondary">Explore More Festivals</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Generate safety features section
+        function generateSafetySection(festival) {
+            const safetyHTML = festival.safetyFeatures.map(feature => `<li>${feature}</li>`).join('');
+            const accessibilityHTML = festival.accessibilityFeatures.map(feature => `<li>${feature}</li>`).join('');
+
+            return `
+                <div class="section">
+                    <h2>🛡️ Safety & Accessibility Features</h2>
+                    <p class="section-intro">Comprehensive safety measures and accessibility features ensuring everyone can enjoy the festival</p>
+                    <div class="grid">
+                        <div class="card safety-features">
+                            <h3>🛡️ Safety Features</h3>
+                            <ul class="features-list">
+                                ${safetyHTML}
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>♿ Accessibility Features</h3>
+                            <ul class="features-list">
+                                ${accessibilityHTML}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Main function to load and render festival page
+        function loadFestivalPage() {
+            const festivalId = getFestivalId();
+            
+            // Check if festival data is loaded
+            if (!window.FESTIVALS_DATA || !window.FESTIVALS_DATA.festivals) {
+                document.getElementById('main-content').innerHTML = `
+                    <div class="error-message">
+                        <h2>⚠️ Data Loading Error</h2>
+                        <p>Festival data is not available. Please make sure festivals-data.js is loaded correctly.</p>
+                        <a href="index.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">← Back to All Festivals</a>
+                    </div>
+                `;
+                document.getElementById('loading-screen').classList.add('hidden');
+                return;
+            }
+
+            const festival = window.FESTIVALS_DATA.festivals.find(f => f.id === festivalId);
+
+            if (!festival) {
+                document.getElementById('main-content').innerHTML = `
+                    <div class="error-message">
+                        <h2>🚫 Festival Not Found</h2>
+                        <p>Sorry, we couldn't find information for the festival "${festivalId}". Please check the URL or return to the main page.</p>
+                        <a href="index.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">← Back to All Festivals</a>
+                    </div>
+                `;
+                document.getElementById('loading-screen').classList.add('hidden');
+                return;
+            }
+
+            // Update page metadata
+            document.getElementById('page-title').textContent = `${festival.name} 2025 | Safe Venues, Hotels & Complete Guide | FestivalTravel.org`;
+            document.getElementById('page-description').setAttribute('content', `Complete guide to ${festival.name} with female-friendly venues, safe accommodations, trusted bars, and local attractions. Your safety-first festival experience.`);
+            document.getElementById('page-keywords').setAttribute('content', `${festival.name}, ${festival.tags.join(', ')}, female-friendly, safe venues, festival accommodation, ${festival.location}`);
+            document.getElementById('og-title').setAttribute('content', `${festival.name} 2025 - Complete Safety Guide`);
+            document.getElementById('og-description').setAttribute('content', `Everything you need for a safe, amazing ${festival.name} experience including venues, hotels, bars and attractions.`);
+            document.getElementById('canonical-url').setAttribute('href', `https://www.festivaltravel.org/festival.html#${festival.id}`);
+
+            // Update hero section
+            document.getElementById('festival-name').textContent = festival.name;
+            document.getElementById('festival-subtitle').textContent = `${festival.description.split('.')[0]} | ${festival.dates} | ${festival.location}`;
+            generateHeroSection(festival);
+
+            // Generate main content
+            const mainContent = document.getElementById('main-content');
+            mainContent.innerHTML = `
+                ${generateQuickFacts(festival)}
+                ${generateEmergencyInfo(festival)}
+                ${generateVenuesSection(festivalId)}
+                ${generateHotelsSection(festivalId)}
+                ${generateSafetySection(festival)}
+                ${generateCTASection(festival)}
+            `;
+
+            // Add structured data for SEO
+            const structuredData = {
+                "@context": "https://schema.org",
+                "@type": "MusicEvent",
+                "name": festival.name,
+                "startDate": festival.dates.split(' ')[0] + ", 2025",
+                "location": {
+                    "@type": "Place",
+                    "name": festival.location,
+                    "addressCountry": festival.country
+                },
+                "description": festival.description,
+                "offers": {
+                    "@type": "Offer",
+                    "price": festival.ticketPrice.replace(/[£$€¥]/g, '').split('-')[0],
+                    "priceCurrency": festival.ticketPrice.match(/[£$€¥]/)?.[0] || "USD"
+                },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": festival.name + " Organization"
+                },
+                "url": festival.website
+            };
+
+            // Remove existing structured data script if any
+            const existingScript = document.querySelector('script[type="application/ld+json"]');
+            if (existingScript) {
+                existingScript.remove();
+            }
+
+            // Add new structured data
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.text = JSON.stringify(structuredData);
+            document.head.appendChild(script);
+
+            // Hide loading screen
+            setTimeout(() => {
+                document.getElementById('loading-screen').classList.add('hidden');
+            }, 800);
+        }
+
+        // Handle hash changes for navigation
+        window.addEventListener('hashchange', function() {
+            loadFestivalPage();
+        });
+
+        // Tab functionality
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            const targetContent = document.getElementById(tabName);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+            
+            if (event && event.target) {
+                event.target.classList.add('active');
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        function initializeSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Error handling
+        function handleErrors() {
+            window.addEventListener('error', function(e) {
+                console.error('Page error:', e.error);
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error-message';
+                errorDiv.innerHTML = `
+                    <h3>⚠️ Something went wrong</h3>
+                    <p>There was an error loading the festival information. Please refresh the page or try again later.</p>
+                    <button onclick="location.reload()" class="btn btn-primary" style="margin-top: 1rem;">Refresh Page</button>
+                `;
+                document.getElementById('main-content').appendChild(errorDiv);
+            });
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                handleErrors();
+                
+                // Wait for festivals-data.js to load
+                if (typeof FESTIVALS_DATA !== 'undefined') {
+                    window.FESTIVALS_DATA = FESTIVALS_DATA;
+                    loadFestivalPage();
+                } else {
+                    // Retry loading after a delay
+                    setTimeout(() => {
+                        if (typeof FESTIVALS_DATA !== 'undefined') {
+                            window.FESTIVALS_DATA = FESTIVALS_DATA;
+                            loadFestivalPage();
+                        } else {
+                            document.getElementById('main-content').innerHTML = `
+                                <div class="error-message">
+                                    <h2>⚠️ Data Loading Error</h2>
+                                    <p>Festival data could not be loaded. Please make sure festivals-data.js is available and try refreshing the page.</p>
+                                    <a href="index.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">← Back to All Festivals</a>
+                                </div>
+                            `;
+                            document.getElementById('loading-screen').classList.add('hidden');
+                        }
+                    }, 2000);
+                }
+                
+                // Initialize other features after content loads
+                setTimeout(() => {
+                    initializeSmoothScrolling();
+                }, 1000);
+                
+            } catch (error) {
+                console.error('Initialization error:', error);
+                document.getElementById('loading-screen').innerHTML = `
+                    <div style="text-align: center;">
+                        <h2>⚠️ Loading Error</h2>
+                        <p>There was an error loading the page. Please refresh to try again.</p>
+                        <button onclick="location.reload()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: white; color: #007bff; border: none; border-radius: 5px; cursor: pointer; font-weight: 600;">Refresh Page</button>
+                    </div>
+                `;
+            }
+        });
+
+        // Global functions for external access
+        window.festivalTemplate = {
+            showTab: showTab,
+            loadFestivalPage: loadFestivalPage
+        };
+    </script>
+
+    <!-- Load festival data -->
+    <script src="assets/js/festivals-data.js"></script>
+</body>
+</html>
