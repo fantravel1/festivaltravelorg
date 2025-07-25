@@ -1279,6 +1279,234 @@ const FESTIVALS_DATA = {
                 femaleFeatures: ['female welfare officers', 'women-only spaces available', 'trauma-informed support', 'confidential services'],
                 description: 'Comprehensive welfare services with decades of experience and female-specific support options'
             }
+        ],
+        'tomorrowland': [
+            {
+                id: 'sleep-well-youth-hostel',
+                name: 'Sleep Well Youth Hostel',
+                type: 'female_friendly_hostel',
+                distance: '25 km from festival (Brussels)',
+                priceRange: '€35-65/night',
+                safetyRating: 5,
+                femaleFeatures: ['female-only dorms', 'women-only floors', '24hr female reception', 'secure lockers', 'safety-focused staff'],
+                amenities: ['kitchen facilities', 'common areas', 'laundry', 'free WiFi', 'breakfast included'],
+                contact: '+32 2 218 50 50',
+                description: 'Modern hostel in Brussels with dedicated female-only areas and excellent safety record'
+            },
+            {
+                id: 'hotel-des-galeries',
+                name: 'Hotel des Galeries',
+                type: 'boutique_hotel',
+                distance: '30 km from festival (Brussels center)',
+                priceRange: '€120-200/night',
+                safetyRating: 5,
+                femaleFeatures: ['solo female traveler focused', 'central safe location', '24hr concierge', 'well-lit entrance'],
+                amenities: ['luxury rooms', 'restaurant', 'art gallery', 'business center'],
+                contact: '+32 2 213 74 74',
+                description: 'Boutique hotel in Brussels known for exceptional solo female traveler safety and service'
+            },
+            {
+                id: 'yooma-urban-lodge',
+                name: 'Yooma Urban Lodge',
+                type: 'modern_hotel',
+                distance: '28 km from festival (Brussels)',
+                priceRange: '€80-140/night',
+                safetyRating: 4,
+                femaleFeatures: ['modern security systems', 'independent traveler focus', 'safe neighborhood', 'female-friendly design'],
+                amenities: ['fitness center', 'co-working space', 'restaurant', 'modern rooms'],
+                contact: '+32 2 421 94 20',
+                description: 'Modern lodge popular with independent women travelers, emphasizing safety and comfort'
+            }
+        ],
+        'fuji-rock': [
+            {
+                id: 'nine-hours-shinjuku',
+                name: 'Nine Hours Shinjuku',
+                type: 'capsule_hotel',
+                distance: '2 hours from festival (Tokyo)',
+                priceRange: '¥4,500-7,000/night',
+                safetyRating: 5,
+                femaleFeatures: ['women-only floors', 'female-only entrance', 'women-only amenities', 'high-tech security'],
+                amenities: ['modern capsules', 'shared bathrooms', 'lockers', 'WiFi', 'minimalist design'],
+                contact: '+81 3-6304-5757',
+                description: 'Premium capsule hotel with dedicated women-only floors and cutting-edge security'
+            },
+            {
+                id: 'prince-naeba-hotel',
+                name: 'Prince Naeba Hotel',
+                type: 'ski_resort_hotel',
+                distance: 'On festival grounds',
+                priceRange: '¥12,000-25,000/night',
+                safetyRating: 5,
+                femaleFeatures: ['on-site safety', 'female-only floor options', 'resort security', 'safe mountain environment'],
+                amenities: ['ski resort facilities', 'multiple restaurants', 'hot springs', 'shuttle service'],
+                contact: '+81 25-789-2211',
+                description: 'On-site resort hotel with female-only floor options and comprehensive mountain safety'
+            },
+            {
+                id: 'dormy-inn-niigata',
+                name: 'Dormy Inn Niigata',
+                type: 'business_hotel',
+                distance: '90 min from festival',
+                priceRange: '¥8,000-15,000/night',
+                safetyRating: 4,
+                femaleFeatures: ['women-only floors available', 'female amenities', 'business traveler safety', 'secure access'],
+                amenities: ['hot spring bath', 'free ramen', 'laundry', 'business facilities'],
+                contact: '+81 25-243-5489',
+                description: 'Business hotel chain with women-only floors and excellent safety standards'
+            }
+        ],
+        'montreal-jazz': [
+            {
+                id: 'hi-montreal-hostel',
+                name: 'HI Montreal Hostel',
+                type: 'female_friendly_hostel',
+                distance: '2 km from festival area',
+                priceRange: 'CAD $35-80/night',
+                safetyRating: 5,
+                femaleFeatures: ['female-only dorms', 'women-only floors', 'female safety programs', '24hr security'],
+                amenities: ['kitchen facilities', 'common areas', 'laundry', 'free WiFi', 'breakfast available'],
+                contact: '+1 514-843-3317',
+                description: 'International hostel with comprehensive female-only accommodations and safety programs'
+            },
+            {
+                id: 'casa-bianca-bb',
+                name: 'Casa Bianca B&B',
+                type: 'female_owned_bb',
+                distance: '1.5 km from festival',
+                priceRange: 'CAD $90-150/night',
+                safetyRating: 5,
+                femaleFeatures: ['female-owned and operated', 'women-focused service', 'safe Plateau location', 'personal attention'],
+                amenities: ['breakfast included', 'garden terrace', 'local expertise', 'cozy atmosphere'],
+                contact: '+1 514-312-3737',
+                description: 'Female-owned B&B in safe Plateau area with personalized service for women travelers'
+            },
+            {
+                id: 'hotel-zero1',
+                name: 'Hotel Zero1',
+                type: 'boutique_hotel',
+                distance: '1 km from festival',
+                priceRange: 'CAD $120-220/night',
+                safetyRating: 4,
+                femaleFeatures: ['solo female traveler packages', 'safe downtown location', 'women-friendly amenities', 'security focus'],
+                amenities: ['fitness center', 'restaurant', 'modern design', 'business center'],
+                contact: '+1 514-871-9696',
+                description: 'Modern boutique hotel with special packages and services for solo female travelers'
+            }
+        ],
+        'flow-festival': [
+            {
+                id: 'hotel-kaMP',
+                name: 'Hotel Kämp',
+                type: 'luxury_hotel',
+                distance: '3 km from festival',
+                priceRange: '€200-350/night',
+                safetyRating: 5,
+                femaleFeatures: ['luxury security', 'female concierge services', 'solo female traveler excellence', 'safe central location'],
+                amenities: ['spa services', 'fine dining', 'fitness center', 'luxury amenities'],
+                contact: '+358 9 576 111',
+                description: 'Prestigious Helsinki hotel with exceptional reputation for solo female traveler safety and service'
+            },
+            {
+                id: 'hostel-academica',
+                name: 'Hostel Academica',
+                type: 'female_friendly_hostel',
+                distance: '2 km from festival',
+                priceRange: '€30-70/night',
+                safetyRating: 5,
+                femaleFeatures: ['female-only rooms', 'women-only floors', 'female safety focus', 'secure environment'],
+                amenities: ['shared kitchen', 'common areas', 'laundry', 'free WiFi', 'breakfast'],
+                contact: '+358 9 1311 4334',
+                description: 'University-based hostel with excellent female-only accommodations and safety standards'
+            },
+            {
+                id: 'hotel-lilla-roberts',
+                name: 'Hotel Lilla Roberts',
+                type: 'design_hotel',
+                distance: '2.5 km from festival',
+                priceRange: '€120-200/night',
+                safetyRating: 5,
+                femaleFeatures: ['female management team', 'women-focused design', 'solo traveler specialization', 'artistic atmosphere'],
+                amenities: ['design rooms', 'restaurant', 'art collection', 'wellness facilities'],
+                contact: '+358 9 681 9680',
+                description: 'Design hotel with female management team and specialized services for women travelers'
+            }
+        ],
+        'splendour': [
+            {
+                id: 'arts-factory-lodge',
+                name: 'Arts Factory Lodge',
+                type: 'female_friendly_hostel',
+                distance: '5 km from festival',
+                priceRange: 'AU$40-90/night',
+                safetyRating: 5,
+                femaleFeatures: ['female-only dorms', 'women-only areas', 'solo female traveler hub', 'community atmosphere'],
+                amenities: ['pool', 'cafe', 'arts workshops', 'live music', 'yoga classes'],
+                contact: '+61 2 6685 7709',
+                description: 'Iconic Byron Bay hostel extremely popular with solo female travelers and festival-goers'
+            },
+            {
+                id: 'nimbin-waterfall-retreat',
+                name: 'Nimbin Waterfall Retreat',
+                type: 'female_operated_retreat',
+                distance: '20 km from festival',
+                priceRange: 'AU$80-160/night',
+                safetyRating: 5,
+                femaleFeatures: ['female-operated', 'women-only wellness programs', 'safe natural setting', 'holistic focus'],
+                amenities: ['waterfall access', 'meditation spaces', 'organic meals', 'wellness treatments'],
+                contact: '+61 2 6689 1234',
+                description: 'Female-operated wellness retreat in natural setting with women-focused programs'
+            },
+            {
+                id: 'byron-bay-yyy-hostel',
+                name: 'Byron Bay YHA',
+                type: 'youth_hostel',
+                distance: '8 km from festival',
+                priceRange: 'AU$35-75/night',
+                safetyRating: 4,
+                femaleFeatures: ['female-only dorms', 'women travelers focus', 'safe beachside location', 'community programs'],
+                amenities: ['pool', 'kitchen', 'common areas', 'bike rental', 'beach access'],
+                contact: '+61 2 6685 8788',
+                description: 'YHA hostel with excellent female-only facilities and strong safety record'
+            }
+        ],
+        'latitude': [
+            {
+                id: 'swan-hotel-southwold',
+                name: 'The Swan Hotel Southwold',
+                type: 'country_hotel',
+                distance: '15 km from festival',
+                priceRange: '£120-220/night',
+                safetyRating: 5,
+                femaleFeatures: ['female management', 'solo female traveler focus', 'safe coastal town', 'personal service'],
+                amenities: ['restaurant', 'bar', 'sea views', 'traditional comfort'],
+                contact: '+44 1502 722186',
+                description: 'Traditional seaside hotel with female management and excellent solo traveler reputation'
+            },
+            {
+                id: 'wentworth-hotel',
+                name: 'Wentworth Hotel',
+                type: 'seaside_hotel',
+                distance: '12 km from festival',
+                priceRange: '£90-170/night',
+                safetyRating: 4,
+                femaleFeatures: ['family-run hospitality', 'women-friendly atmosphere', 'safe Aldeburgh location', 'coastal safety'],
+                amenities: ['sea views', 'restaurant', 'traditional rooms', 'local charm'],
+                contact: '+44 1728 452312',
+                description: 'Family-run hotel in safe Aldeburgh with welcoming atmosphere for solo female travelers'
+            },
+            {
+                id: 'brudenell-hotel',
+                name: 'Brudenell Hotel',
+                type: 'boutique_hotel',
+                distance: '12 km from festival',
+                priceRange: '£110-190/night',
+                safetyRating: 5,
+                femaleFeatures: ['boutique safety standards', 'female-friendly service', 'beachfront security', 'solo traveler packages'],
+                amenities: ['beachfront location', 'spa services', 'restaurant', 'modern amenities'],
+                contact: '+44 1728 452071',
+                description: 'Boutique beachfront hotel with specialized services and packages for solo female travelers'
+            }
         ]
     }
 };
