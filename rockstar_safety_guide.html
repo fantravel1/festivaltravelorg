@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Festival Safety Guide | FestivalTravel.org</title>
+    <meta name="description" content="Comprehensive, research-backed festival safety guide for women. Expert tips on staying safe while having fun at music festivals worldwide - from pre-planning to emergency protocols.">
+    <meta name="keywords" content="festival safety guide, women's festival safety, music festival security, solo female travel safety, festival preparation, emergency protocols">
+    <meta property="og:title" content="The Ultimate Festival Safety Guide for Women">
+    <meta property="og:description" content="Expert, research-backed safety strategies for music festivals. Stay safe while having the time of your life.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.festivaltravel.org/safety.html">
+    <link rel="canonical" href="https://www.festivaltravel.org/safety.html">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #007bff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%23dc2626" width="1920" height="1080"/><circle fill="%23ea580c" cx="400" cy="200" r="100" opacity="0.4"/><circle fill="%23d97706" cx="1200" cy="400" r="150" opacity="0.3"/><circle fill="%23dc2626" cx="800" cy="600" r="120" opacity="0.35"/><circle fill="%23b91c1c" cx="1600" cy="800" r="80" opacity="0.4"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            margin-top: 80px;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            opacity: 0.95;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #ffd700;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 5px solid #007bff;
+        }
+
+        .toc h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .toc-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .toc-item:hover {
+            background: #007bff;
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .toc-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        /* Main Content */
+        .content-section {
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 3rem 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #333;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 0.5rem;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: #333;
+        }
+
+        .content-section h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.8rem;
+            color: #555;
+        }
+
+        .content-section p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .content-section ul,
+        .content-section ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        .content-section li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        /* Highlight Boxes */
+        .highlight-box {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            border: 2px solid #2196f3;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .highlight-box.warning {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border-color: #ff9800;
+        }
+
+        .highlight-box.danger {
+            background: linear-gradient(135deg, #ffebee, #ffcdd2);
+            border-color: #f44336;
+        }
+
+        .highlight-box.success {
+            background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+            border-color: #4caf50;
+        }
+
+        .highlight-box h4 {
+            margin-top: 0;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Pro Tips */
+        .pro-tip {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            border-left: 5px solid #9c27b0;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .pro-tip h5 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #4a148c;
+        }
+
+        /* Quick Reference Cards */
+        .quick-ref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .quick-ref-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #007bff;
+        }
+
+        .quick-ref-card h4 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        /* Emergency Contacts */
+        .emergency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .emergency-card {
+            background: linear-gradient(135deg, #ffebee, #ffcdd2);
+            border: 2px solid #f44336;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .emergency-card h5 {
+            color: #d32f2f;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .emergency-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #b71c1c;
+        }
+
+        /* Research References */
+        .references {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-left: 5px solid #6c757d;
+        }
+
+        .references h3 {
+            color: #495057;
+            margin-bottom: 1rem;
+        }
+
+        .references ol {
+            margin-left: 1rem;
+        }
+
+        .references li {
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            color: #6c757d;
+        }
+
+        .references a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .toc-grid,
+            .quick-ref-grid,
+            .emergency-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .content-section {
+                padding: 2rem;
+            }
+
+            .content-section h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .content-section {
+                padding: 1.5rem;
+            }
+
+            .highlight-box,
+            .pro-tip {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">FestivalTravel.org</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="festival.html">Festivals</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="safety.html" class="active">Safety Guide</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>The Ultimate Festival Safety Guide</h1>
+                <p class="hero-subtitle">Research-backed strategies to stay safe while having the time of your life at music festivals worldwide. Because being smart doesn't mean missing out on the fun.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">87%</span>
+                        <span class="stat-label">of incidents are preventable with proper planning</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">of festival-goers have positive experiences</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">emergency support at major festivals</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <div class="container">
+        <div class="toc">
+            <h2>📋 Your Complete Safety Roadmap</h2>
+            <div class="toc-grid">
+                <a href="#pre-festival" class="toc-item">
+                    <span class="toc-icon">📅</span>
+                    <div>Pre-Festival Planning</div>
+                </a>
+                <a href="#arrival-setup" class="toc-item">
+                    <span class="toc-icon">🏕️</span>
+                    <div>Arrival & Setup</div>
+                </a>
+                <a href="#crowd-safety" class="toc-item">
+                    <span class="toc-icon">👥</span>
+                    <div>Crowd Safety</div>
+                </a>
+                <a href="#personal-security" class="toc-item">
+                    <span class="toc-icon">🔒</span>
+                    <div>Personal Security</div>
+                </a>
+                <a href="#health-wellness" class="toc-item">
+                    <span class="toc-icon">💊</span>
+                    <div>Health & Wellness</div>
+                </a>
+                <a href="#emergency-protocols" class="toc-item">
+                    <span class="toc-icon">🚨</span>
+                    <div>Emergency Protocols</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pre-Festival Planning -->
+    <div class="container">
+        <div class="content-section" id="pre-festival">
+            <h2>📅 Pre-Festival Planning: Set Yourself Up for Success</h2>
+            
+            <p>Research shows that 87% of festival incidents could be prevented with proper advance planning. Here's how to be part of that statistic.</p>
+
+            <h3>Research Your Festival</h3>
+            <p>Not all festivals are created equal. Before committing, investigate:</p>
+            <ul>
+                <li><strong>Safety record:</strong> Look for festivals with clear anti-harassment policies and visible security measures</li>
+                <li><strong>Medical facilities:</strong> Check if they have on-site medical staff and emergency protocols</li>
+                <li><strong>Venue layout:</strong> Familiarize yourself with exit points, medical tents, and security posts</li>
+                <li><strong>Local crime statistics:</strong> Research the area's general safety profile</li>
+            </ul>
+
+            <div class="pro-tip">
+                <h5>💡 Pro Tip: The 3-Source Rule</h5>
+                <p>Always verify festival safety information from at least 3 independent sources: official website, recent attendee reviews, and local news coverage.</p>
+            </div>
+
+            <h3>Accommodation Strategy</h3>
+            <p>Your base of operations sets the tone for your entire experience:</p>
+
+            <h4>Hotel Selection Criteria</h4>
+            <ul>
+                <li><strong>24/7 front desk service</strong> - Essential for late-night returns</li>
+                <li><strong>Well-lit parking and entrances</strong> - Visible security deters problems</li>
+                <li><strong>CCTV coverage</strong> - Look for cameras in lobbies and hallways</li>
+                <li><strong>Secure key card access</strong> - Avoid hotels with traditional keys</li>
+                <li><strong>Recent positive reviews</strong> - Focus on safety-related comments</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h4>🏨 Hotel Safety Checklist</h4>
+                <p>Upon arrival: Note fire exits, test door locks, check peephole visibility, and store front desk number in your phone.</p>
+            </div>
+
+            <h3>Transportation Planning</h3>
+            <p>Getting there and back safely requires strategic thinking:</p>
+
+            <div class="quick-ref-grid">
+                <div class="quick-ref-card">
+                    <h4>🚗 Driving</h4>
+                    <ul>
+                        <li>Share GPS route with trusted contacts</li>
+                        <li>Plan rest stops every 2 hours</li>
+                        <li>Avoid driving tired or after drinking</li>
+                        <li>Pre-book secure parking near venue</li>
+                    </ul>
+                </div>
+                <div class="quick-ref-card">
+                    <h4>✈️ Flying</h4>
+                    <ul>
+                        <li>Book airport transfers in advance</li>
+                        <li>Use verified ride-sharing services</li>
+                        <li>Keep copies of tickets/IDs separate</li>
+                        <li>Allow extra time for security delays</li>
+                    </ul>
+                </div>
+                <div class="quick-ref-card">
+                    <h4>🚌 Festival Shuttles</h4>
+                    <ul>
+                        <li>Official shuttles are typically safest option</li>
+                        <li>Keep shuttle schedule and backup plans</li>
+                        <li>Travel in groups when possible</li>
+                        <li>Have emergency transport budget</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Communication Plan</h3>
+            <p>Stay connected with your safety network:</p>
+            <ul>
+                <li><strong>Itinerary sharing:</strong> Send detailed plans to 2-3 trusted contacts</li>
+                <li><strong>Check-in schedule:</strong> Agree on regular contact times</li>
+                <li><strong>Emergency contacts:</strong> Program local emergency numbers</li>
+                <li><strong>Phone backup:</strong> Bring portable chargers and consider a backup phone</li>
+            </ul>
+
+            <div class="highlight-box warning">
+                <h4>⚠️ Critical: Create a Code Word System</h4>
+                <p>Establish a distress code word with your emergency contacts. If you text this word, they know to immediately contact authorities and/or come to your aid.</p>
+            </div>
+        </div>
+
+        <!-- Arrival & Setup -->
+        <div class="content-section" id="arrival-setup">
+            <h2>🏕️ Arrival & Setup: First Impressions Matter</h2>
+
+            <p>The first few hours set the tone for your entire festival experience. Here's how to start strong:</p>
+
+            <h3>Arrival Day Strategy</h3>
+            <ul>
+                <li><strong>Arrive during daylight hours</strong> - Better visibility for navigation and setup</li>
+                <li><strong>Check in with your safety contact</strong> - Confirm safe arrival immediately</li>
+                <li><strong>Orient yourself quickly</strong> - Locate medical tents, security posts, and exits</li>
+                <li><strong>Test your phone signal</strong> - Identify dead zones and plan accordingly</li>
+            </ul>
+
+            <h3>Camping Safety (If Applicable)</h3>
+            <p>Festival camping requires extra vigilance:</p>
+
+            <div class="quick-ref-grid">
+                <div class="quick-ref-card">
+                    <h4>📍 Campsite Selection</h4>
+                    <ul>
+                        <li>Choose well-lit areas near pathways</li>
+                        <li>Avoid isolated corners or blind spots</li>
+                        <li>Position near friendly neighbors</li>
+                        <li>Keep distance from main party areas</li>
+                    </ul>
+                </div>
+                <div class="quick-ref-card">
+                    <h4>🔐 Security Setup</h4>
+                    <ul>
+                        <li>Use locks on all zippers</li>
+                        <li>Hide valuables in multiple locations</li>
+                        <li>Create decoy wallet with small bills</li>
+                        <li>Never leave tent completely unattended</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pro-tip">
+                <h5>💡 Pro Tip: The Buddy System</h5>
+                <p>Even if you're traveling solo, make friends with neighboring campers. Exchange phone numbers and agree to watch each other's sites. Solo campers are statistically safer when they quickly integrate into small groups.</p>
+            </div>
+
+            <h3>Venue Reconnaissance</h3>
+            <p>Spend your first hour doing a safety walkthrough:</p>
+            <ol>
+                <li><strong>Emergency exits:</strong> Locate all exits from main areas</li>
+                <li><strong>Medical stations:</strong> Note locations and operating hours</li>
+                <li><strong>Security posts:</strong> Identify uniformed security positions</li>
+                <li><strong>Safe spaces:</strong> Find quieter areas for breaks</li>
+                <li><strong>Communication dead zones:</strong> Test phone signal throughout venue</li>
+            </ol>
+
+            <div class="highlight-box">
+                <h4>📱 Digital Safety Setup</h4>
+                <p>Download offline maps, save emergency contacts, enable location sharing with trusted friends, and take photos of your accommodation/campsite for easy identification.</p>
+            </div>
+        </div>
+
+        <!-- Crowd Safety -->
+        <div class="content-section" id="crowd-safety">
+            <h2>👥 Crowd Safety: Navigation & Survival</h2>
+
+            <p>Large crowds can be exhilarating but also dangerous. Understanding crowd dynamics can literally save your life.</p>
+
+            <h3>Understanding Crowd Density</h3>
+            <p>Crowd safety experts identify these danger levels:</p>
+
+            <div class="quick-ref-grid">
+                <div class="quick-ref-card">
+                    <h4>🟢 Safe (1-2 people/m²)</h4>
+                    <p>Normal walking pace, easy movement, comfortable personal space</p>
+                </div>
+                <div class="quick-ref-card">
+                    <h4>🟡 Cautious (3-4 people/m²)</h4>
+                    <p>Reduced speed, some pushing, still controllable movement</p>
+                </div>
+                <div class="quick-ref-card">
+                    <h4>🟠 Dangerous (5-6 people/m²)</h4>
+                    <p>Very slow movement, significant pressure, difficult to change direction</p>
+                </div>
+                <div class="quick-ref-card">
+                    <h4>🔴 Critical (7+ people/m²)</h4>
+                    <p>No control over movement, crushing pressure, immediate evacuation needed</p>
+                </div>
+            </div>
+
+            <h3>Crowd Navigation Strategies</h3>
+            <ul>
+                <li><strong>Move with the flow:</strong> Never fight against crowd movement</li>
+                <li><strong>Stay on your feet:</strong> If you fall, curl into a ball and protect your head</li>
+                <li><strong>Keep arms up:</strong> Protects chest compression in dense crowds</li>
+                <li><strong>Exit early:</strong> Leave before headliner ends to avoid crush</li>
+                <li><strong>Watch for panic signs:</strong> Screaming, sudden movement changes, people falling</li>
+            </ul>
+
+            <div class="highlight-box danger">
+                <h4>🚨 Crowd Collapse Warning Signs</h4>
+                <p>If you hear glass breaking, see people falling, feel intense pressure, or notice panic spreading - immediately move toward exits. Don't stop to collect belongings.</p>
+            </div>
+
+            <h3>Stage Area Safety</h3>
+            <p>Different areas around stages have different risk profiles:</p>
+
+            <div class="pro-tip">
+                <h5>💡 Pro Tip: The Sweet Spot Strategy</h5>
+                <p>Position yourself 1/3 back from the stage and away from center. You'll still have a great view with significantly less crowd pressure. Avoid areas directly in front of barriers where crushing is most likely.</p>
+            </div>
+
+            <h4>High-Risk Zones to Avoid:</h4>
+            <ul>
+                <li><strong>Barrier areas:</strong> Risk of crushing against barriers</li>
+                <li><strong>Narrow pathways:</strong> Bottleneck effect creates dangerous pressure</li>
+                <li><strong>Dead-end areas:</strong> No escape route if crowds surge</li>
+                <li><strong>Slope bottoms:</strong> People can fall on top of you</li>
+            </ul>
+
+            <h3>Mosh Pit & Crowd Surfing</h3>
+            <p>If you choose to participate in high-energy crowd activities:</p>
+            <ul>
+                <li><strong>Remove jewelry and glasses</strong> - Prevents injury to yourself and others</li>
+                <li><strong>Tie back long hair</strong> - Prevents entanglement</li>
+                <li><strong>Help fallen people immediately</strong> - Part of mosh pit etiquette</li>
+                <li><strong>Exit if you feel overwhelmed</strong> - No shame in prioritizing safety</li>
+                <li><strong>Never crowd surf toward barriers</strong> - High injury risk</li>
+            </ul>
+
+            <div class="highlight-box success">
+                <h4>✅ Crowd Safety Golden Rules</h4>
+                <ol>
+                    <li>Always know where the nearest exit is</li>
+                    <li>Never push against crowd flow</li>
+                    <li>Help others when safe to do so</li>
+                    <li>Trust your instincts about dangerous situations</li>
+                    <li>Prioritize safety over getting closer to the stage</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Personal Security -->
+        <div class="content-section" id="personal-security">
+            <h2>🔒 Personal Security: Protecting Yourself & Your Belongings</h2>
+
+            <p>Personal security at festivals requires a multi-layered approach that doesn't interfere with having fun.</p>
+
+            <h3>The Strategic Approach to Valuables</h3>
+            <p>The best security strategy is making yourself a less attractive target:</p>
+
+            <div class="quick-ref-grid">
+                <div class="quick-ref-card">
+                    <h4>💎 High-Value Items</h4>
+                    <ul>
+                        <li>Leave expensive jewelry at home</li>
+                        <li>Use an older phone if possible</li>
+                        <li>Bring minimum cash/cards needed</li>
+                        <li>Consider a cheap "festival watch"</li>
+                    </ul>
+                </div>
+                <div class="quick-ref-card">
+                    <h4>🎒 Bag Strategy</h4>
+                    <ul>
+                        <li>Use bags with zippers, not snaps</li>
+                        <li>Wear backpacks in front in crowds</li>
+                        <li>Consider a hidden money belt</li>
+                        <li>Multiple smaller bags vs one large bag</li>
+                    </ul>
+                </div>
+                <div class="quick-ref-card">
+                    <h4>💰 Money Management</h4>
+                    <ul>
+                        <li>Spread cash across 3+ locations</li>
+                
