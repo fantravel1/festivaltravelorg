@@ -134,6 +134,38 @@ const FESTIVALS_DATA = {
                     'Female-led world music ensembles and orchestras',
                     'Rising female stars platform - launching pad for emerging talent',
                     'Matriarchal music traditions honored and celebrated'
+                ],
+                transformationStories: [
+                    {
+                        name: 'Amara K.',
+                        age: 34,
+                        type: 'Cultural Explorer',
+                        festival: 'WOMAD 2024',
+                        rating: 5,
+                        before: 'My world felt small. Same music, same people, same experiences on repeat.',
+                        after: 'Women in World Music workshop opened my eyes. I heard stories from 6 continents, learned djembe from a Senegalese master. Now I\'m studying ethnomusicology.',
+                        highlight: 'Women in World Music workshop expanded my entire worldview'
+                    },
+                    {
+                        name: 'Priya S.',
+                        age: 29,
+                        type: 'Solo Mother Traveler',
+                        festival: 'WOMAD 2024',
+                        rating: 5,
+                        before: 'Hadn\'t done anything for myself since having kids. Felt like I\'d lost my identity.',
+                        after: 'Went to WOMAD alone while kids stayed with family. Danced, learned drumming, had deep conversations. Remembered who I am beyond "mom."',
+                        highlight: 'Safe family camping gave me permission to rediscover myself'
+                    },
+                    {
+                        name: 'Chen L.',
+                        age: 26,
+                        type: 'Musician',
+                        festival: 'WOMAD 2024',
+                        rating: 5,
+                        before: 'Felt disconnected from my Chinese heritage. Didn\'t see Asian women in Western music spaces.',
+                        after: 'Watched incredible Asian female musicians own the stage. Joined the Global Solidarity conversation. Found my artistic voice that honors both cultures.',
+                        highlight: 'Seeing Asian women celebrated helped me claim my identity'
+                    }
                 ]
             },
             safetyFeatures: [
@@ -295,6 +327,38 @@ const FESTIVALS_DATA = {
                     'Platform for emerging female artists from Spain and internationally',
                     'Celebrating feminist punk, riot grrrl, and women-led alternative movements',
                     'Female sound engineers and production crews prominently featured'
+                ],
+                transformationStories: [
+                    {
+                        name: 'Maria G.',
+                        age: 31,
+                        type: 'Music Industry Professional',
+                        festival: 'Primavera Sound 2024',
+                        rating: 5,
+                        before: 'I felt invisible in the music industry. Stuck managing male artists, never taken seriously.',
+                        after: 'Primavera Pro changed everything. I met a label exec at the Women in Music panel, pitched my female artists. Signed 2 acts within 3 months.',
+                        highlight: 'Primavera Pro conference opened doors I didn\'t know existed'
+                    },
+                    {
+                        name: 'Lucia R.',
+                        age: 24,
+                        type: 'Electronic Music Enthusiast',
+                        festival: 'Primavera Sound 2024',
+                        rating: 5,
+                        before: 'I loved electronic music but felt like I didn\'t belong. Guys always explaining things to me at shows.',
+                        after: 'Attended the female DJ workshop, learned production basics. Now I have my own tracks and played my first gig last month.',
+                        highlight: 'Female DJ masterclass made me believe I could do this'
+                    },
+                    {
+                        name: 'Emma S.',
+                        age: 27,
+                        type: 'First-Time International Traveler',
+                        festival: 'Primavera Sound 2024',
+                        rating: 5,
+                        before: 'Barcelona alone? My family thought I was crazy. I almost cancelled three times.',
+                        after: 'Met incredible women from 12 countries at the beach yoga session. We explored the city together, danced until sunrise. Now planning Glastonbury with my new crew.',
+                        highlight: 'Beach yoga meetup turned strangers into lifelong friends'
+                    }
                 ]
             },
             safetyFeatures: [
@@ -459,6 +523,38 @@ const FESTIVALS_DATA = {
                     'Platform for emerging female talent across all genres',
                     'Women festival organizers and production crew visible and celebrated',
                     'Gender-balanced programming across Rising, Arena, and Orange stages'
+                ],
+                transformationStories: [
+                    {
+                        name: 'Astrid H.',
+                        age: 26,
+                        type: 'Mental Health Advocate',
+                        festival: 'Roskilde Festival 2024',
+                        rating: 5,
+                        before: 'I struggled with anxiety at crowded events. Always left early, never felt safe asking for help.',
+                        after: 'Visited Soft Spots on night one just to see it. Talked to a peer counselor. Stayed all 4 nights. Now I volunteer at festivals back home.',
+                        highlight: 'Soft Spots showed me festivals can prioritize mental health'
+                    },
+                    {
+                        name: 'Freya N.',
+                        age: 23,
+                        type: 'Consent Educator',
+                        festival: 'Roskilde Festival 2024',
+                        rating: 5,
+                        before: 'I wanted to be an activist but didn\'t know how. Felt too young, too inexperienced.',
+                        after: 'The bystander intervention training changed me. I learned practical skills, gained confidence. Now I run workshops at my university.',
+                        highlight: 'Bystander training gave me tools to create change'
+                    },
+                    {
+                        name: 'Sophie K.',
+                        age: 29,
+                        type: 'Solo Traveler from UK',
+                        festival: 'Roskilde Festival 2024',
+                        rating: 5,
+                        before: 'Nervous about camping alone in another country. What if I don\'t fit in?',
+                        after: 'The Danish camping culture is incredible. My neighbors became family. We\'re planning a reunion at Glastonbury. Nordic culture is goals.',
+                        highlight: 'Camping community showed me instant belonging'
+                    }
                 ]
             },
             safetyFeatures: [
@@ -624,6 +720,38 @@ const FESTIVALS_DATA = {
                     'Women sound designers and technical crew prominently featured',
                     'Platform for emerging female talent in underground electronic music',
                     'Honoring women who create safe, transformative festival experiences'
+                ],
+                transformationStories: [
+                    {
+                        name: 'River M.',
+                        age: 25,
+                        type: 'Body Positivity Advocate',
+                        festival: 'Shambhala 2024',
+                        rating: 5,
+                        before: 'I hated my body. Never felt comfortable in festival clothes. Always hiding, comparing myself.',
+                        after: 'The body positivity circle in Safe Space broke me open. I cried, I healed, I danced in a crop top for the first time ever. I\'m free now.',
+                        highlight: 'Safe Space body positivity circle changed my relationship with myself'
+                    },
+                    {
+                        name: 'Maya T.',
+                        age: 30,
+                        type: 'Bass Music Producer',
+                        festival: 'Shambhala 2024',
+                        rating: 5,
+                        before: 'Felt like an imposter in the bass scene. Every producer meet-up was just guys.',
+                        after: 'Women in Bass workshop connected me with 10 female producers. We started a collective. My track got signed last month.',
+                        highlight: 'Women in Bass workshop led to my music career breakthrough'
+                    },
+                    {
+                        name: 'Jade L.',
+                        age: 22,
+                        type: 'Mental Health Supporter',
+                        festival: 'Shambhala 2024',
+                        rating: 5,
+                        before: 'Struggled with panic attacks. Scared to go to festivals alone. Almost didn\'t come.',
+                        after: 'Discovered The Sanctuary when I needed help on night two. The trauma-informed care saved me. Now I\'m training to volunteer next year.',
+                        highlight: 'The Sanctuary showed me safe spaces can exist anywhere'
+                    }
                 ]
             },
             safetyFeatures: [
@@ -786,6 +914,38 @@ const FESTIVALS_DATA = {
                     'Female fire performers and flow artists celebrated',
                     'Platform for emerging female talent in bass music and house',
                     'Celebrating women who create the visual and sonic magic of the forest'
+                ],
+                transformationStories: [
+                    {
+                        name: 'Sarah M.',
+                        age: 28,
+                        type: 'Solo Traveler',
+                        festival: 'Electric Forest 2024',
+                        rating: 5,
+                        before: 'I was terrified to go alone. What if I didn\'t make friends? What if I felt awkward at camp?',
+                        after: 'I met my festival family at Her Forest welcome brunch on Day 1. Left with 20+ new friends and a business partner. We\'re planning 2025 together!',
+                        highlight: 'Her Forest Group Camp changed my life'
+                    },
+                    {
+                        name: 'Maya P.',
+                        age: 35,
+                        type: 'First-Timer',
+                        festival: 'Electric Forest 2023',
+                        rating: 5,
+                        before: 'Never been to a festival. Thought I was too old, too anxious. Would the music be too loud?',
+                        after: 'The forest at night felt like magic. I danced until sunrise, cried at a body positivity workshop, discovered my power. Age is just a number.',
+                        highlight: 'Body positivity workshop unlocked something in me'
+                    },
+                    {
+                        name: 'Jessica K.',
+                        age: 24,
+                        type: 'Music Producer',
+                        festival: 'Electric Forest 2024',
+                        rating: 5,
+                        before: 'Wanted to break into electronic music but felt like an outsider as a woman.',
+                        after: 'Took the Women in Electronic Music workshop. A female DJ I met there is now mentoring me. Released my first track last month!',
+                        highlight: 'Found my mentor and my voice'
+                    }
                 ]
             },
             safetyFeatures: [
@@ -1064,6 +1224,38 @@ const FESTIVALS_DATA = {
                     'Platform for emerging UK female talent on smaller stages',
                     'Women sound engineers, stage managers, and festival organizers honored',
                     'Legendary performances by icons like Dolly Parton, Beyoncé, and Adele'
+                ],
+                transformationStories: [
+                    {
+                        name: 'Emma L.',
+                        age: 42,
+                        type: 'Solo Traveler & Activist',
+                        festival: 'Glastonbury 2024',
+                        rating: 5,
+                        before: 'Burned out from activism work. Felt disconnected from my purpose and power.',
+                        after: 'The Goddess Temple and Green Fields reignited everything. Met women doing incredible work. I remembered why I fight. I\'m back.',
+                        highlight: 'Goddess Temple meditation reconnected me to my power'
+                    },
+                    {
+                        name: 'Priya S.',
+                        age: 29,
+                        type: 'First-Timer',
+                        festival: 'Glastonbury 2023',
+                        rating: 5,
+                        before: 'Overwhelmed by the size. 200,000 people? How would I not get lost and anxious?',
+                        after: 'The Sisterhood Tent became my sanctuary. Made friends in women\'s circles. Glastonbury is massive but you find your corners. Never felt unsafe.',
+                        highlight: 'Women-only spaces made the massive feel manageable'
+                    },
+                    {
+                        name: 'Claire M.',
+                        age: 38,
+                        type: 'Music Lover',
+                        festival: 'Glastonbury 2016',
+                        rating: 5,
+                        before: 'Just wanted to see Adele. Didn\'t expect to be changed.',
+                        after: '100,000 people singing together as Adele performed. I cried the entire time. That moment lives in me forever. Worth every muddy step.',
+                        highlight: 'Witnessing history on Pyramid Stage - life-changing'
+                    }
                 ]
             },
             safetyFeatures: [
