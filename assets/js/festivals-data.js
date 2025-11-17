@@ -17,6 +17,33 @@ const FESTIVALS_DATA = {
             ticketPrice: '£190-280',
             capacity: 35000,
             founded: 1982,
+            womensExperiences: {
+                highlights: [
+                    'Strong female artist representation across all stages with 50% female-led performances',
+                    'Women in World Music workshops celebrating female musicians from diverse cultures',
+                    'Female-led drumming circles and percussion workshops',
+                    'Safe, well-lit family camping areas perfect for mothers traveling with children',
+                    'Dedicated women\'s wellness and mindfulness spaces'
+                ],
+                soloTravelTips: [
+                    'Join the WOMAD Women\'s Meetup group - organized gatherings throughout the festival',
+                    'Participate in morning yoga sessions - great way to meet other solo travelers',
+                    'The Taste the World area is perfect for solo dining with communal tables',
+                    'Volunteer program offers instant community for solo attendees'
+                ],
+                empowermentPrograms: [
+                    'Women in Music panel discussions featuring international female artists',
+                    'Female entrepreneurship workshops in the World of Words tent',
+                    'Girls\' drumming initiative - empowering young women through music',
+                    'Women\'s global solidarity conversations and cultural exchanges'
+                ],
+                femaleArtistHighlights: [
+                    'Celebrating female artists from 6 continents showcasing diverse musical traditions',
+                    'Female-led world music ensembles and orchestras',
+                    'Rising female stars platform - launching pad for emerging talent',
+                    'Matriarchal music traditions honored and celebrated'
+                ]
+            },
             safetyFeatures: [
                 'Well-lit pathways throughout site',
                 'Dedicated female welfare officers',
@@ -56,6 +83,36 @@ const FESTIVALS_DATA = {
             ticketPrice: '€220-380',
             capacity: 65000,
             founded: 2001,
+            womensExperiences: {
+                highlights: [
+                    'Industry-leading 50/50 gender equality commitment in artist lineups since 2019',
+                    'Women\'s music industry networking events and mentorship programs',
+                    'Female DJ workshops and electronic music production masterclasses',
+                    'Safe dance spaces with visible "Nobody is Normal" support staff',
+                    'Barcelona\'s vibrant feminist cultural scene extends to the festival grounds'
+                ],
+                soloTravelTips: [
+                    'Stay in El Born or Gràcia neighborhoods - safe, female-friendly with great nightlife',
+                    'Join Primavera Women\'s Social Media groups for pre-festival meetups',
+                    'Take advantage of the excellent Barcelona metro system - safe until late',
+                    'Beach yoga sessions in the morning are perfect for meeting other solo travelers',
+                    'Festival\'s diverse international crowd makes solo attendance completely normal'
+                ],
+                empowermentPrograms: [
+                    'Primavera Pro conferences featuring women music industry leaders',
+                    'Feminist activist collaborations and awareness campaigns',
+                    'Women in Electronic Music panel discussions and networking',
+                    'Gender equality workshops and bystander intervention training',
+                    'Support for female-led local community organizations'
+                ],
+                femaleArtistHighlights: [
+                    '50% female headliners and performers across all stages',
+                    'Showcasing groundbreaking female electronic music producers',
+                    'Platform for emerging female artists from Spain and internationally',
+                    'Celebrating feminist punk, riot grrrl, and women-led alternative movements',
+                    'Female sound engineers and production crews prominently featured'
+                ]
+            },
             safetyFeatures: [
                 '"Nobody is Normal" anti-harassment protocol',
                 'Information stands with trained diverse staff',
@@ -95,6 +152,39 @@ const FESTIVALS_DATA = {
             ticketPrice: '€210-320',
             capacity: 130000,
             founded: 1971,
+            womensExperiences: {
+                highlights: [
+                    'Nordic gender equality excellence reflected throughout festival culture',
+                    'Pioneering consent culture campaigns making respectful behavior the norm',
+                    'Soft Spots counseling areas offering professional mental health support',
+                    'Exceptionally high female attendance (near 50/50 gender balance)',
+                    'Safe, progressive Scandinavian culture promotes women\'s freedom and safety',
+                    'Women-led activist organizations and social impact initiatives'
+                ],
+                soloTravelTips: [
+                    'Denmark\'s exceptional safety makes solo travel comfortable and empowering',
+                    'Join the Roskilde women\'s Facebook groups for pre-festival meetups',
+                    'Copenhagen is incredibly solo-female-traveler friendly - explore before/after',
+                    'Camping areas have strong community vibe perfect for meeting people',
+                    'Scandinavian culture of trust and respect creates relaxed atmosphere',
+                    'Public transport is safe, efficient, and runs late - easy independent navigation'
+                ],
+                empowermentPrograms: [
+                    'Consent culture workshops and peer education programs',
+                    'Women in Music industry panels and networking events',
+                    'Activist organizations focusing on women\'s rights and gender equality',
+                    'Volunteer programs building community and leadership skills',
+                    'Bystander intervention training - empowering everyone to create safety',
+                    'Mental health awareness and support services breaking stigma'
+                ],
+                femaleArtistHighlights: [
+                    'Strong commitment to diverse lineups including prominent female headliners',
+                    'Celebrating Nordic female artists and international women performers',
+                    'Platform for emerging female talent across all genres',
+                    'Women festival organizers and production crew visible and celebrated',
+                    'Gender-balanced programming across Rising, Arena, and Orange stages'
+                ]
+            },
             safetyFeatures: [
                 'Pioneering consent campaigns and education',
                 'Crowd safety hosts for navigation assistance',
@@ -136,6 +226,38 @@ const FESTIVALS_DATA = {
             ticketPrice: 'CAD $420-580',
             capacity: 15000,
             founded: 1998,
+            womensExperiences: {
+                highlights: [
+                    'Dedicated Safe Space for women, BIPOC, and LGBTQIA2S+ community members',
+                    'Women-led harm reduction and peer support teams',
+                    'Female DJs and producers prominently featured across all 6 stages',
+                    'Judgment-free zone promoting authentic self-expression and body positivity',
+                    'The Sanctuary offers 24-hour professional support with trauma-informed care',
+                    'River swimming and natural beauty create healing, feminine-energy spaces'
+                ],
+                soloTravelTips: [
+                    'The Safe Space is perfect for solo travelers to connect and find community',
+                    'Join sunrise yoga by the river - magical way to start your day and meet people',
+                    'Shambha-family culture means solo travelers are welcomed and adopted immediately',
+                    'The Sanctuary offers 24/7 support if you ever feel overwhelmed',
+                    'Camp near the Safe Space for a more intentional, connected experience'
+                ],
+                empowermentPrograms: [
+                    'Consent culture workshops and education throughout the festival',
+                    'Women in bass music production workshops and DJ skills sessions',
+                    'Mental health first aid and peer support training',
+                    'Body positivity and self-love programming',
+                    'LGBTQIA2S+ allyship and inclusion workshops',
+                    'Trauma-informed care training for volunteers'
+                ],
+                femaleArtistHighlights: [
+                    'Celebrating women in electronic music - from DJs to producers to visual artists',
+                    'Female-led bass music taking center stage',
+                    'Women sound designers and technical crew prominently featured',
+                    'Platform for emerging female talent in underground electronic music',
+                    'Honoring women who create safe, transformative festival experiences'
+                ]
+            },
             safetyFeatures: [
                 'ShambhaCares comprehensive harm-reduction program',
                 '24-hour Sanctuary with professional counseling',
@@ -175,6 +297,129 @@ const FESTIVALS_DATA = {
             ticketPrice: '$380-650',
             capacity: 50000,
             founded: 2011,
+            womensExperiences: {
+                highlights: [
+                    'Her Forest - dedicated community program for femme-identifying attendees with its own camp area',
+                    'Daily morning Humanity Circles for connection, sharing, and empowerment',
+                    'Women-led art installations and interactive forest experiences',
+                    'Female-focused wellness activities including yoga, meditation, and breathwork',
+                    'Magical forest setting creates safe, nurturing atmosphere for self-expression'
+                ],
+                dayInTheLife: [
+                    {
+                        time: '7:00 AM',
+                        title: 'Sunrise Yoga at Her Forest',
+                        description: 'Wake up to birdsong and join 50+ women for yoga as the sun rises over the forest. The Her Forest camp comes alive with gentle stretches and breathing exercises.',
+                        location: 'Her Forest Group Camp',
+                        vibe: '✨ Peaceful & Energizing',
+                        realReference: 'Her Forest hosts daily morning yoga sessions - check their camp schedule board for exact times',
+                        feeling: 'You roll out of your tent to misty morning air. The forest feels magical. Other women are stirring, smiling, welcoming you to the circle.'
+                    },
+                    {
+                        time: '9:00 AM',
+                        title: 'Her Forest Welcome Brunch',
+                        description: 'Community breakfast where solo travelers meet their festival family! Share stories, make plans, and connect with other femme-identifying festivalgoers over coffee and breakfast.',
+                        location: 'Her Forest Pavilion',
+                        vibe: '💕 Community & Connection',
+                        realReference: 'Her Forest Welcome Brunch happens on Day 1 - this is where lifelong friendships begin',
+                        feeling: '"Hi! First timer?" "Me too!" Within 20 minutes you have 5 new friends and plans to meet at Sherwood Court later.'
+                    },
+                    {
+                        time: '11:30 AM',
+                        title: 'Women in Electronic Music Workshop',
+                        description: 'Learn DJ basics and music production from female artists who perform at the festival. Hands-on session where you might discover a new passion!',
+                        location: 'The Observatory',
+                        vibe: '🎧 Educational & Inspiring',
+                        realReference: 'Electric Forest regularly features music production workshops - past instructors have included female DJs from the lineup',
+                        feeling: 'Your hands on the decks, headphones on, a female DJ showing you how to mix. "You\'re a natural!" she says. You feel powerful.'
+                    },
+                    {
+                        time: '1:30 PM',
+                        title: 'Explore the Forest Art Installations',
+                        description: 'Wander through the enchanted forest discovering interactive art pieces, many created by women artists. The Hangar and Forest Stage areas transform into wonderlands.',
+                        location: 'Sherwood Forest paths',
+                        vibe: '🌲 Magical & Wonder-filled',
+                        realReference: 'The forest is filled with 100+ art installations that change yearly - many by female artists',
+                        feeling: 'You turn a corner and gasp - a glowing installation of butterflies. You reach out, they respond to your touch. Magic is real here.'
+                    },
+                    {
+                        time: '3:00 PM',
+                        title: 'Body Positivity Workshop',
+                        description: 'Join a powerful session on self-love and body acceptance in Her Forest\'s sacred space. Share, heal, and celebrate your authentic self with other women.',
+                        location: 'Her Forest Sacred Space',
+                        vibe: '💪 Empowering & Healing',
+                        realReference: 'Her Forest regularly hosts empowerment workshops throughout the festival weekend',
+                        feeling: 'Tears, laughter, hugs. A stranger becomes a sister. You release shame you didn\'t know you were carrying.'
+                    },
+                    {
+                        time: '5:30 PM',
+                        title: 'Catch Female-Led Performances',
+                        description: 'Amazing women artists taking stages across the forest! Check the lineup for female DJs at Ranch Arena, Tripolee, or Sherwood Court.',
+                        location: 'Multiple Stages',
+                        vibe: '🎤 Energetic & Inspiring',
+                        realReference: 'Electric Forest 2024 featured artists like LP Giobbi, Cassian, Sofi Tukker, and other incredible female performers',
+                        feeling: 'Bass drops, lights explode, you\'re dancing with your new Her Forest crew. A female DJ commands the stage. You feel invincible.'
+                    },
+                    {
+                        time: '8:00 PM',
+                        title: 'Her Forest Community Dinner',
+                        description: 'Share a meal with your festival family. Bring something to contribute or just bring yourself. Stories, laughter, and planning the night\'s adventures.',
+                        location: 'Her Forest Camp',
+                        vibe: '🍽️ Warm & Connecting',
+                        realReference: 'Community meals are a Her Forest tradition - gift economy style',
+                        feeling: 'Someone passes you pasta, someone else braids your hair. "Which stage should we hit first?" Plans are made. Family is formed.'
+                    },
+                    {
+                        time: '10:00 PM',
+                        title: 'Dance Under the Stars at Sherwood Court',
+                        description: 'The main stage comes alive! Dance with your crew, make new friends in the crowd, feel the energy of thousands moving as one to incredible music.',
+                        location: 'Sherwood Court Main Stage',
+                        vibe: '🌟 Electric & Euphoric',
+                        realReference: 'Sherwood Court hosts headliners from 9pm-3am - past performers include String Cheese Incident, Bassnectar, and more',
+                        feeling: 'Lights cascade over the trees. The bass moves through your body. You\'re surrounded by friends. This is freedom.'
+                    },
+                    {
+                        time: '1:00 AM',
+                        title: 'Late Night Forest Wandering',
+                        description: 'Explore the forest when it truly comes alive. Secret shows, art installations glowing, intimate moments. Discover why they call it magic.',
+                        location: 'Throughout Sherwood Forest',
+                        vibe: '✨ Mystical & Intimate',
+                        realReference: 'The forest stays active all night with secret performances and installations that only appear after dark',
+                        feeling: 'Fairy lights. A violinist playing in a hidden grove. Strangers become friends. The forest holds you safely.'
+                    },
+                    {
+                        time: '3:00 AM',
+                        title: 'Return to Her Forest Camp',
+                        description: 'Head back to camp where someone has a fire going. Share the night\'s stories, make plans for tomorrow, fall asleep to laughter and forest sounds.',
+                        location: 'Her Forest Group Camp',
+                        vibe: '💫 Cozy & Safe',
+                        realReference: 'Her Forest camp provides a safe landing spot all night - always someone awake to welcome you home',
+                        feeling: 'Your tent feels like home. Tomorrow you do it all again. You fall asleep smiling, belonging to something beautiful.'
+                    }
+                ],
+                soloTravelTips: [
+                    'Her Forest Group Camp is THE place for solo female travelers - instant community and lifelong friendships',
+                    'Attend Her Forest welcome brunch on Day 1 to meet your festival family',
+                    'Join morning yoga and wellness sessions to connect with like-minded women',
+                    'Participate in the gift economy and art exchanges - beautiful way to bond',
+                    'The forest at night feels magical and safe with consistent lighting and friendly vibes'
+                ],
+                empowermentPrograms: [
+                    'Her Forest Leadership Program - workshops on empowerment, consent, and community building',
+                    'Women in Electronic Music production workshops and DJ lessons',
+                    'Body positivity and self-love workshops in the forest',
+                    'Female entrepreneurship and creative business panels',
+                    'Mentorship circles connecting veteran festivalgoers with first-timers',
+                    'Community meal sharing and intentional connection exercises'
+                ],
+                femaleArtistHighlights: [
+                    'Strong representation of female DJs and electronic music producers',
+                    'Women-led art installations throughout the enchanted forest',
+                    'Female fire performers and flow artists celebrated',
+                    'Platform for emerging female talent in bass music and house',
+                    'Celebrating women who create the visual and sonic magic of the forest'
+                ]
+            },
             safetyFeatures: [
                 'Her Forest initiative for femme empowerment',
                 'Humanity Circles for connection and support',
@@ -328,6 +573,131 @@ const FESTIVALS_DATA = {
             ticketPrice: '£335-380',
             capacity: 210000,
             founded: 1970,
+            womensExperiences: {
+                highlights: [
+                    'Iconic women-only areas including the Sisterhood sanctuary space',
+                    'Green Fields with goddess workshops, women\'s healing spaces, and feminist activism',
+                    'Legendary female headliners making history on the Pyramid Stage',
+                    'Women\'s rights activism and feminist organizations throughout the site',
+                    'Shangri-La\'s women-led performance art and cabaret shows',
+                    'Mother and baby facilities making it accessible for traveling mums'
+                ],
+                dayInTheLife: [
+                    {
+                        time: '8:00 AM',
+                        title: 'Goddess Temple Morning Meditation',
+                        description: 'Start your day in the sacred Goddess Temple in the Green Fields. Join women in circle for meditation, chanting, and setting intentions for the day.',
+                        location: 'Goddess Temple, Green Fields',
+                        vibe: '🙏 Sacred & Centering',
+                        realReference: 'The Goddess Temple has been a Glastonbury staple since 2004, offering daily ceremonies and women\'s circles',
+                        feeling: 'Incense smoke curls. Women\'s voices rise in harmony. You feel ancient wisdom flowing through this sacred space.'
+                    },
+                    {
+                        time: '10:30 AM',
+                        title: 'Explore The Park\'s Hidden Stages',
+                        description: 'Wander through The Park area discovering intimate performances on small stages tucked between trees. Perfect solo exploration before crowds arrive.',
+                        location: 'The Park',
+                        vibe: '🌳 Intimate & Discovering',
+                        realReference: 'The Park is Glastonbury\'s woodland area with intimate stages - past female performers include Laura Marling, Lianne La Havas',
+                        feeling: 'Dappled sunlight. An acoustic set under the trees. You sit on the grass, coffee in hand, discovering your new favorite artist.'
+                    },
+                    {
+                        time: '12:00 PM',
+                        title: 'Women of the World (WOW) Panel Discussion',
+                        description: 'Powerful talks featuring incredible women leaders, activists, and artists. Past speakers have included feminists, politicians, and cultural icons.',
+                        location: 'WOW Stage or Leftfield',
+                        vibe: '💡 Inspiring & Educational',
+                        realReference: 'WOW Foundation regularly programs at Glastonbury - past panelists have included Jude Kelly, Annie Lennox, and other amazing women',
+                        feeling: 'You\'re surrounded by brilliant minds. Notes furiously taken. Ideas sparking. You feel your worldview expanding.'
+                    },
+                    {
+                        time: '2:00 PM',
+                        title: 'Sisterhood Tent - Women\'s Safe Space',
+                        description: 'Drop into the women-only sanctuary for a break from the crowds. Share stories, rest, connect with other women, or just recharge in safety.',
+                        location: 'Sisterhood Tent',
+                        vibe: '💕 Safe & Supportive',
+                        realReference: 'Sisterhood spaces have operated at Glastonbury providing women-only areas for rest and connection',
+                        feeling: 'Cool shade, comfy cushions. A woman shares her festival story. You feel seen, safe, understood. Sisterhood is real.'
+                    },
+                    {
+                        time: '4:00 PM',
+                        title: 'Catch Emerging Female Artists',
+                        description: 'Head to the West Holts or Acoustic Stage for incredible female performers. These stages have launched the careers of amazing women artists.',
+                        location: 'West Holts or Acoustic Stage',
+                        vibe: '🎶 Discovering & Delighting',
+                        realReference: 'West Holts and Acoustic stages feature diverse female talent - past performers include Lauryn Hill, Janelle Monáe, and many more',
+                        feeling: 'Her voice soars. Goosebumps. You film a clip thinking "I\'ll tell people I saw her before she was huge."'
+                    },
+                    {
+                        time: '6:30 PM',
+                        title: 'Green Fields Feminist Activism Talks',
+                        description: 'Join passionate discussions about women\'s rights, environmental activism, and social justice. The Green Fields is the festival\'s political heart.',
+                        location: 'Green Fields',
+                        vibe: '✊ Activating & Empowering',
+                        realReference: 'Glastonbury\'s Green Fields hosts environmental and social justice organizations - a hub for feminist activism since the 1980s',
+                        feeling: 'Fire in your belly. You sign petitions, exchange contacts. You\'re not just at a festival - you\'re part of a movement.'
+                    },
+                    {
+                        time: '9:00 PM',
+                        title: 'Legendary Female Headliner on Pyramid Stage',
+                        description: 'Join 100,000+ people to witness history as an iconic female artist commands Glastonbury\'s legendary main stage. Dolly, Beyoncé, Adele have all made magic here.',
+                        location: 'Pyramid Stage',
+                        vibe: '⭐ Historic & Euphoric',
+                        realReference: 'Glastonbury\'s Pyramid Stage has hosted legendary female headliners: Dolly Parton (2014), Beyoncé (2011), Adele (2016), plus countless other icons',
+                        feeling: 'One hundred thousand voices singing together. She owns this stage. Tears streaming. You\'ll remember this moment forever.'
+                    },
+                    {
+                        time: '11:30 PM',
+                        title: 'Shangri-La\'s Women-Led Performance Art',
+                        description: 'Dive into Shangri-La\'s dystopian wonderland where female performers, drag artists, and cabaret acts create mind-bending shows. Adult playground activated.',
+                        location: 'Shangri-La',
+                        vibe: '🔥 Wild & Liberating',
+                        realReference: 'Shangri-La features women-led performance art, cabaret, and immersive experiences - a space for radical self-expression',
+                        feeling: 'Lights flash. A female performer breathes fire. Boundaries dissolve. You dance with strangers who feel like family.'
+                    },
+                    {
+                        time: '1:30 AM',
+                        title: 'Late Night at Arcadia\'s Spider',
+                        description: 'Dance under the massive spider sculpture shooting flames. Electronic music, pyrotechnics, pure energy. The night is still young.',
+                        location: 'Arcadia',
+                        vibe: '🕷️ Epic & Energetic',
+                        realReference: 'Arcadia\'s spider stage is an iconic Glastonbury installation featuring electronic music and fire shows until 4am',
+                        feeling: 'Bass reverberates through your chest. Flames shoot skyward. You\'re alive, electric, infinite. This is legendary.'
+                    },
+                    {
+                        time: '3:00 AM',
+                        title: 'Return to Camp via the Green Fields',
+                        description: 'Walk back through the quiet Green Fields. The goddess temple glows softly. You reflect on an incredible day, already planning tomorrow.',
+                        location: 'Walking to campsite',
+                        vibe: '✨ Reflective & Content',
+                        realReference: 'The Green Fields takes on a magical quality at night - solar lights, quiet conversations, the spiritual heart of Glastonbury',
+                        feeling: 'Stars overhead. The festival sleeps but hums with energy. Your feet hurt but your heart is full. You belong here.'
+                    }
+                ],
+                soloTravelTips: [
+                    'The Green Fields are perfect for solo travelers seeking community and connection',
+                    'Join women\'s circles and goddess workshops to meet like-minded festivalgoers',
+                    'Volunteering programs create instant community and lifelong friendships',
+                    'The Acoustic stage offers intimate performances perfect for solo enjoyment',
+                    'Camp near The Park or Green Fields for a quieter, more connected experience'
+                ],
+                empowermentPrograms: [
+                    'Women\'s rights and feminist activism talks in the Leftfield tent',
+                    'Goddess worship and divine feminine workshops in Sacred Space',
+                    'Women in Music panels celebrating female artists and industry pioneers',
+                    'WOW - Women of the World festival programming',
+                    'Environmental activism led by powerful women leaders',
+                    'Body positivity and self-expression celebrations throughout'
+                ],
+                femaleArtistHighlights: [
+                    'History-making female headliners on the Pyramid Stage',
+                    'Celebrating 50+ years of groundbreaking women performers',
+                    'Female-led bands across rock, folk, electronic, and world music',
+                    'Platform for emerging UK female talent on smaller stages',
+                    'Women sound engineers, stage managers, and festival organizers honored',
+                    'Legendary performances by icons like Dolly Parton, Beyoncé, and Adele'
+                ]
+            },
             safetyFeatures: [
                 'Extensive welfare services with decades of experience',
                 'Women-only areas and safe spaces available',
