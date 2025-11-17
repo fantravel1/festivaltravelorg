@@ -25,6 +25,98 @@ const FESTIVALS_DATA = {
                     'Safe, well-lit family camping areas perfect for mothers traveling with children',
                     'Dedicated women\'s wellness and mindfulness spaces'
                 ],
+                dayInTheLife: [
+                    {
+                        time: '9:00 AM',
+                        title: 'Morning Yoga in the Beautiful Park Grounds',
+                        description: 'Start your day with gentle yoga on the historic Charlton Park grounds. The English countryside surrounds you as you stretch and breathe.',
+                        location: 'Yoga Area, Charlton Park',
+                        vibe: '🧘 Peaceful & Grounding',
+                        realReference: 'WOMAD takes place in the stunning Charlton Park - yoga and wellness activities start early each morning',
+                        feeling: 'Dew on grass. Historic mansion in the distance. Deep breaths. You feel connected to earth and centuries of history.'
+                    },
+                    {
+                        time: '11:00 AM',
+                        title: 'Women in World Music Workshop',
+                        description: 'Join a powerful workshop celebrating female musicians from diverse cultures. Learn traditional instruments, hear stories, celebrate global sisterhood.',
+                        location: 'World of Words Tent',
+                        vibe: '🎶 Educational & Inspiring',
+                        realReference: 'WOMAD\'s World of Words tent features workshops on world music traditions with many sessions highlighting female musicians',
+                        feeling: 'Women from 6 continents sharing music. You hold a djembe. She teaches you the rhythm. Language disappears. Music connects.'
+                    },
+                    {
+                        time: '1:00 PM',
+                        title: 'Taste the World - Communal Dining',
+                        description: 'Solo traveler? The Taste the World food area has communal tables perfect for meeting people. Try cuisine from every continent while making friends.',
+                        location: 'Taste the World Area',
+                        vibe: '🍜 Social & Delicious',
+                        realReference: 'Taste the World is WOMAD\'s international food area featuring cuisine from around the globe with communal seating',
+                        feeling: 'You sit with strangers eating Ethiopian injera. Within minutes, you\'re sharing travel stories and festival plans. Family found.'
+                    },
+                    {
+                        time: '3:00 PM',
+                        title: 'Female-Led Drumming Circle',
+                        description: 'Join dozens of women in a powerful drumming circle. No experience needed - just bring your energy. Feel rhythm move through your body.',
+                        location: 'Workshop Stage',
+                        vibe: '🥁 Powerful & Primal',
+                        realReference: 'WOMAD features regular drumming workshops and circles, often led by female percussionists from various traditions',
+                        feeling: 'Drums speaking. Your hands keeping rhythm. Sweat and laughter. You\'ve never felt more powerful, more connected to ancient feminine energy.'
+                    },
+                    {
+                        time: '5:00 PM',
+                        title: 'Discover Female Artists from 6 Continents',
+                        description: 'WOMAD\'s stages showcase incredible women musicians. From Senegalese griot singers to Australian didgeridoo players - watch women make history.',
+                        location: 'Open Air Stage / Siam Tent',
+                        vibe: '🌍 Diverse & Eye-opening',
+                        realReference: 'WOMAD features female artists from every continent - past performers include Angelique Kidjo, Buika, and countless global stars',
+                        feeling: 'Her voice carries centuries. Instruments you\'ve never seen. Music transcending language. You witness the world\'s diversity celebrated.'
+                    },
+                    {
+                        time: '7:00 PM',
+                        title: 'Girls\' Drumming Initiative Performance',
+                        description: 'Watch young women perform after completing WOMAD\'s empowerment program. See the next generation of female musicians taking the stage with confidence.',
+                        location: 'Charlie Gillett Stage',
+                        vibe: '✨ Inspiring & Hopeful',
+                        realReference: 'WOMAD supports girls\' music education programs and often features young female performers',
+                        feeling: 'Girls no older than 12 commanding the stage. Their confidence infectious. You remember your own power at that age. You feel hope.'
+                    },
+                    {
+                        time: '9:00 PM',
+                        title: 'Women\'s Global Solidarity Conversations',
+                        description: 'Join intimate conversations with women from around the world. Share stories, discuss challenges, celebrate victories. Global sisterhood in action.',
+                        location: 'World of Words Tent',
+                        vibe: '💬 Deep & Connecting',
+                        realReference: 'WOMAD\'s World of Words features talks and conversations on social justice, women\'s rights, and global solidarity',
+                        feeling: 'A woman from Syria. Another from Brazil. You from your town. Different worlds, same struggles. You realize: sisterhood is global.'
+                    },
+                    {
+                        time: '11:00 PM',
+                        title: 'Dance to Matriarchal Music Traditions',
+                        description: 'Experience music from cultures where women led. Matriarchal traditions honored. Female-led ensembles commanding stages. History reclaimed through sound.',
+                        location: 'Siam Tent',
+                        vibe: '👑 Powerful & Historical',
+                        realReference: 'WOMAD celebrates matriarchal music traditions and features performances highlighting women\'s roles in musical heritage',
+                        feeling: 'Ancient rhythms. Women\'s voices in harmony. You dance to traditions where women led. You feel your ancestors smiling.'
+                    },
+                    {
+                        time: '12:30 AM',
+                        title: 'Late Night World Beat Dance Party',
+                        description: 'The festival\'s still going! Dance to Afrobeat, cumbia, reggae, all with strong female presence. The whole world dances together under English stars.',
+                        location: 'Open Air Stage',
+                        vibe: '🎉 Joyful & United',
+                        realReference: 'WOMAD stages run late with dance music from global traditions - a celebration of cultural diversity',
+                        feeling: 'Brazilian beside Nigerian beside British. All dancing the same beat. Borders dissolve. Music is universal. You are home.'
+                    },
+                    {
+                        time: '2:00 AM',
+                        title: 'Walk Back Through Safe, Lit Pathways',
+                        description: 'Head back to family camping on well-lit paths. Feel safe, feel happy, feel enriched by global culture. Plan tomorrow\'s discoveries.',
+                        location: 'Walking to Family Camping Area',
+                        vibe: '🌙 Content & Safe',
+                        realReference: 'WOMAD features well-lit pathways and safe family camping areas - perfect for mothers and solo travelers',
+                        feeling: 'Lanterns lighting your way. Music fading behind you. Your heart full of rhythms from around the world. Tomorrow you do it again.'
+                    }
+                ],
                 soloTravelTips: [
                     'Join the WOMAD Women\'s Meetup group - organized gatherings throughout the festival',
                     'Participate in morning yoga sessions - great way to meet other solo travelers',
@@ -90,6 +182,98 @@ const FESTIVALS_DATA = {
                     'Female DJ workshops and electronic music production masterclasses',
                     'Safe dance spaces with visible "Nobody is Normal" support staff',
                     'Barcelona\'s vibrant feminist cultural scene extends to the festival grounds'
+                ],
+                dayInTheLife: [
+                    {
+                        time: '9:00 AM',
+                        title: 'Beach Yoga Session in Barceloneta',
+                        description: 'Start your day with sunrise yoga on Barcelona\'s beach before the festival begins. Connect with other early risers while the Mediterranean sparkles.',
+                        location: 'Barceloneta Beach',
+                        vibe: '🌅 Peaceful & Beachy',
+                        realReference: 'Many Primavera attendees start their day with beach yoga - Barcelona\'s beaches are steps from the festival site',
+                        feeling: 'Toes in sand, salt air, stretching as the city wakes. You feel grounded before the music begins.'
+                    },
+                    {
+                        time: '11:00 AM',
+                        title: 'Explore El Born & Gràcia Neighborhoods',
+                        description: 'Wander through Barcelona\'s safe, female-friendly neighborhoods. Coffee at local cafes, vintage shopping, soaking in the feminist street art and culture.',
+                        location: 'El Born / Gràcia',
+                        vibe: '☕ Cultural & Exploring',
+                        realReference: 'El Born and Gràcia are known for feminist bookshops, safe streets, and vibrant women-led cultural spaces',
+                        feeling: 'Narrow streets, colorful buildings. You feel the city\'s feminist energy - this is where activism meets art.'
+                    },
+                    {
+                        time: '2:00 PM',
+                        title: 'Primavera Pro Women in Music Conference',
+                        description: 'Attend powerful panel discussions featuring women music industry leaders, label executives, and artists. Network, learn, get inspired.',
+                        location: 'Primavera Pro Venue',
+                        vibe: '💼 Professional & Empowering',
+                        realReference: 'Primavera Pro runs during the festival with dedicated programming on gender equality and women in music - past speakers include major industry figures',
+                        feeling: 'Conference room buzzing with brilliant women. Business cards exchanged. You realize you belong in this industry.'
+                    },
+                    {
+                        time: '5:00 PM',
+                        title: 'Arrive at Parc del Fòrum - Festival Begins',
+                        description: 'Head to the stunning waterfront venue as the festival gates open. The Mediterranean as your backdrop, multiple stages calling your name.',
+                        location: 'Parc del Fòrum',
+                        vibe: '🎪 Anticipation & Excitement',
+                        realReference: 'Primavera Sound takes place at Parc del Fòrum, a massive waterfront space with views of the Mediterranean',
+                        feeling: 'You walk through the gates. Music pulses from every direction. The sea breeze mixes with bass. Adventure begins.'
+                    },
+                    {
+                        time: '7:00 PM',
+                        title: 'Catch Groundbreaking Female Headliner',
+                        description: 'Watch a legendary female artist on the main stage as the sun sets over the water. Part of Primavera\'s 50/50 gender commitment - women making history.',
+                        location: 'Primavera Stage',
+                        vibe: '🎤 Powerful & Historic',
+                        realReference: 'Primavera Sound\'s 50/50 lineup commitment since 2019 means female headliners like Cardi B, Lorde, FKA twigs, and Bikini Kill have graced the stages',
+                        feeling: 'She owns this stage. Thousands singing along. The gender gap doesn\'t exist here. This is equality in action.'
+                    },
+                    {
+                        time: '9:30 PM',
+                        title: 'Electronic Music Masterclass with Female DJ',
+                        description: 'Join an intimate workshop where a female DJ teaches production basics. Hands-on learning from a woman who\'s breaking barriers in electronic music.',
+                        location: 'Workshop Area',
+                        vibe: '🎧 Learning & Inspired',
+                        realReference: 'Primavera regularly features workshops and masterclasses with female electronic music producers and DJs',
+                        feeling: 'Your hands on the equipment. She\'s patient, encouraging. "You have the ear for this," she says. You believe her.'
+                    },
+                    {
+                        time: '11:00 PM',
+                        title: 'Dance to Female DJs Across Multiple Stages',
+                        description: 'Primavera\'s commitment means incredible female DJs on every stage. Choose your vibe: techno, house, experimental, bass - all led by women.',
+                        location: 'Multiple Stages',
+                        vibe: '💃 Energetic & Free',
+                        realReference: 'With 50/50 programming, Primavera features female DJs like The Blessed Madonna, Peggy Gou, Honey Dijon, and many more',
+                        feeling: 'You dance between stages. Every set is fire. Women commanding decks. You\'ve never felt more alive.'
+                    },
+                    {
+                        time: '1:00 AM',
+                        title: 'Nobody is Normal Safe Space Check-in',
+                        description: 'See the "Nobody is Normal" protocol in action - trained staff visible everywhere, information stands accessible, feeling of safety palpable.',
+                        location: 'Throughout Festival',
+                        vibe: '🛡️ Safe & Supported',
+                        realReference: 'Primavera\'s "Nobody is Normal" protocol includes trained staff, clear reporting systems, and feminist organization partnerships',
+                        feeling: 'You notice the purple shirts everywhere. Someone asks if you\'re okay. You realize: this place actually cares.'
+                    },
+                    {
+                        time: '3:00 AM',
+                        title: 'Late Night Experimental Electronic',
+                        description: 'Discover cutting-edge female producers on smaller stages. The real music nerds come out now. This is where genre boundaries dissolve.',
+                        location: 'Pull&Bear Stage / Adidas Stage',
+                        vibe: '🔮 Experimental & Mind-bending',
+                        realReference: 'Primavera\'s smaller stages feature experimental electronic music until sunrise - past performers include Arca, Yaeji, and other boundary-pushers',
+                        feeling: 'Sound you\'ve never heard. Visual art you can\'t describe. You\'re witnessing the future of music being created.'
+                    },
+                    {
+                        time: '5:00 AM',
+                        title: 'Sunrise Over the Mediterranean',
+                        description: 'As the festival winds down, watch the sun rise over the sea. Music still playing softly. New friends beside you. Barcelona waking up.',
+                        location: 'Waterfront at Parc del Fòrum',
+                        vibe: '🌊 Magical & Reflective',
+                        realReference: 'Primavera Sound runs until sunrise - the waterfront location creates stunning sunrise moments',
+                        feeling: 'Pink sky. Waves lapping. Last beats fading. You made it to sunrise. Barcelona never felt more like home.'
+                    }
                 ],
                 soloTravelTips: [
                     'Stay in El Born or Gràcia neighborhoods - safe, female-friendly with great nightlife',
@@ -160,6 +344,98 @@ const FESTIVALS_DATA = {
                     'Exceptionally high female attendance (near 50/50 gender balance)',
                     'Safe, progressive Scandinavian culture promotes women\'s freedom and safety',
                     'Women-led activist organizations and social impact initiatives'
+                ],
+                dayInTheLife: [
+                    {
+                        time: '10:00 AM',
+                        title: 'Explore Copenhagen Before Festival',
+                        description: 'Start in the world\'s most female-solo-traveler-friendly city. Bike through Nørrebro, coffee in feminist cafes, feel Danish safety and equality.',
+                        location: 'Copenhagen - Nørrebro/Vesterbro',
+                        vibe: '🚴 Safe & Empowering',
+                        realReference: 'Copenhagen ranks as one of the world\'s safest cities for solo female travelers - Roskilde is just 30 minutes away',
+                        feeling: 'Biking like a local. Everyone speaks English. You feel safe walking anywhere. This is what gender equality looks like.'
+                    },
+                    {
+                        time: '1:00 PM',
+                        title: 'Arrive at Roskilde - Join Camping Community',
+                        description: 'Set up camp in one of the friendliest camping scenes worldwide. Danish culture of trust means instant community, shared resources, open hearts.',
+                        location: 'Roskilde Camping Areas',
+                        vibe: '⛺ Welcoming & Communal',
+                        realReference: 'Roskilde\'s camping culture is legendary - attendees often arrive days early to build community',
+                        feeling: 'Your neighbor offers you a beer. Another helps with your tent. Within an hour, you have a camp family. This is Denmark.'
+                    },
+                    {
+                        time: '3:00 PM',
+                        title: 'Consent Culture Workshop',
+                        description: 'Join Roskilde\'s pioneering consent education program. Learn, practice, become part of creating a respectful festival culture.',
+                        location: 'Workshop Area',
+                        vibe: '📚 Educational & Progressive',
+                        realReference: 'Roskilde has been a leader in consent culture education with workshops, peer programs, and visible campaigns since the 2000s',
+                        feeling: 'Interactive exercises. Real scenarios. Everyone taking it seriously. You feel empowered to set boundaries, support others.'
+                    },
+                    {
+                        time: '5:30 PM',
+                        title: 'Women in Music Industry Panel',
+                        description: 'Attend powerful talks featuring Nordic women music leaders. Hear about Denmark\'s success in gender equality, get inspired to pursue your dreams.',
+                        location: 'Apollo Stage / Talk Tent',
+                        vibe: '💼 Inspiring & Professional',
+                        realReference: 'Roskilde features music industry talks and panels, often highlighting Nordic success in gender equality',
+                        feeling: 'Danish women leading major labels, festivals, venues. They make it look possible. You take notes. You believe.'
+                    },
+                    {
+                        time: '8:00 PM',
+                        title: 'Catch Female Headliners Across Stages',
+                        description: 'Incredible women commanding Orange Stage, Arena, and Rising stages. Gender-balanced programming means history-making performances all night.',
+                        location: 'Orange Stage / Arena',
+                        vibe: '🎸 Powerful & Equal',
+                        realReference: 'Roskilde programs gender-diverse lineups - past female headliners include Cardi B, Dua Lipa, Björk, and countless icons',
+                        feeling: 'She owns Orange Stage. 80,000 people watching. This is what equality sounds like. You sing every word.'
+                    },
+                    {
+                        time: '10:00 PM',
+                        title: 'Visit Soft Spots - Mental Health Support',
+                        description: 'See Roskilde\'s innovative Soft Spots counseling areas. Professional support, peer listeners, breaking mental health stigma. Feel held.',
+                        location: 'Soft Spots Tent',
+                        vibe: '🧡 Supportive & Safe',
+                        realReference: 'Roskilde\'s Soft Spots provides free counseling and mental health support 24/7 - pioneering festival mental health care',
+                        feeling: 'You pop in. Trained counselors, calm space, no judgment. You don\'t need it now, but knowing it exists feels like safety.'
+                    },
+                    {
+                        time: '12:00 AM',
+                        title: 'Dance to Nordic Female Artists',
+                        description: 'Discover incredible Scandinavian women performers - the Nordic music scene is bursting with female talent across all genres.',
+                        location: 'Arena / Gloria',
+                        vibe: '🎵 Discovering & Dancing',
+                        realReference: 'Roskilde showcases Nordic female talent - artists like MØ, Soleima, and other Scandinavian stars regularly perform',
+                        feeling: 'Nordic pop, electronic, experimental. Women singing in Danish, Swedish, Norwegian. You discover your new favorite artist.'
+                    },
+                    {
+                        time: '2:00 AM',
+                        title: 'Join Activist Conversations',
+                        description: 'Roskilde\'s activist scene is alive. Join late-night conversations about women\'s rights, equality, social justice with fellow festivalgoers.',
+                        location: 'Activist Village / Camp Areas',
+                        vibe: '✊ Activating & Deep',
+                        realReference: 'Roskilde has a strong activist presence with organizations focusing on social justice and equality',
+                        feeling: 'Deep conversations by campfire. Danish activist shares strategies. You exchange contacts. This is movement-building.'
+                    },
+                    {
+                        time: '4:00 AM',
+                        title: 'Sunrise with New Festival Family',
+                        description: 'Watch the sun rise over Roskilde with your new Danish and international friends. Share the night\'s stories, plan tomorrow\'s adventures.',
+                        location: 'Camping Area',
+                        vibe: '🌅 Connected & Grateful',
+                        realReference: 'Roskilde\'s long summer days mean late sunrises around 4-5am - perfect for festival sunrise moments',
+                        feeling: 'Pink sky. Friend from Germany beside friend from Denmark beside you. Language barriers dissolved by music and trust. Home.'
+                    },
+                    {
+                        time: '11:00 AM',
+                        title: 'Recovery Brunch & Bystander Training',
+                        description: 'Late start! Join bystander intervention training over brunch. Learn how to support others, create safety, be an ally everywhere.',
+                        location: 'Workshop Area',
+                        vibe: '🥐 Practical & Empowering',
+                        realReference: 'Roskilde offers bystander intervention training teaching attendees how to safely intervene when witnessing problems',
+                        feeling: 'Role-playing intervention. Learning specific phrases. You leave knowing: you can help. You can make a difference.'
+                    }
                 ],
                 soloTravelTips: [
                     'Denmark\'s exceptional safety makes solo travel comfortable and empowering',
@@ -234,6 +510,98 @@ const FESTIVALS_DATA = {
                     'Judgment-free zone promoting authentic self-expression and body positivity',
                     'The Sanctuary offers 24-hour professional support with trauma-informed care',
                     'River swimming and natural beauty create healing, feminine-energy spaces'
+                ],
+                dayInTheLife: [
+                    {
+                        time: '8:00 AM',
+                        title: 'Sunrise Yoga by the Salmo River',
+                        description: 'Wake up to birdsong and join fellow festivalgoers for yoga on the riverbank. The Salmo River flows beside camp, creating the most serene start imaginable.',
+                        location: 'Riverbank near Safe Space',
+                        vibe: '🌄 Serene & Grounding',
+                        realReference: 'The Salmo River is a central feature of Shambhala - many attendees start days with riverside yoga and meditation',
+                        feeling: 'River sounds. Mountain air. Your mat on soft grass. Nature holds you as you stretch into the day.'
+                    },
+                    {
+                        time: '10:00 AM',
+                        title: 'Visit the Safe Space - Connect & Recharge',
+                        description: 'Drop into the dedicated Safe Space for women, BIPOC, and LGBTQIA2S+ community. Meet new friends, share experiences, rest in intentional community.',
+                        location: 'Safe Space Tent',
+                        vibe: '💜 Safe & Connected',
+                        realReference: 'Shambhala\'s Safe Space is a dedicated area for marginalized communities with comfortable seating, resources, and peer support',
+                        feeling: 'You walk in. Everyone smiles. "First Shambha?" someone asks. Instant belonging. This is your sanctuary.'
+                    },
+                    {
+                        time: '12:00 PM',
+                        title: 'River Swimming & Natural Beauty',
+                        description: 'Join other women for a refreshing dip in the Salmo River. The cold water wakes you up, the mountains remind you of your power.',
+                        location: 'Salmo River',
+                        vibe: '💧 Refreshing & Wild',
+                        realReference: 'The Salmo River offers swimming spots - a beloved Shambhala tradition for cooling off and connecting with nature',
+                        feeling: 'Cold water shocks your system. You surface laughing. A stranger becomes a friend. River magic is real.'
+                    },
+                    {
+                        time: '2:00 PM',
+                        title: 'Consent Culture Workshop',
+                        description: 'Participate in a powerful workshop on consent, boundaries, and community care. Learn bystander intervention skills that empower you everywhere.',
+                        location: 'Safe Space / Workshop Area',
+                        vibe: '💪 Empowering & Educational',
+                        realReference: 'ShambhaCares offers consent workshops and bystander intervention training throughout the festival',
+                        feeling: 'Role-playing scenarios. Learning to say no. Learning to support others. You leave feeling powerful, prepared.'
+                    },
+                    {
+                        time: '4:30 PM',
+                        title: 'Women in Bass Music Workshop',
+                        description: 'Learn production techniques from female bass music producers. Get hands-on with equipment, ask questions, discover your creative power.',
+                        location: 'Workshop Tent',
+                        vibe: '🎛️ Creative & Inspiring',
+                        realReference: 'Shambhala features workshops on music production including sessions led by female DJs and producers',
+                        feeling: 'Bass vibrating through you. She shows you how she creates those drops. "Try it," she says. You do. Magic.'
+                    },
+                    {
+                        time: '7:00 PM',
+                        title: 'Catch Female DJs Across 6 Stages',
+                        description: 'Incredible women commanding stages: The Pagoda, The Village, Fractal Forest, The Grove, Amp, and Living Room. Pick your vibe, all led by women.',
+                        location: 'Multiple Stages',
+                        vibe: '🎵 Electric & Diverse',
+                        realReference: 'Shambhala has 6 uniquely themed stages - past female performers include CloZee, LP Giobbi, and many powerful women in bass music',
+                        feeling: 'You wander between stages. Each vibe different. Every DJ a woman owning her craft. You feel invincible.'
+                    },
+                    {
+                        time: '10:00 PM',
+                        title: 'Body Positivity & Self-Love Circle',
+                        description: 'Join a powerful circle in the Safe Space. Share, heal, celebrate your authentic self. Witness transformation happen in real-time.',
+                        location: 'Safe Space',
+                        vibe: '✨ Healing & Transformative',
+                        realReference: 'The Safe Space hosts empowerment programming including body positivity circles and healing spaces',
+                        feeling: 'Tears. Laughter. Sharing secrets. A complete stranger holds space for your pain. You feel lighter than air.'
+                    },
+                    {
+                        time: '12:00 AM',
+                        title: 'Dance at Fractal Forest - Pure Magic',
+                        description: 'The most magical stage comes alive. Trees lit up, bass music, visual projections. Dance with your new Shambha-family under the stars.',
+                        location: 'Fractal Forest Stage',
+                        vibe: '🌲 Magical & Euphoric',
+                        realReference: 'Fractal Forest is Shambhala\'s iconic stage featuring elaborate tree decorations, lighting, and bass music - a fan favorite',
+                        feeling: 'Lights dance through trees. Bass moves your soul. You\'re surrounded by friends you made today. This is family.'
+                    },
+                    {
+                        time: '2:00 AM',
+                        title: 'Visit The Sanctuary if Needed',
+                        description: 'See the 24/7 Sanctuary in action - professional counselors, trauma-informed care, peers trained in support. Feel safe knowing help is always available.',
+                        location: 'The Sanctuary',
+                        vibe: '🕊️ Supportive & Safe',
+                        realReference: 'Shambhala\'s Sanctuary offers 24/7 professional support with trauma-informed care and crisis intervention',
+                        feeling: 'You peek in. Soft lighting, calm voices, people being held with care. You feel safe knowing it exists.'
+                    },
+                    {
+                        time: '4:00 AM',
+                        title: 'Sunrise Session at The Pagoda',
+                        description: 'The Pagoda stage plays until sunrise. Watch the mountains glow pink as bass music transitions to morning beats. You made it.',
+                        location: 'The Pagoda Stage',
+                        vibe: '🌅 Transcendent & Accomplished',
+                        realReference: 'The Pagoda is known for sunrise sets - the stage faces east with views of the mountains',
+                        feeling: 'Pink mountains. Last dancers moving slowly. You\'ve been dancing for hours. You\'ve never been more alive. Shambhala holds you.'
+                    }
                 ],
                 soloTravelTips: [
                     'The Safe Space is perfect for solo travelers to connect and find community',
