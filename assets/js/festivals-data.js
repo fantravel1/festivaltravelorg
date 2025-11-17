@@ -305,6 +305,98 @@ const FESTIVALS_DATA = {
                     'Female-focused wellness activities including yoga, meditation, and breathwork',
                     'Magical forest setting creates safe, nurturing atmosphere for self-expression'
                 ],
+                dayInTheLife: [
+                    {
+                        time: '7:00 AM',
+                        title: 'Sunrise Yoga at Her Forest',
+                        description: 'Wake up to birdsong and join 50+ women for yoga as the sun rises over the forest. The Her Forest camp comes alive with gentle stretches and breathing exercises.',
+                        location: 'Her Forest Group Camp',
+                        vibe: '✨ Peaceful & Energizing',
+                        realReference: 'Her Forest hosts daily morning yoga sessions - check their camp schedule board for exact times',
+                        feeling: 'You roll out of your tent to misty morning air. The forest feels magical. Other women are stirring, smiling, welcoming you to the circle.'
+                    },
+                    {
+                        time: '9:00 AM',
+                        title: 'Her Forest Welcome Brunch',
+                        description: 'Community breakfast where solo travelers meet their festival family! Share stories, make plans, and connect with other femme-identifying festivalgoers over coffee and breakfast.',
+                        location: 'Her Forest Pavilion',
+                        vibe: '💕 Community & Connection',
+                        realReference: 'Her Forest Welcome Brunch happens on Day 1 - this is where lifelong friendships begin',
+                        feeling: '"Hi! First timer?" "Me too!" Within 20 minutes you have 5 new friends and plans to meet at Sherwood Court later.'
+                    },
+                    {
+                        time: '11:30 AM',
+                        title: 'Women in Electronic Music Workshop',
+                        description: 'Learn DJ basics and music production from female artists who perform at the festival. Hands-on session where you might discover a new passion!',
+                        location: 'The Observatory',
+                        vibe: '🎧 Educational & Inspiring',
+                        realReference: 'Electric Forest regularly features music production workshops - past instructors have included female DJs from the lineup',
+                        feeling: 'Your hands on the decks, headphones on, a female DJ showing you how to mix. "You\'re a natural!" she says. You feel powerful.'
+                    },
+                    {
+                        time: '1:30 PM',
+                        title: 'Explore the Forest Art Installations',
+                        description: 'Wander through the enchanted forest discovering interactive art pieces, many created by women artists. The Hangar and Forest Stage areas transform into wonderlands.',
+                        location: 'Sherwood Forest paths',
+                        vibe: '🌲 Magical & Wonder-filled',
+                        realReference: 'The forest is filled with 100+ art installations that change yearly - many by female artists',
+                        feeling: 'You turn a corner and gasp - a glowing installation of butterflies. You reach out, they respond to your touch. Magic is real here.'
+                    },
+                    {
+                        time: '3:00 PM',
+                        title: 'Body Positivity Workshop',
+                        description: 'Join a powerful session on self-love and body acceptance in Her Forest\'s sacred space. Share, heal, and celebrate your authentic self with other women.',
+                        location: 'Her Forest Sacred Space',
+                        vibe: '💪 Empowering & Healing',
+                        realReference: 'Her Forest regularly hosts empowerment workshops throughout the festival weekend',
+                        feeling: 'Tears, laughter, hugs. A stranger becomes a sister. You release shame you didn\'t know you were carrying.'
+                    },
+                    {
+                        time: '5:30 PM',
+                        title: 'Catch Female-Led Performances',
+                        description: 'Amazing women artists taking stages across the forest! Check the lineup for female DJs at Ranch Arena, Tripolee, or Sherwood Court.',
+                        location: 'Multiple Stages',
+                        vibe: '🎤 Energetic & Inspiring',
+                        realReference: 'Electric Forest 2024 featured artists like LP Giobbi, Cassian, Sofi Tukker, and other incredible female performers',
+                        feeling: 'Bass drops, lights explode, you\'re dancing with your new Her Forest crew. A female DJ commands the stage. You feel invincible.'
+                    },
+                    {
+                        time: '8:00 PM',
+                        title: 'Her Forest Community Dinner',
+                        description: 'Share a meal with your festival family. Bring something to contribute or just bring yourself. Stories, laughter, and planning the night\'s adventures.',
+                        location: 'Her Forest Camp',
+                        vibe: '🍽️ Warm & Connecting',
+                        realReference: 'Community meals are a Her Forest tradition - gift economy style',
+                        feeling: 'Someone passes you pasta, someone else braids your hair. "Which stage should we hit first?" Plans are made. Family is formed.'
+                    },
+                    {
+                        time: '10:00 PM',
+                        title: 'Dance Under the Stars at Sherwood Court',
+                        description: 'The main stage comes alive! Dance with your crew, make new friends in the crowd, feel the energy of thousands moving as one to incredible music.',
+                        location: 'Sherwood Court Main Stage',
+                        vibe: '🌟 Electric & Euphoric',
+                        realReference: 'Sherwood Court hosts headliners from 9pm-3am - past performers include String Cheese Incident, Bassnectar, and more',
+                        feeling: 'Lights cascade over the trees. The bass moves through your body. You\'re surrounded by friends. This is freedom.'
+                    },
+                    {
+                        time: '1:00 AM',
+                        title: 'Late Night Forest Wandering',
+                        description: 'Explore the forest when it truly comes alive. Secret shows, art installations glowing, intimate moments. Discover why they call it magic.',
+                        location: 'Throughout Sherwood Forest',
+                        vibe: '✨ Mystical & Intimate',
+                        realReference: 'The forest stays active all night with secret performances and installations that only appear after dark',
+                        feeling: 'Fairy lights. A violinist playing in a hidden grove. Strangers become friends. The forest holds you safely.'
+                    },
+                    {
+                        time: '3:00 AM',
+                        title: 'Return to Her Forest Camp',
+                        description: 'Head back to camp where someone has a fire going. Share the night\'s stories, make plans for tomorrow, fall asleep to laughter and forest sounds.',
+                        location: 'Her Forest Group Camp',
+                        vibe: '💫 Cozy & Safe',
+                        realReference: 'Her Forest camp provides a safe landing spot all night - always someone awake to welcome you home',
+                        feeling: 'Your tent feels like home. Tomorrow you do it all again. You fall asleep smiling, belonging to something beautiful.'
+                    }
+                ],
                 soloTravelTips: [
                     'Her Forest Group Camp is THE place for solo female travelers - instant community and lifelong friendships',
                     'Attend Her Forest welcome brunch on Day 1 to meet your festival family',
@@ -489,6 +581,98 @@ const FESTIVALS_DATA = {
                     'Women\'s rights activism and feminist organizations throughout the site',
                     'Shangri-La\'s women-led performance art and cabaret shows',
                     'Mother and baby facilities making it accessible for traveling mums'
+                ],
+                dayInTheLife: [
+                    {
+                        time: '8:00 AM',
+                        title: 'Goddess Temple Morning Meditation',
+                        description: 'Start your day in the sacred Goddess Temple in the Green Fields. Join women in circle for meditation, chanting, and setting intentions for the day.',
+                        location: 'Goddess Temple, Green Fields',
+                        vibe: '🙏 Sacred & Centering',
+                        realReference: 'The Goddess Temple has been a Glastonbury staple since 2004, offering daily ceremonies and women\'s circles',
+                        feeling: 'Incense smoke curls. Women\'s voices rise in harmony. You feel ancient wisdom flowing through this sacred space.'
+                    },
+                    {
+                        time: '10:30 AM',
+                        title: 'Explore The Park\'s Hidden Stages',
+                        description: 'Wander through The Park area discovering intimate performances on small stages tucked between trees. Perfect solo exploration before crowds arrive.',
+                        location: 'The Park',
+                        vibe: '🌳 Intimate & Discovering',
+                        realReference: 'The Park is Glastonbury\'s woodland area with intimate stages - past female performers include Laura Marling, Lianne La Havas',
+                        feeling: 'Dappled sunlight. An acoustic set under the trees. You sit on the grass, coffee in hand, discovering your new favorite artist.'
+                    },
+                    {
+                        time: '12:00 PM',
+                        title: 'Women of the World (WOW) Panel Discussion',
+                        description: 'Powerful talks featuring incredible women leaders, activists, and artists. Past speakers have included feminists, politicians, and cultural icons.',
+                        location: 'WOW Stage or Leftfield',
+                        vibe: '💡 Inspiring & Educational',
+                        realReference: 'WOW Foundation regularly programs at Glastonbury - past panelists have included Jude Kelly, Annie Lennox, and other amazing women',
+                        feeling: 'You\'re surrounded by brilliant minds. Notes furiously taken. Ideas sparking. You feel your worldview expanding.'
+                    },
+                    {
+                        time: '2:00 PM',
+                        title: 'Sisterhood Tent - Women\'s Safe Space',
+                        description: 'Drop into the women-only sanctuary for a break from the crowds. Share stories, rest, connect with other women, or just recharge in safety.',
+                        location: 'Sisterhood Tent',
+                        vibe: '💕 Safe & Supportive',
+                        realReference: 'Sisterhood spaces have operated at Glastonbury providing women-only areas for rest and connection',
+                        feeling: 'Cool shade, comfy cushions. A woman shares her festival story. You feel seen, safe, understood. Sisterhood is real.'
+                    },
+                    {
+                        time: '4:00 PM',
+                        title: 'Catch Emerging Female Artists',
+                        description: 'Head to the West Holts or Acoustic Stage for incredible female performers. These stages have launched the careers of amazing women artists.',
+                        location: 'West Holts or Acoustic Stage',
+                        vibe: '🎶 Discovering & Delighting',
+                        realReference: 'West Holts and Acoustic stages feature diverse female talent - past performers include Lauryn Hill, Janelle Monáe, and many more',
+                        feeling: 'Her voice soars. Goosebumps. You film a clip thinking "I\'ll tell people I saw her before she was huge."'
+                    },
+                    {
+                        time: '6:30 PM',
+                        title: 'Green Fields Feminist Activism Talks',
+                        description: 'Join passionate discussions about women\'s rights, environmental activism, and social justice. The Green Fields is the festival\'s political heart.',
+                        location: 'Green Fields',
+                        vibe: '✊ Activating & Empowering',
+                        realReference: 'Glastonbury\'s Green Fields hosts environmental and social justice organizations - a hub for feminist activism since the 1980s',
+                        feeling: 'Fire in your belly. You sign petitions, exchange contacts. You\'re not just at a festival - you\'re part of a movement.'
+                    },
+                    {
+                        time: '9:00 PM',
+                        title: 'Legendary Female Headliner on Pyramid Stage',
+                        description: 'Join 100,000+ people to witness history as an iconic female artist commands Glastonbury\'s legendary main stage. Dolly, Beyoncé, Adele have all made magic here.',
+                        location: 'Pyramid Stage',
+                        vibe: '⭐ Historic & Euphoric',
+                        realReference: 'Glastonbury\'s Pyramid Stage has hosted legendary female headliners: Dolly Parton (2014), Beyoncé (2011), Adele (2016), plus countless other icons',
+                        feeling: 'One hundred thousand voices singing together. She owns this stage. Tears streaming. You\'ll remember this moment forever.'
+                    },
+                    {
+                        time: '11:30 PM',
+                        title: 'Shangri-La\'s Women-Led Performance Art',
+                        description: 'Dive into Shangri-La\'s dystopian wonderland where female performers, drag artists, and cabaret acts create mind-bending shows. Adult playground activated.',
+                        location: 'Shangri-La',
+                        vibe: '🔥 Wild & Liberating',
+                        realReference: 'Shangri-La features women-led performance art, cabaret, and immersive experiences - a space for radical self-expression',
+                        feeling: 'Lights flash. A female performer breathes fire. Boundaries dissolve. You dance with strangers who feel like family.'
+                    },
+                    {
+                        time: '1:30 AM',
+                        title: 'Late Night at Arcadia\'s Spider',
+                        description: 'Dance under the massive spider sculpture shooting flames. Electronic music, pyrotechnics, pure energy. The night is still young.',
+                        location: 'Arcadia',
+                        vibe: '🕷️ Epic & Energetic',
+                        realReference: 'Arcadia\'s spider stage is an iconic Glastonbury installation featuring electronic music and fire shows until 4am',
+                        feeling: 'Bass reverberates through your chest. Flames shoot skyward. You\'re alive, electric, infinite. This is legendary.'
+                    },
+                    {
+                        time: '3:00 AM',
+                        title: 'Return to Camp via the Green Fields',
+                        description: 'Walk back through the quiet Green Fields. The goddess temple glows softly. You reflect on an incredible day, already planning tomorrow.',
+                        location: 'Walking to campsite',
+                        vibe: '✨ Reflective & Content',
+                        realReference: 'The Green Fields takes on a magical quality at night - solar lights, quiet conversations, the spiritual heart of Glastonbury',
+                        feeling: 'Stars overhead. The festival sleeps but hums with energy. Your feet hurt but your heart is full. You belong here.'
+                    }
                 ],
                 soloTravelTips: [
                     'The Green Fields are perfect for solo travelers seeking community and connection',

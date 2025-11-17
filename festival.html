@@ -474,6 +474,144 @@
             margin: 2rem 0;
         }
 
+        /* Timeline Styles */
+        .timeline-section {
+            position: relative;
+        }
+
+        .timeline-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, #5c6bc0, #9575cd, #5c6bc0);
+            border-radius: 2px;
+        }
+
+        .timeline-moment {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 80px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 18px;
+            top: 10px;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #5c6bc0, #7e57c2);
+            border: 4px solid white;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(92, 107, 192, 0.3);
+            z-index: 2;
+        }
+
+        .timeline-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .timeline-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            border-color: #5c6bc0;
+        }
+
+        .timeline-header {
+            margin-bottom: 1rem;
+        }
+
+        .timeline-time {
+            display: inline-block;
+            background: linear-gradient(135deg, #5c6bc0, #7e57c2);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-card h4 {
+            color: #1a237e;
+            font-size: 1.4rem;
+            margin: 0.5rem 0;
+            font-weight: 600;
+        }
+
+        .timeline-vibe {
+            color: #666;
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .timeline-preview {
+            color: #555;
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+
+        .timeline-expand {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 2px dashed #e0e0e0;
+        }
+
+        .timeline-location {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 0.8rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            color: #01579b;
+            font-weight: 500;
+        }
+
+        .timeline-feeling {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            color: #e65100;
+            font-style: italic;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            border-left: 4px solid #ff6f00;
+        }
+
+        .timeline-reference {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            padding: 1rem;
+            border-radius: 8px;
+            color: #4a148c;
+            line-height: 1.6;
+        }
+
+        .timeline-reference strong {
+            color: #6a1b9a;
+        }
+
+        .timeline-toggle {
+            text-align: center;
+            margin-top: 1rem;
+            color: #5c6bc0;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
         /* Footer */
         .footer {
             background: #333;
@@ -546,6 +684,25 @@
 
             .contact-item strong {
                 font-size: 1rem;
+            }
+
+            /* Timeline mobile styles */
+            .timeline-line {
+                left: 15px;
+            }
+
+            .timeline-dot {
+                left: 5px;
+                width: 24px;
+                height: 24px;
+            }
+
+            .timeline-moment {
+                padding-left: 50px;
+            }
+
+            .timeline-card h4 {
+                font-size: 1.2rem;
             }
         }
 
@@ -807,6 +964,77 @@
             `;
         }
 
+        // Generate Day in the Life timeline section
+        function generateDayInTheLifeSection(festival) {
+            if (!festival.womensExperiences || !festival.womensExperiences.dayInTheLife) {
+                return '';
+            }
+
+            const timeline = festival.womensExperiences.dayInTheLife;
+
+            const timelineHTML = timeline.map((moment, index) => `
+                <div class="timeline-moment" data-moment="${index}">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card" onclick="toggleMoment(${index})">
+                        <div class="timeline-header">
+                            <div class="timeline-time">${moment.time}</div>
+                            <h4>${moment.title}</h4>
+                            <div class="timeline-vibe">${moment.vibe}</div>
+                        </div>
+                        <div class="timeline-preview">
+                            ${moment.description}
+                        </div>
+                        <div class="timeline-expand" id="moment-${index}" style="display: none;">
+                            <div class="timeline-location">📍 ${moment.location}</div>
+                            <div class="timeline-feeling">"${moment.feeling}"</div>
+                            <div class="timeline-reference">
+                                <strong>Real Info:</strong> ${moment.realReference}
+                            </div>
+                        </div>
+                        <div class="timeline-toggle">Click to ${index === 0 ? 'expand' : 'expand'} ▼</div>
+                    </div>
+                </div>
+            `).join('');
+
+            return `
+                <div class="section timeline-section" style="background: linear-gradient(135deg, #e8eaf6, #c5cae9); border: 3px solid #5c6bc0;">
+                    <h2>🌅 A Day in Your Life at ${festival.name}</h2>
+                    <p class="section-intro" style="font-size: 1.2rem; font-weight: 600; color: #1a237e;">
+                        Experience a complete day through the eyes of a woman at this incredible festival. Every moment is real, every reference is authentic, every feeling is based on actual experiences. Click each moment to dive deeper into your journey.
+                    </p>
+
+                    <div class="timeline-container">
+                        <div class="timeline-line"></div>
+                        ${timelineHTML}
+                    </div>
+
+                    <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.9); border-radius: 15px;">
+                        <h3 style="color: #5c6bc0; margin-bottom: 1rem;">This Could Be Your Story</h3>
+                        <p style="color: #666; line-height: 1.8; max-width: 700px; margin: 0 auto;">
+                            Every moment in this timeline has happened to real women at ${festival.name}. The workshops are real. The locations are real. The connections are real. The transformation is real. This could be your journey.
+                        </p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Toggle timeline moment expansion
+        function toggleMoment(index) {
+            const moment = document.getElementById(`moment-${index}`);
+            const card = moment.parentElement;
+            const toggle = card.querySelector('.timeline-toggle');
+
+            if (moment.style.display === 'none') {
+                moment.style.display = 'block';
+                toggle.textContent = 'Click to collapse ▲';
+                card.style.background = 'linear-gradient(135deg, #fff9e6, #fff3cd)';
+            } else {
+                moment.style.display = 'none';
+                toggle.textContent = 'Click to expand ▼';
+                card.style.background = 'white';
+            }
+        }
+
         // Generate women's experiences section
         function generateWomensExperiencesSection(festival) {
             if (!festival.womensExperiences) {
@@ -936,6 +1164,7 @@
             mainContent.innerHTML = `
                 ${generateQuickFacts(festival)}
                 ${generateEmergencyInfo(festival)}
+                ${generateDayInTheLifeSection(festival)}
                 ${generateWomensExperiencesSection(festival)}
                 ${generateVenuesSection(festivalId)}
                 ${generateHotelsSection(festivalId)}
