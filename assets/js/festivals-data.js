@@ -1024,6 +1024,164 @@ const FESTIVALS_DATA = {
             ticketPrice: 'CAD $120-280',
             capacity: 120000,
             founded: 2006,
+            womensExperiences: {
+                highlights: [
+                    'Les Hirondelles - pioneering women\'s safety team trained in sexology and trauma-informed care',
+                    'Bilingual French/English culture creates unique, inclusive environment',
+                    'Montreal\'s progressive Canadian values prioritizing consent education',
+                    'Beautiful island setting on Parc Jean-Drapeau in the St. Lawrence River',
+                    'Strong female francophone artist representation celebrating Quebec culture',
+                    'World-class anti-harassment education and prevention programming'
+                ],
+                dayInTheLife: [
+                    {
+                        time: '10:00 AM',
+                        title: 'Island Morning on Parc Jean-Drapeau',
+                        description: 'Take the Montreal metro to the island festival site. Arrive at Parc Jean-Drapeau surrounded by the St. Lawrence River. Island vibes, city accessible.',
+                        location: 'Parc Jean-Drapeau Island',
+                        vibe: '🏝️ Urban Island Paradise',
+                        realReference: 'Osheaga takes place on Parc Jean-Drapeau, an island in the St. Lawrence River accessible by Montreal metro',
+                        feeling: 'Island surrounded by water. Montreal skyline visible. You\'re in nature and the city at once. This is special.'
+                    },
+                    {
+                        time: '12:00 PM',
+                        title: 'Meet Les Hirondelles Safety Team',
+                        description: 'Notice women in distinctive uniforms everywhere. Les Hirondelles - trained in sexology, consent, trauma care. Revolutionary safety approach.',
+                        location: 'Throughout Festival',
+                        vibe: '🛡️ Protected & Pioneering',
+                        realReference: 'Les Hirondelles is Osheaga\'s groundbreaking safety initiative - team members trained by sexual assault centers in trauma-informed care',
+                        feeling: 'They\'re everywhere. Trained professionals. Not security - educators. You feel safe in a completely new way.'
+                    },
+                    {
+                        time: '2:00 PM',
+                        title: 'Bilingual Culture & French-Canadian Pride',
+                        description: 'Hear announcements in French and English. Watch francophone female artists own stages. Montreal\'s unique culture celebrating women.',
+                        location: 'Scène de la Montagne',
+                        vibe: '🇨🇦 Bilingual & Cultural',
+                        realReference: 'Osheaga showcases francophone artists prominently - bilingual culture is central to Montreal and festival identity',
+                        feeling: 'She sings in French. The crowd erupts. Quebec pride. Female artists in their own language. Powerful cultural celebration.'
+                    },
+                    {
+                        time: '4:00 PM',
+                        title: 'Consent Education Workshop',
+                        description: 'Attend workshop led by Les Hirondelles on consent culture, boundaries, and empowerment. Education, not just enforcement.',
+                        location: 'Les Hirondelles Station',
+                        vibe: '📚 Educational & Empowering',
+                        realReference: 'Les Hirondelles offers workshops and education on consent, harassment prevention, and safe festival culture',
+                        feeling: 'They teach actual skills. How to intervene. How to support. This should be at EVERY festival. You leave empowered.'
+                    },
+                    {
+                        time: '6:00 PM',
+                        title: 'Solo Female Travelers Meetup',
+                        description: 'Join 200+ solo women at the designated meetup spot. Canadians, Americans, Europeans - instant bilingual sisterhood.',
+                        location: 'Central Meeting Point',
+                        vibe: '👭 International & Connected',
+                        realReference: 'Osheaga\'s accessible location in Montreal attracts international visitors - strong solo traveler community organizes via social media',
+                        feeling: '"Salut!" "Hi!" Bilingual greetings. Instant friends. Solo becomes social in French and English. Montreal magic.'
+                    },
+                    {
+                        time: '7:30 PM',
+                        title: 'Sunset Over St. Lawrence River',
+                        description: 'Watch sunset over the water with your new crew. Island festival means 360° beauty. Montreal skyline glowing.',
+                        location: 'Waterfront Area',
+                        vibe: '🌅 Serene & Beautiful',
+                        realReference: 'Parc Jean-Drapeau\'s island location offers stunning sunset views over the St. Lawrence River and Montreal skyline',
+                        feeling: 'River reflecting pink sky. City lights beginning. Island breeze. Your friends from 4 countries. This moment is perfect.'
+                    },
+                    {
+                        time: '9:00 PM',
+                        title: 'Female Hip-Hop Artists Making History',
+                        description: 'Watch powerful female hip-hop and rap artists command the main stage. Diverse voices, important messages, massive platform.',
+                        location: 'Scène de la Rivière (Main Stage)',
+                        vibe: '🎤 Powerful & Revolutionary',
+                        realReference: 'Osheaga features strong hip-hop programming with prominent female artists addressing social issues and empowerment',
+                        feeling: 'She speaks truth to thousands. About being a woman. Being powerful. Being heard. You feel every word.'
+                    },
+                    {
+                        time: '11:00 PM',
+                        title: 'Les Hirondelles Support in Action',
+                        description: 'See Les Hirondelles help a woman who needs support. Gentle, professional, trauma-informed. This is how it should always be.',
+                        location: 'Throughout Festival',
+                        vibe: '💝 Compassionate & Professional',
+                        realReference: 'Les Hirondelles provides direct support, accompaniment to medical tents, and referrals to local resources when needed',
+                        feeling: 'Watching them work. So professional. So caring. This program should be worldwide. Women supporting women.'
+                    },
+                    {
+                        time: '12:30 AM',
+                        title: 'Late Night Electronic at Scène Verte',
+                        description: 'Underground female DJs taking over. Green stage lit up. Intimate crowd. Real music lovers.',
+                        location: 'Scène Verte (Green Stage)',
+                        vibe: '🔮 Underground & Intimate',
+                        realReference: 'Osheaga\'s smaller stages feature electronic and underground acts - platform for emerging female DJ talent',
+                        feeling: 'She reads the crowd perfectly. Everyone dancing. This is where tomorrow\'s headliners start. Women leading the way.'
+                    },
+                    {
+                        time: '1:00 AM',
+                        title: 'Safe Metro Ride Back to Montreal',
+                        description: 'Festival ends. Take the metro back to the city with new friends. Canadian safety. Bilingual conversations. Processing the magic.',
+                        location: 'Montreal Metro',
+                        vibe: '🚇 Safe & Social',
+                        realReference: 'Montreal metro runs late during Osheaga with dedicated festival service - safe, clean public transit',
+                        feeling: 'Metro at 1am. Groups of friends. You feel completely safe. Canadian culture. This is how cities should work.'
+                    }
+                ],
+                soloTravelTips: [
+                    'Montreal is extremely safe for solo female travelers - Canadian culture prioritizes safety',
+                    'Metro access makes travel to/from festival easy and secure',
+                    'Les Hirondelles team specifically supports solo attendees - just ask',
+                    'Join Montreal/Osheaga solo traveler groups on Facebook before festival',
+                    'Stay in Montreal hostels for instant international friend groups',
+                    'Bilingual culture means you can communicate easily in English or practice French'
+                ],
+                empowermentPrograms: [
+                    'Les Hirondelles consent education and harassment prevention workshops',
+                    'Sexology-based training creating trauma-informed festival culture',
+                    'Women\'s safety team providing professional support and resources',
+                    'Female francophone artist showcases celebrating Quebec culture',
+                    'Solo female traveler meetups organized through social media',
+                    'Partnerships with local women\'s organizations for ongoing support'
+                ],
+                femaleArtistHighlights: [
+                    'Strong female francophone artist representation celebrating Quebec',
+                    'Women in hip-hop and rap addressing social issues and empowerment',
+                    'Electronic music female DJs and producers on underground stages',
+                    'Diverse international female artists across all genres',
+                    'Platform for emerging female talent on smaller stages',
+                    'Bilingual female artists celebrated as cultural ambassadors'
+                ],
+                transformationStories: [
+                    {
+                        name: 'Claire B.',
+                        age: 26,
+                        type: 'Consent Educator',
+                        festival: 'Osheaga 2024',
+                        rating: 5,
+                        before: 'Wanted to do consent education but didn\'t know how to start. Felt overwhelmed.',
+                        after: 'Les Hirondelles workshop gave me frameworks and training. Now I run consent workshops at my university. Changed my career path.',
+                        highlight: 'Les Hirondelles program taught me professional skills to educate others'
+                    },
+                    {
+                        name: 'Amélie D.',
+                        age: 24,
+                        type: 'Francophone Solo Traveler',
+                        festival: 'Osheaga 2024',
+                        rating: 5,
+                        before: 'From France, nervous about traveling alone to North America. Different culture, different safety standards.',
+                        after: 'Montreal felt safer than Paris. Canadian culture is protective but empowering. Met bilingual friends. Now planning solo trip across Canada.',
+                        highlight: 'Canadian safety culture made international solo travel feel natural'
+                    },
+                    {
+                        name: 'Jasmine W.',
+                        age: 30,
+                        type: 'Sexual Assault Survivor',
+                        festival: 'Osheaga 2024',
+                        rating: 5,
+                        before: 'Stopped going to festivals after assault. Too triggering. Miss the music but can\'t feel safe.',
+                        after: 'Les Hirondelles team is trauma-informed. They GET it. I felt safe for the first time in years. I can festival again.',
+                        highlight: 'Trauma-informed safety approach helped me reclaim festival joy'
+                    }
+                ]
+            },
             safetyFeatures: [
                 'Les Hirondelles specialized response team',
                 'Sexology and harassment prevention training',
@@ -1062,6 +1220,164 @@ const FESTIVALS_DATA = {
             ticketPrice: '$429-1050',
             capacity: 250000,
             founded: 1999,
+            womensExperiences: {
+                highlights: [
+                    'Celebration of female artists across all genres - from Beyoncé\'s historic Beychella to powerful women commanding stages',
+                    'Fashion as empowerment - express yourself freely in the desert with supportive community',
+                    'Women-led art installations and immersive experiences celebrating feminine energy',
+                    'Strong female influencer and creator community fostering connections',
+                    'Desert sunrise yoga and wellness programming for women',
+                    'Safe spaces for solo female travelers in car camping and general admission areas'
+                ],
+                dayInTheLife: [
+                    {
+                        time: '7:00 AM',
+                        title: 'Sunrise Yoga in the Desert',
+                        description: 'Start your day with morning yoga as the sun rises over the Coachella Valley. Join 100+ women for breathwork and meditation in the cool desert air.',
+                        location: 'Wellness Area',
+                        vibe: '🌅 Peaceful & Grounding',
+                        realReference: 'Coachella offers morning yoga sessions in dedicated wellness areas - the desert sunrise creates magical energy',
+                        feeling: 'Cool breeze. Palm trees silhouetted against pink sky. Your mat on the grass. The desert holds you in stillness before the music begins.'
+                    },
+                    {
+                        time: '10:00 AM',
+                        title: 'Explore Female-Led Art Installations',
+                        description: 'Wander through stunning art installations created by women artists. Interactive experiences celebrating feminine power and creativity.',
+                        location: 'Art Grounds',
+                        vibe: '🎨 Inspiring & Creative',
+                        realReference: 'Coachella features dozens of large-scale art installations, many created by female artists like Kara Walker and other renowned creators',
+                        feeling: 'Art towers above you. Women taking photos, exploring, creating. You feel part of something bigger than music.'
+                    },
+                    {
+                        time: '12:00 PM',
+                        title: 'Connect with Solo Travelers at Meetup',
+                        description: 'Join the official solo travelers meetup at the Ferris wheel. Meet women from around the world, exchange numbers, form your Coachella crew.',
+                        location: 'Ferris Wheel Meeting Point',
+                        vibe: '👯 Social & Exciting',
+                        realReference: 'The iconic Coachella Ferris wheel serves as a central meeting point where solo travelers connect via social media groups',
+                        feeling: '"I\'m here alone too!" becomes instant friendship. Numbers exchanged, Instagram follows, plans for the weekend made. Your crew is formed.'
+                    },
+                    {
+                        time: '3:00 PM',
+                        title: 'Fashion, Empowerment & Self-Expression',
+                        description: 'Embrace Coachella fashion culture - flower crowns, festival style, bold choices. See women of all sizes, ages, backgrounds expressing themselves fearlessly.',
+                        location: 'Throughout Festival Grounds',
+                        vibe: '💃 Confident & Expressive',
+                        realReference: 'Coachella is famous for fashion culture where self-expression is celebrated - body positivity and creative style are core to the experience',
+                        feeling: 'Glitter. Fringe. Confidence. Nobody judges. Every body is beautiful. You wear what makes YOU feel powerful. Liberation.'
+                    },
+                    {
+                        time: '5:00 PM',
+                        title: 'Powerful Female Headliner Takes the Stage',
+                        description: 'Watch as a legendary woman commands the main stage. History in the making, just like Beyoncé\'s groundbreaking 2018 Beychella performance.',
+                        location: 'Coachella Main Stage',
+                        vibe: '👑 Powerful & Historic',
+                        realReference: 'Beyoncé\'s 2018 Beychella performance was the first Black woman to headline - since then, icons like Billie Eilish, Ariana Grande continue the legacy',
+                        feeling: 'She owns this desert. Her voice carries across 100,000 people. You witness greatness. Women can do ANYTHING.'
+                    },
+                    {
+                        time: '7:30 PM',
+                        title: 'Discover Rising Female Artists',
+                        description: 'Check out incredible up-and-coming women performers on smaller stages. The future of music is female, and you\'re seeing it first.',
+                        location: 'Gobi/Mojave Tents',
+                        vibe: '🎤 Discovery & Support',
+                        realReference: 'Coachella\'s Gobi and Mojave tents showcase emerging artists - many female performers get their big break on these stages',
+                        feeling: 'Intimate tent. Raw talent. She pours her heart out. You remember her name. In 5 years, you\'ll say "I saw her at Coachella."'
+                    },
+                    {
+                        time: '9:00 PM',
+                        title: 'Sisterhood in the Sahara Tent',
+                        description: 'Dance with your new friends under the legendary Sahara tent. Electronic music, light shows, and pure joy with thousands of women moving as one.',
+                        location: 'Sahara Tent',
+                        vibe: '🎆 Electric & United',
+                        realReference: 'The Sahara tent is Coachella\'s iconic electronic music venue - known for incredible production and transcendent dance experiences',
+                        feeling: 'Bass shakes your chest. Lights explode. Your crew dancing together. Strangers become sisters. This is collective euphoria.'
+                    },
+                    {
+                        time: '11:00 PM',
+                        title: 'Cooling Stations & Sisterhood Support',
+                        description: 'Desert nights get cool. Women help each other - sharing layers, offering water, checking in. See the best of humanity in action.',
+                        location: 'Throughout Festival',
+                        vibe: '💛 Caring & Community',
+                        realReference: 'Coachella attendees are known for looking out for each other, especially regarding heat/cold management and hydration',
+                        feeling: 'A stranger offers you her jacket. Another shares her water. "You okay, girl?" becomes the anthem. We take care of each other.'
+                    },
+                    {
+                        time: '12:30 AM',
+                        title: 'Late Night Female DJ Magic',
+                        description: 'Women DJs commanding decks past midnight. Underground stages, intimate vibes, the real music heads come out now.',
+                        location: 'Yuma/DoLab',
+                        vibe: '🔮 Underground & Authentic',
+                        realReference: 'Yuma and DoLab feature underground electronic music until late - many incredible female DJs like The Blessed Madonna, Honey Dijon, and more',
+                        feeling: 'Small stage. Serious sound. She reads the crowd perfectly. You discover your new favorite artist. This is where legends are born.'
+                    },
+                    {
+                        time: '1:30 AM',
+                        title: 'Walk Back Under the Desert Stars',
+                        description: 'Festival ends, but the night isn\'t over. Walk back to camp under infinite stars, processing the magic with your crew.',
+                        location: 'Campgrounds',
+                        vibe: '✨ Reflective & Magical',
+                        realReference: 'The dark desert sky creates spectacular stargazing - Coachella campers often gather under the stars after music ends',
+                        feeling: 'Desert silence. Stars everywhere. Your friends beside you. You\'ve never felt more alive, more yourself, more part of something beautiful.'
+                    }
+                ],
+                soloTravelTips: [
+                    'Join Coachella Solo Travelers Facebook groups before the festival for meetups and camp coordination',
+                    'Car camping with tent-only camping nearby creates instant community for solo attendees',
+                    'The Ferris wheel at sunset is the classic solo traveler meeting spot',
+                    'Download the Coachella app for real-time updates and safety features',
+                    'Fashion is self-expression - wear what makes YOU feel empowered, ignore the influencer pressure',
+                    'Hydration is sisterhood - always accept water offers and offer to others'
+                ],
+                empowermentPrograms: [
+                    'Women-led art installations celebrating feminine creativity and power',
+                    'Female DJ and producer showcases on multiple stages',
+                    'Body positivity through fashion expression and judgment-free zones',
+                    'Women in music industry networking in VIP and artist areas',
+                    'Wellness programming including yoga, meditation, and healing spaces',
+                    'Female-founded brand activations and empowerment experiences'
+                ],
+                femaleArtistHighlights: [
+                    'Historic female headliners - from Beyoncé\'s Beychella to Billie Eilish to Ariana Grande',
+                    'Diverse representation across genres - rock, hip-hop, electronic, Latin, alternative',
+                    'Platform for emerging female artists across Gobi, Mojave, and Sonora stages',
+                    'Female DJs commanding Sahara, Yuma, and DoLab stages',
+                    'Women of color prominently celebrated and centered',
+                    'Multigenerational female artist representation from legends to newcomers'
+                ],
+                transformationStories: [
+                    {
+                        name: 'Jasmine L.',
+                        age: 26,
+                        type: 'Fashion & Body Confidence',
+                        festival: 'Coachella 2024',
+                        rating: 5,
+                        before: 'I hated my body. Never wore crop tops or shorts. Avoided photos. Felt invisible.',
+                        after: 'Saw women of EVERY size rocking bikinis and confidence in the desert. Wore what I wanted for the first time. 50+ compliments. I\'m finally free.',
+                        highlight: 'Coachella fashion culture taught me my body deserves celebration'
+                    },
+                    {
+                        name: 'Keisha M.',
+                        age: 29,
+                        type: 'Solo International Traveler',
+                        festival: 'Coachella 2024',
+                        rating: 5,
+                        before: 'Flying from London alone to a massive US festival? Everyone said I was crazy. I almost backed out.',
+                        after: 'Met my now-best friends at the solo traveler meetup. We camped together, danced together, cried during Beyoncé together. Planning our reunion.',
+                        highlight: 'Solo traveler community turned strangers into family within hours'
+                    },
+                    {
+                        name: 'Sofia R.',
+                        age: 24,
+                        type: 'Aspiring DJ & Producer',
+                        festival: 'Coachella 2024',
+                        rating: 5,
+                        before: 'Wanted to be a DJ but felt like the scene wasn\'t for women. Gave up on my dream.',
+                        after: 'Watched Honey Dijon absolutely destroy the Yuma stage. She looked at me and nodded. I bought equipment the next week. Playing my first gig next month.',
+                        highlight: 'Seeing women command stages made my dreams feel possible'
+                    }
+                ]
+            },
             safetyFeatures: [
                 'Comprehensive medical facilities with desert expertise',
                 'Professional security throughout with crowd management',
@@ -1297,6 +1613,164 @@ const FESTIVALS_DATA = {
             ticketPrice: '€300-450',
             capacity: 400000,
             founded: 2005,
+            womensExperiences: {
+                highlights: [
+                    'Global sisterhood - women from 200+ countries united by music and magic',
+                    'Fairytale production celebrating feminine power and magical transformation',
+                    'DreamVille camping creates instant international female friendships',
+                    'Female DJs from around the world commanding the world\'s biggest stages',
+                    'PLUR culture (Peace, Love, Unity, Respect) creates judgment-free environment',
+                    'Belgian/European safety standards and progressive gender equality culture'
+                ],
+                dayInTheLife: [
+                    {
+                        time: '9:00 AM',
+                        title: 'International Breakfast at DreamVille',
+                        description: 'Wake up in DreamVille camping. Your tent neighbors are from Brazil, Korea, Germany, and Morocco. Breakfast becomes a global potluck of friendship.',
+                        location: 'DreamVille Camping Village',
+                        vibe: '🌍 Global & Connected',
+                        realReference: 'DreamVille is Tomorrowland\'s camping village hosting 38,000 people from over 200 countries - instant international community',
+                        feeling: 'Coffee from Italy. Bread from Germany. Laughter in 5 languages. You\'ve known these women 12 hours but they feel like lifelong friends.'
+                    },
+                    {
+                        time: '11:00 AM',
+                        title: 'Explore the Fairytale Mainstage',
+                        description: 'Walk to the festival grounds as the magical mainstage is revealed. Jaw-dropping production celebrating fantasy, wonder, and feminine magic.',
+                        location: 'Main Stage',
+                        vibe: '✨ Awestruck & Magical',
+                        realReference: 'Tomorrowland\'s mainstage is legendary - each year a new magical theme with incredible production featuring fairy tales and fantasy',
+                        feeling: 'The stage is a castle, a garden, a dreamscape. You\'ve never seen anything like it. Magic is real here.'
+                    },
+                    {
+                        time: '1:00 PM',
+                        title: 'Women Unite Meetup at the Book of Wisdom',
+                        description: 'Join 500+ solo female travelers at the iconic Book of Wisdom for the Women of Tomorrow meetup. Instant global sisterhood.',
+                        location: 'Book of Wisdom Stage',
+                        vibe: '👭 Unity & Empowering',
+                        realReference: 'The Book of Wisdom is a central Tomorrowland meeting point where groups organize meetups via social media',
+                        feeling: '"Where are you from?" Brasil, Japan, USA, Sweden. We\'re from everywhere. We\'re from nowhere. We\'re sisters now.'
+                    },
+                    {
+                        time: '3:00 PM',
+                        title: 'Female DJ Destroys Freedom Stage',
+                        description: 'Watch as a legendary female DJ commands the Freedom stage. Tens of thousands dancing as one, led by her vision and her beats.',
+                        location: 'Freedom Stage',
+                        vibe: '🎧 Powerful & Transcendent',
+                        realReference: 'Freedom Stage is Tomorrowland\'s second main stage - female DJs like Amelie Lens, Charlotte de Witte regularly headline',
+                        feeling: 'She controls 50,000 people with her hands. The drop hits. The crowd erupts. Women leading the biggest stages in the world.'
+                    },
+                    {
+                        time: '5:30 PM',
+                        title: 'PLUR Bracelets & Female Bonding',
+                        description: 'Exchange friendship bracelets with women you just met. PLUR culture means instant connection, no judgment, pure love.',
+                        location: 'Throughout Festival',
+                        vibe: '💕 Loving & Accepting',
+                        realReference: 'PLUR (Peace Love Unity Respect) culture is central to Tomorrowland - bracelet exchanges symbolize friendship and connection',
+                        feeling: 'She ties the bracelet on your wrist. "Sisters forever," she says in broken English. You both tear up. This is pure love.'
+                    },
+                    {
+                        time: '7:00 PM',
+                        title: 'Sunset at Mainstage with International Crew',
+                        description: 'Your new global crew gathers for sunset at the mainstage. Music builds. Fireworks explode. You\'re part of something bigger than yourself.',
+                        location: 'Main Stage',
+                        vibe: '🎆 Epic & United',
+                        realReference: 'Tomorrowland\'s sunset mainstage performances feature pyrotechnics, fireworks, and production that creates transcendent moments',
+                        feeling: 'Fireworks. Music swelling. Arms around your international sisters. You\'ve never felt more connected to humanity.'
+                    },
+                    {
+                        time: '9:00 PM',
+                        title: 'Women in Electronic Music Showcase',
+                        description: 'Special programming featuring back-to-back female artists. The future of electronic music is female, and you\'re witnessing it.',
+                        location: 'Opera Stage / Freedom Stage',
+                        vibe: '🚀 Inspiring & Future-Focused',
+                        realReference: 'Tomorrowland features showcases highlighting female talent in electronic music across multiple stages',
+                        feeling: 'Women commanding decks all night. Different styles, one message: we belong here. We\'re taking over. The future is ours.'
+                    },
+                    {
+                        time: '11:00 PM',
+                        title: 'Safe Space Support & Sisterhood',
+                        description: 'See Safe Space Ambassadors in their distinctive uniforms. Women helping women. Belgian culture of care and respect in action.',
+                        location: 'Throughout Festival',
+                        vibe: '🛡️ Protected & Supported',
+                        realReference: 'Tomorrowland Safe Space Ambassadors patrol throughout the festival providing support and intervention',
+                        feeling: 'Purple shirts everywhere. "You okay, love?" They check on everyone. European culture of actual caring. You feel safe.'
+                    },
+                    {
+                        time: '12:30 AM',
+                        title: 'Deep House Magic at Opera Stage',
+                        description: 'Underground female DJs creating magic at the intimate Opera stage. Real music nerds, real talent, real connection.',
+                        location: 'Opera Stage',
+                        vibe: '🔮 Deep & Soulful',
+                        realReference: 'The Opera Stage and Atmosphere stage feature deeper, more underground electronic music - showcasing diverse female DJ talent',
+                        feeling: 'Smaller stage. Perfect sound. She catches your eye and smiles. Music this good, played by women. Dreams do come true.'
+                    },
+                    {
+                        time: '2:00 AM',
+                        title: 'Walk Home Through Magical Forest',
+                        description: 'Festival ends. Walk back to DreamVille through lit pathways and magical installations. Process the beauty with your global sisters.',
+                        location: 'Path to DreamVille',
+                        vibe: '🌙 Reflective & Grateful',
+                        realReference: 'The walk from Tomorrowland to DreamVille features beautiful lighting and art - creating a magical transition',
+                        feeling: 'Lights in trees. Music fading. Your Brazilian friend on one side, your Japanese friend on the other. Life is perfect right now.'
+                    }
+                ],
+                soloTravelTips: [
+                    'Join Tomorrowland Women Unite and Solo Travelers Facebook groups before the festival',
+                    'DreamVille Easy Tent packages make solo camping stress-free and social',
+                    'The Book of Wisdom is the classic meetup point for solo travelers',
+                    'Download the Tomorrowland app for meetups, safety, and navigation',
+                    'European culture makes solo female travel extremely safe and normalized',
+                    'PLUR culture means immediate acceptance - you\'re never truly alone'
+                ],
+                empowermentPrograms: [
+                    'Women in Electronic Music showcases featuring female DJs and producers',
+                    'Global sisterhood meetups organized through social media and app',
+                    'Safe Space Ambassador program with female-led support teams',
+                    'Female artist networking in VIP and backstage areas',
+                    'PLUR culture promoting respect, consent, and judgment-free expression',
+                    'International women\'s empowerment through cross-cultural connection'
+                ],
+                femaleArtistHighlights: [
+                    'World-class female DJs headlining - Amelie Lens, Charlotte de Witte, Nervo, and more',
+                    'Underground female talent showcased across Opera, Atmosphere, and Garden stages',
+                    'Women of color prominently featured across all stages',
+                    'Female producers and live acts commanding main stages',
+                    'Rising female talent platform across Core and Atmosphere stages',
+                    'International female DJ representation from every continent'
+                ],
+                transformationStories: [
+                    {
+                        name: 'Yuki T.',
+                        age: 27,
+                        type: 'International Solo Traveler',
+                        festival: 'Tomorrowland 2024',
+                        rating: 5,
+                        before: 'Traveling alone from Japan to Europe? My family was terrified. I was terrified. Maybe I shouldn\'t go.',
+                        after: 'Met sisters from 15 countries in DreamVille. They taught me their languages, I taught them mine. We\'re planning to meet in Tokyo next year.',
+                        highlight: 'Global sisterhood made me brave enough to travel anywhere alone'
+                    },
+                    {
+                        name: 'Lena K.',
+                        age: 25,
+                        type: 'Aspiring Female DJ',
+                        festival: 'Tomorrowland 2024',
+                        rating: 5,
+                        before: 'Felt like female DJs only get small stages. Why bother trying?',
+                        after: 'Watched Charlotte de Witte absolutely demolish the main stage. 80,000 people. All for her. Bought DJ equipment the next week. This IS possible.',
+                        highlight: 'Seeing women command the world\'s biggest stages changed everything'
+                    },
+                    {
+                        name: 'Isabella M.',
+                        age: 30,
+                        type: 'PLUR Culture Convert',
+                        festival: 'Tomorrowland 2024',
+                        rating: 5,
+                        before: 'Cynical about humanity. Didn\'t believe people could be genuinely kind without agenda.',
+                        after: 'Strangers became family. Women shared everything - food, water, joy, tears. PLUR isn\'t a slogan, it\'s real. People CAN be good.',
+                        highlight: 'PLUR culture restored my faith in humanity and sisterhood'
+                    }
+                ]
+            },
             safetyFeatures: [
                 'State-of-the-art security with international standards',
                 'Comprehensive medical facilities with multi-lingual staff',
@@ -1409,6 +1883,164 @@ const FESTIVALS_DATA = {
             ticketPrice: '€189-269',
             capacity: 85000,
             founded: 2004,
+            womensExperiences: {
+                highlights: [
+                    'Finland ranks #1 globally for gender equality - experience it firsthand at Flow',
+                    'Solo female travel paradise - Nordic safety and progressive culture',
+                    'Sustainability and eco-consciousness woven into empowerment values',
+                    'Historic Helsinki industrial grounds create unique urban festival experience',
+                    'Strong female artist representation reflecting Finnish equality values',
+                    'Scandinavian design aesthetic celebrating creativity and feminine power'
+                ],
+                dayInTheLife: [
+                    {
+                        time: '11:00 AM',
+                        title: 'Explore Historic Suvilahti Industrial Grounds',
+                        description: 'Arrive at Flow\'s unique venue - a historic power plant transformed into an art-filled festival site. Urban beauty meets Nordic design.',
+                        location: 'Suvilahti Power Plant Area',
+                        vibe: '🏭 Industrial & Artistic',
+                        realReference: 'Flow Festival takes place at Suvilahti, a former power plant in Helsinki - combining industrial architecture with modern design',
+                        feeling: 'Brick walls. Art installations. Finnish design everywhere. This isn\'t a field - it\'s an urban masterpiece.'
+                    },
+                    {
+                        time: '1:00 PM',
+                        title: 'Nordic Equality in Action - Solo Women Everywhere',
+                        description: 'Look around. Hundreds of solo women confidently exploring. Finnish equality culture means nobody questions a woman alone.',
+                        location: 'Throughout Festival',
+                        vibe: '💪 Empowered & Equal',
+                        realReference: 'Finland\'s #1 global ranking for gender equality creates a culture where solo female attendance is completely normalized',
+                        feeling: 'Solo women everywhere. Nobody stares. Nobody questions. You\'re just... equal. This is what it should feel like everywhere.'
+                    },
+                    {
+                        time: '3:00 PM',
+                        title: 'Sustainability & Female-Led Eco Initiatives',
+                        description: 'Visit eco-booths run by Finnish women activists. Learn about zero-waste living, climate action, and feminine approaches to saving the planet.',
+                        location: 'Sustainability Village',
+                        vibe: '🌱 Conscious & Purposeful',
+                        realReference: 'Flow Festival has won awards for sustainability - features extensive eco-programming and female-led environmental initiatives',
+                        feeling: 'These Finnish women are changing the world. Practical solutions. No BS. You leave inspired to DO something.'
+                    },
+                    {
+                        time: '5:00 PM',
+                        title: 'Finnish Female Artist Showcases Nordic Sound',
+                        description: 'Discover incredible Finnish female musicians blending electronic music with Nordic melancholy and power. Uniquely beautiful.',
+                        location: 'Black Tent / Forest Stage',
+                        vibe: '🎵 Ethereal & Powerful',
+                        realReference: 'Flow showcases Finnish artists including strong female representation - the Nordic sound is distinct and celebrated',
+                        feeling: 'Her voice fills the tent. Haunting. Strong. Uniquely Finnish. You\'ve discovered music you didn\'t know existed.'
+                    },
+                    {
+                        time: '7:00 PM',
+                        title: 'Women in Tech & Music Panel Discussion',
+                        description: 'Attend panel featuring Finnish women leading in music tech, production, and innovation. The future is being built here.',
+                        location: 'Talk Tent',
+                        vibe: '🚀 Innovative & Inspiring',
+                        realReference: 'Flow features panels and talks on music, technology, and culture - strong focus on women in tech and innovation',
+                        feeling: 'Female CEOs, producers, engineers on stage. Nordic countries don\'t just talk about equality - they LIVE it.'
+                    },
+                    {
+                        time: '9:00 PM',
+                        title: 'Sunset Over Helsinki with New Friends',
+                        description: 'August in Finland means endless twilight. Watch the golden hour glow over Helsinki with women you met hours ago but feel like lifelong friends.',
+                        location: 'Main Stage Area',
+                        vibe: '🌅 Serene & Connected',
+                        realReference: 'August evenings in Helsinki feature beautiful long twilight - Flow\'s urban location offers stunning city views',
+                        feeling: 'Golden light. Helsinki skyline. Your Finnish friend explains the concept of "sisu" - resilience. You feel it in your bones.'
+                    },
+                    {
+                        time: '11:00 PM',
+                        title: 'Underground Female DJ Set',
+                        description: 'Deep in the power plant, an incredible female DJ plays techno to a knowing crowd. This is where real music nerds come.',
+                        location: 'Warehouse Stage',
+                        vibe: '🔮 Underground & Authentic',
+                        realReference: 'Flow\'s warehouse and indoor stages feature cutting-edge electronic music - strong platform for female DJs and producers',
+                        feeling: 'Industrial space. Perfect sound system. She controls the room with precision. This is art. This is power.'
+                    },
+                    {
+                        time: '12:30 AM',
+                        title: 'Finnish Sauna Culture & Female Bonding',
+                        description: 'Finnish women explain sauna culture - vulnerability, trust, feminine space. You understand Nordic culture on a deeper level.',
+                        location: 'Conversation Areas',
+                        vibe: '💭 Deep & Cultural',
+                        realReference: 'Finnish sauna culture emphasizes equality, vulnerability, and trust - these values permeate Flow Festival culture',
+                        feeling: 'They share their culture openly. Teach you Finnish words. You feel trusted. Accepted. Part of something ancient and sacred.'
+                    },
+                    {
+                        time: '1:30 AM',
+                        title: 'Safe Walk to Helsinki City Center',
+                        description: 'Festival ends. Walk through safe, clean Helsinki streets back to your accommodation. Nordic safety at its finest.',
+                        location: 'Helsinki Streets',
+                        vibe: '🌙 Safe & Peaceful',
+                        realReference: 'Helsinki is one of the world\'s safest cities - walking alone at night is completely normal and safe for women',
+                        feeling: '1:30am. Walking alone. Not scared. Not looking over your shoulder. Just... safe. This should be universal.'
+                    },
+                    {
+                        time: '2:00 AM',
+                        title: 'Late Night Helsinki Vibes',
+                        description: 'Helsinki\'s summer nightlife is alive. Join festival-goers at late-night cafes, processing the music and the magic.',
+                        location: 'Helsinki Cafes',
+                        vibe: '☕ Social & Reflective',
+                        realReference: 'Helsinki\'s festival culture extends beyond the venue - late night cafes and hangouts are central to the experience',
+                        feeling: 'Cafe at 2am. Finnish friends, new travelers, locals. Coffee and conversation. Life feels perfect in this moment.'
+                    }
+                ],
+                soloTravelTips: [
+                    'Finland is the safest country for solo female travel - embrace the freedom',
+                    'Public transport from festival to Helsinki city center is safe, clean, and runs late',
+                    'Finnish people may seem reserved but are incredibly helpful - just ask',
+                    'Download the Flow app for meetups and solo traveler groups',
+                    'Stay in Helsinki hostels for instant international friend groups',
+                    'Nordic summer means long daylight - never feels too late or dark'
+                ],
+                empowermentPrograms: [
+                    'Women in Music & Tech panels featuring Finnish industry leaders',
+                    'Sustainability and climate activism led by female organizers',
+                    'Finnish female artist showcases celebrating Nordic talent',
+                    'Gender equality workshops reflecting Finland\'s #1 global ranking',
+                    'Solo female traveler meetups through social media and app',
+                    'Nordic design and art celebrating feminine creativity'
+                ],
+                femaleArtistHighlights: [
+                    'Strong Finnish female artist representation across all stages',
+                    'Nordic and Scandinavian female musicians prominently featured',
+                    'Electronic music females DJs and producers leading underground stages',
+                    'Gender parity reflecting Finnish equality values',
+                    'International female headliners mixed with local talent',
+                    'Emerging female artists platform supporting new voices'
+                ],
+                transformationStories: [
+                    {
+                        name: 'Emma L.',
+                        age: 28,
+                        type: 'Solo Traveler from USA',
+                        festival: 'Flow Festival 2024',
+                        rating: 5,
+                        before: 'Scared to travel alone internationally. Everyone warned me about being a woman alone in Europe.',
+                        after: 'Finland changed my entire perspective. Walked alone at 2am. Felt safer than my hometown. Solo travel fears are GONE. Booked 3 more trips.',
+                        highlight: 'Nordic safety culture showed me solo female travel can be completely fearless'
+                    },
+                    {
+                        name: 'Aino K.',
+                        age: 25,
+                        type: 'Finnish Female DJ',
+                        festival: 'Flow Festival 2024',
+                        rating: 5,
+                        before: 'Felt like Finnish women were invisible in global electronic music scene.',
+                        after: 'Flow gave me a platform. International promoters saw my set. Now I\'m touring 5 countries. My country believes in women.',
+                        highlight: 'Finnish gender equality gave me the platform to launch my international career'
+                    },
+                    {
+                        name: 'Priya M.',
+                        age: 32,
+                        type: 'Eco-Activist',
+                        festival: 'Flow Festival 2024',
+                        rating: 5,
+                        before: 'Tired of festivals that just greenwash. Where\'s the REAL environmental commitment?',
+                        after: 'Flow\'s sustainability isn\'t marketing - it\'s real. Met female climate leaders changing policy. Now I know how to make actual impact.',
+                        highlight: 'Female-led sustainability programs showed me effective climate action'
+                    }
+                ]
+            },
             safetyFeatures: [
                 'Nordic safety excellence with high standards',
                 'Professional security team with cultural sensitivity',

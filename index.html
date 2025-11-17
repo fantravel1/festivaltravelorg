@@ -1298,38 +1298,85 @@
                 return;
             }
 
-            // Simple matching logic based on answers
+            // Enhanced matching logic including all 10 festivals
             let matchedFestival = null;
             let matchReasons = [];
 
             const festivals = FESTIVALS_DATA.festivals;
+            const music = quizAnswers[0];      // Music preference
+            const size = quizAnswers[1];       // Festival size
+            const priority = quizAnswers[2];   // What matters most
+            const location = quizAnswers[3];   // Geographic preference
+            const budget = quizAnswers[4];     // Budget range
 
-            // Match based on music preference
-            if (quizAnswers[0] === 'world') {
+            // Advanced matching algorithm
+            // World Music
+            if (music === 'world') {
                 matchedFestival = festivals.find(f => f.id === 'womad');
                 matchReasons.push("WOMAD celebrates world music with female artists from 6 continents");
-            } else if (quizAnswers[0] === 'electronic' && quizAnswers[2] === 'support') {
+            }
+            // Trauma-informed support prioritized
+            else if (priority === 'support' && location === 'northamerica' && music !== 'electronic') {
+                matchedFestival = festivals.find(f => f.id === 'osheaga');
+                matchReasons.push("Osheaga's Les Hirondelles program offers pioneering trauma-informed care and consent education");
+            }
+            // Bass music + mental health support
+            else if (music === 'electronic' && priority === 'support' && location === 'northamerica') {
                 matchedFestival = festivals.find(f => f.id === 'shambhala');
-                matchReasons.push("Shambhala features incredible bass music with 24/7 mental health support");
-            } else if (quizAnswers[0] === 'electronic' && quizAnswers[2] === 'community') {
+                matchReasons.push("Shambhala features incredible bass music with 24/7 mental health support and body positivity programming");
+            }
+            // Nordic safety + solo travel
+            else if (location === 'europe' && size === 'medium' && priority !== 'artists') {
+                matchedFestival = festivals.find(f => f.id === 'flow-festival');
+                matchReasons.push("Flow Festival in Finland offers world-class safety, sustainability, and Nordic gender equality culture");
+            }
+            // Massive electronic + international community
+            else if (music === 'electronic' && size === 'large' && location === 'europe' && budget === 'mid') {
+                matchedFestival = festivals.find(f => f.id === 'tomorrowland');
+                matchReasons.push("Tomorrowland creates magical experiences with global sisterhood from 200+ countries and PLUR culture");
+            }
+            // Large iconic festival + fashion/diversity
+            else if ((music === 'diverse' || music === 'alternative') && size === 'large' && location === 'northamerica' && budget === 'premium') {
+                matchedFestival = festivals.find(f => f.id === 'coachella');
+                matchReasons.push("Coachella celebrates fashion as empowerment, body positivity, and historic female headliners like Beyoncé");
+            }
+            // Electronic + community focus
+            else if (music === 'electronic' && priority === 'community') {
                 matchedFestival = festivals.find(f => f.id === 'electric-forest');
-                matchReasons.push("Electric Forest's Her Forest program creates instant community for women");
-            } else if (quizAnswers[0] === 'alternative' && quizAnswers[2] === 'artists') {
+                matchReasons.push("Electric Forest's Her Forest program creates instant community and transformative experiences for women");
+            }
+            // Gender equality + female artists
+            else if (priority === 'artists' && location === 'europe') {
                 matchedFestival = festivals.find(f => f.id === 'primavera-sound');
-                matchReasons.push("Primavera Sound pioneered 50/50 gender parity with incredible female headliners");
-            } else if (quizAnswers[2] === 'empowerment') {
+                matchReasons.push("Primavera Sound pioneered 50/50 gender parity with incredible female headliners and diverse representation");
+            }
+            // Empowerment programs + education
+            else if (priority === 'empowerment' && location === 'europe') {
                 matchedFestival = festivals.find(f => f.id === 'roskilde');
-                matchReasons.push("Roskilde offers powerful women-in-music panels and empowerment programming");
-            } else if (quizAnswers[1] === 'large') {
-                matchedFestival = festivals.find(f => f.id === 'roskilde');
-                matchReasons.push("Roskilde is one of Europe's largest festivals with epic experiences");
-            } else {
+                matchReasons.push("Roskilde offers powerful women-in-music panels, bystander intervention training, and progressive Nordic culture");
+            }
+            // Large legendary experience
+            else if (size === 'large' && location === 'uk') {
                 matchedFestival = festivals.find(f => f.id === 'glastonbury');
-                matchReasons.push("Glastonbury offers diverse music and is the legendary festival experience");
+                matchReasons.push("Glastonbury is the legendary UK festival experience with diverse music and decades of inclusive culture");
+            }
+            // Default fallback based on location
+            else if (location === 'northamerica') {
+                matchedFestival = festivals.find(f => f.id === 'electric-forest');
+                matchReasons.push("Electric Forest offers transformative experiences in Michigan forests with Her Forest women's programming");
+            }
+            else if (location === 'europe') {
+                matchedFestival = festivals.find(f => f.id === 'primavera-sound');
+                matchReasons.push("Primavera Sound combines Barcelona's beach vibes with 50/50 gender-balanced lineups");
+            }
+            else {
+                // Ultimate fallback - Glastonbury is universally loved
+                matchedFestival = festivals.find(f => f.id === 'glastonbury');
+                matchReasons.push("Glastonbury offers the legendary festival experience with something for everyone");
             }
 
-            // Add additional match reasons based on other answers
-            if (matchedFestival.womensExperiences) {
+            // Add additional match reasons from festival data
+            if (matchedFestival && matchedFestival.womensExperiences) {
                 const we = matchedFestival.womensExperiences;
                 if (we.soloTravelTips && we.soloTravelTips.length > 0) {
                     matchReasons.push(we.soloTravelTips[0]);
