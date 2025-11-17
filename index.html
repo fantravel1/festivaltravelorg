@@ -322,6 +322,463 @@
             }
         }
 
+        /* Festival Matchmaker Quiz */
+        .quiz-section {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 4rem 2rem;
+            margin: 3rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(33, 150, 243, 0.2);
+        }
+
+        .quiz-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .quiz-header h2 {
+            color: #01579b;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .quiz-header p {
+            color: #0277bd;
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .quiz-container {
+            background: white;
+            border-radius: 15px;
+            padding: 3rem 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-progress {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .quiz-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .quiz-question {
+            margin-bottom: 2rem;
+        }
+
+        .quiz-question h3 {
+            color: #01579b;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .quiz-options {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .quiz-option {
+            background: linear-gradient(135deg, #f5f7fa, #e9ecef);
+            border: 3px solid transparent;
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .quiz-option:hover {
+            transform: translateX(5px);
+            border-color: #667eea;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        }
+
+        .quiz-option.selected {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .quiz-option-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .quiz-option-desc {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .quiz-navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quiz-btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-btn-back {
+            background: #e0e0e0;
+            color: #333;
+        }
+
+        .quiz-btn-back:hover {
+            background: #d0d0d0;
+            transform: translateX(-3px);
+        }
+
+        .quiz-btn-next {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            flex: 1;
+        }
+
+        .quiz-btn-next:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .quiz-result {
+            background: white;
+            border-radius: 15px;
+            padding: 3rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-result h3 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .quiz-result-festival {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border: 3px solid #ff6f00;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .quiz-result-festival h4 {
+            color: #e65100;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .quiz-result-match {
+            background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1b5e20;
+        }
+
+        .quiz-result-why {
+            margin: 1.5rem 0;
+        }
+
+        .quiz-result-why h5 {
+            color: #e65100;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .quiz-result-why ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .quiz-result-why li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .quiz-result-why li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .quiz-result-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .quiz-result-btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .quiz-result-btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .quiz-result-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .quiz-result-btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .quiz-result-btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Transformation Stories Carousel */
+        .stories-carousel-section {
+            background: linear-gradient(135deg, #fff5f8, #ffe0ec);
+            padding: 4rem 0;
+            margin: 3rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(255, 107, 157, 0.2);
+        }
+
+        .carousel-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .carousel-header h2 {
+            color: #c2185b;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .carousel-header p {
+            color: #880e4f;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            padding: 0 60px;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            gap: 2rem;
+        }
+
+        .carousel-story {
+            min-width: 350px;
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-story:hover {
+            border-color: #ff6b9d;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .carousel-story-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .carousel-story-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .carousel-story-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .carousel-story-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .carousel-story-rating {
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+
+        .carousel-story-before,
+        .carousel-story-after {
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .carousel-story-before {
+            background: linear-gradient(135deg, #fee, #fdd);
+            border-left: 4px solid #dc3545;
+            color: #333;
+        }
+
+        .carousel-story-after {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border-left: 4px solid #28a745;
+            color: #333;
+        }
+
+        .carousel-story-highlight {
+            background: linear-gradient(135deg, #fff3cd, #ffeeba);
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-top: 1rem;
+        }
+
+        .carousel-story-highlight strong {
+            color: #856404;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+
+        .carousel-story-highlight p {
+            margin: 0;
+            color: #856404;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            border: 3px solid #ff6b9d;
+            color: #ff6b9d;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-btn:hover {
+            background: #ff6b9d;
+            color: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-btn-prev {
+            left: 10px;
+        }
+
+        .carousel-btn-next {
+            right: 10px;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-top: 2rem;
+        }
+
+        .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background: #ff6b9d;
+            width: 30px;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-story {
+                min-width: 300px;
+            }
+
+            .carousel-container {
+                padding: 0 50px;
+            }
+
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+
         @media (max-width: 480px) {
             .container {
                 padding: 0 15px;
@@ -338,6 +795,22 @@
             .cta-button {
                 padding: 0.8rem 1.5rem;
                 font-size: 0.9rem;
+            }
+
+            .carousel-story {
+                min-width: 280px;
+            }
+
+            .carousel-container {
+                padding: 0 40px;
+            }
+
+            .carousel-header h2 {
+                font-size: 2rem;
+            }
+
+            .carousel-header p {
+                font-size: 1rem;
             }
         }
     </style>
@@ -366,7 +839,36 @@
             <div class="container">
                 <h1>Experience Festivals Your Way - Empowered & Safe</h1>
                 <p>Discover the world's most amazing female-friendly festivals featuring empowerment programs, incredible women artists, solo traveler communities, and experiences designed to celebrate and elevate women. Your adventure, your rules, your power.</p>
-                <a href="#festivals" class="cta-button">Explore Empowering Festivals</a>
+                <a href="#quiz" class="cta-button">Find Your Perfect Festival</a>
+            </div>
+        </section>
+
+        <!-- Festival Matchmaker Quiz -->
+        <section id="quiz" class="container">
+            <div class="quiz-section">
+                <div class="quiz-header">
+                    <h2>🎯 Festival Matchmaker Quiz</h2>
+                    <p>Answer 5 quick questions to discover which festival is perfect for YOUR journey, YOUR vibe, and YOUR transformation.</p>
+                </div>
+
+                <div class="quiz-container" id="quizContainer">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" id="quizProgress"></div>
+                    </div>
+
+                    <div class="quiz-question" id="quizQuestion">
+                        <!-- Questions will be dynamically loaded -->
+                    </div>
+
+                    <div class="quiz-navigation">
+                        <button class="quiz-btn quiz-btn-back" id="quizBackBtn" onclick="previousQuestion()" style="display: none;">← Back</button>
+                        <button class="quiz-btn quiz-btn-next" id="quizNextBtn" onclick="nextQuestion()" style="display: none;">Next →</button>
+                    </div>
+                </div>
+
+                <div class="quiz-result" id="quizResult" style="display: none;">
+                    <!-- Result will be shown here -->
+                </div>
             </div>
         </section>
 
@@ -413,6 +915,28 @@
                         <h3>Global Sisterhood</h3>
                         <p>Connect with women from every continent, share stories, build networks, and create friendships that span the globe. You're never alone.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transformation Stories Carousel -->
+        <section class="container">
+            <div class="stories-carousel-section">
+                <div class="carousel-header">
+                    <h2>💕 Real Women's Transformation Stories</h2>
+                    <p>These aren't just testimonials - they're real transformations from real women who took the leap. Read their journeys from doubt to confidence, from isolated to connected, from scared to empowered. Your story could be next.</p>
+                </div>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-btn-prev" onclick="moveCarousel(-1)">‹</button>
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Stories will be dynamically loaded here -->
+                    </div>
+                    <button class="carousel-btn carousel-btn-next" onclick="moveCarousel(1)">›</button>
+                </div>
+
+                <div class="carousel-dots" id="carouselDots">
+                    <!-- Dots will be dynamically generated -->
                 </div>
             </div>
         </section>
@@ -481,13 +1005,391 @@
 
             const container = document.getElementById('festivals-container');
             const loading = document.getElementById('loading');
-            
+
             setTimeout(() => {
                 const festivalsHTML = FESTIVALS_DATA.festivals.map(createFestivalCard).join('');
                 container.innerHTML = festivalsHTML;
                 loading.style.display = 'none';
                 container.style.display = 'grid';
             }, 1000);
+        }
+
+        // Transformation Stories Carousel
+        let currentCarouselIndex = 0;
+        let allStories = [];
+        let carouselInterval;
+
+        function loadTransformationStories() {
+            if (typeof FESTIVALS_DATA === 'undefined' || !FESTIVALS_DATA.festivals) {
+                return;
+            }
+
+            // Collect all transformation stories from all festivals
+            allStories = [];
+            FESTIVALS_DATA.festivals.forEach(festival => {
+                if (festival.womensExperiences && festival.womensExperiences.transformationStories) {
+                    festival.womensExperiences.transformationStories.forEach(story => {
+                        allStories.push({
+                            ...story,
+                            festivalName: festival.name
+                        });
+                    });
+                }
+            });
+
+            if (allStories.length === 0) {
+                return;
+            }
+
+            renderCarousel();
+            generateCarouselDots();
+            startCarouselAutoPlay();
+        }
+
+        function renderCarousel() {
+            const track = document.getElementById('carouselTrack');
+            if (!track) return;
+
+            const storiesHTML = allStories.map((story, index) => {
+                const stars = '★'.repeat(story.rating);
+                return `
+                    <div class="carousel-story">
+                        <div class="carousel-story-header">
+                            <div>
+                                <div class="carousel-story-name">${story.name}</div>
+                                <div class="carousel-story-meta">
+                                    <span class="carousel-story-tag">${story.type}</span>
+                                    <span class="carousel-story-tag">Age ${story.age}</span>
+                                    <span class="carousel-story-tag">${story.festivalName || story.festival}</span>
+                                </div>
+                            </div>
+                            <div class="carousel-story-rating">${stars}</div>
+                        </div>
+
+                        <div class="carousel-story-before">
+                            "${story.before}"
+                        </div>
+                        <div class="carousel-story-after">
+                            "${story.after}"
+                        </div>
+
+                        <div class="carousel-story-highlight">
+                            <strong>Key Transformation:</strong>
+                            <p>${story.highlight}</p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            track.innerHTML = storiesHTML;
+        }
+
+        function generateCarouselDots() {
+            const dotsContainer = document.getElementById('carouselDots');
+            if (!dotsContainer) return;
+
+            // Create dots for groups of stories (show 3 stories at a time)
+            const numDots = Math.ceil(allStories.length / 3);
+            const dotsHTML = Array.from({length: numDots}, (_, i) =>
+                `<div class="carousel-dot ${i === 0 ? 'active' : ''}" onclick="goToCarouselSlide(${i})"></div>`
+            ).join('');
+
+            dotsContainer.innerHTML = dotsHTML;
+        }
+
+        function moveCarousel(direction) {
+            const track = document.getElementById('carouselTrack');
+            if (!track) return;
+
+            stopCarouselAutoPlay();
+
+            currentCarouselIndex += direction;
+
+            // Loop around
+            if (currentCarouselIndex < 0) {
+                currentCarouselIndex = allStories.length - 1;
+            } else if (currentCarouselIndex >= allStories.length) {
+                currentCarouselIndex = 0;
+            }
+
+            updateCarouselPosition();
+            updateCarouselDots();
+            startCarouselAutoPlay();
+        }
+
+        function goToCarouselSlide(slideIndex) {
+            stopCarouselAutoPlay();
+            currentCarouselIndex = slideIndex * 3;
+            updateCarouselPosition();
+            updateCarouselDots();
+            startCarouselAutoPlay();
+        }
+
+        function updateCarouselPosition() {
+            const track = document.getElementById('carouselTrack');
+            if (!track) return;
+
+            const storyWidth = 350 + 32; // card width + gap
+            const offset = -currentCarouselIndex * storyWidth;
+            track.style.transform = `translateX(${offset}px)`;
+        }
+
+        function updateCarouselDots() {
+            const dots = document.querySelectorAll('.carousel-dot');
+            const activeDotIndex = Math.floor(currentCarouselIndex / 3);
+
+            dots.forEach((dot, index) => {
+                if (index === activeDotIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function startCarouselAutoPlay() {
+            stopCarouselAutoPlay(); // Clear any existing interval
+            carouselInterval = setInterval(() => {
+                moveCarousel(1);
+            }, 5000); // Auto-advance every 5 seconds
+        }
+
+        function stopCarouselAutoPlay() {
+            if (carouselInterval) {
+                clearInterval(carouselInterval);
+            }
+        }
+
+        // Festival Matchmaker Quiz
+        const quizQuestions = [
+            {
+                question: "What type of music moves your soul?",
+                options: [
+                    { title: "World Music & Cultural Diversity", value: "world", desc: "Global sounds, traditional instruments, cultural celebration" },
+                    { title: "Electronic & Bass Music", value: "electronic", desc: "EDM, house, techno, dubstep, and transformative beats" },
+                    { title: "Alternative & Indie Rock", value: "alternative", desc: "Progressive music, alternative rock, and boundary-pushing artists" },
+                    { title: "Mix of Everything", value: "diverse", desc: "All genres - I love musical variety!" }
+                ]
+            },
+            {
+                question: "What festival size feels right for you?",
+                options: [
+                    { title: "Intimate & Cozy (15,000-35,000)", value: "small", desc: "Smaller crowds, easier to make deep connections" },
+                    { title: "Medium Energy (40,000-65,000)", value: "medium", desc: "Good balance of intimacy and variety" },
+                    { title: "Epic Experience (80,000+)", value: "large", desc: "Huge lineups, massive stages, festival city vibes" }
+                ]
+            },
+            {
+                question: "What matters most to you?",
+                options: [
+                    { title: "Empowerment Programs & Workshops", value: "empowerment", desc: "Women-in-music panels, leadership circles, skill-building" },
+                    { title: "Solo Traveler Community", value: "community", desc: "Instant friends, group camps, meetups for solo attendees" },
+                    { title: "Female Artists & Gender Equality", value: "artists", desc: "50/50 lineups, women headliners, celebrating female talent" },
+                    { title: "Mental Health & Support", value: "support", desc: "Safe spaces, counseling, trauma-informed care" }
+                ]
+            },
+            {
+                question: "Where do you want to go?",
+                options: [
+                    { title: "United Kingdom", value: "uk", desc: "England - historic venues, English countryside" },
+                    { title: "Europe", value: "europe", desc: "Spain, Denmark - international adventure" },
+                    { title: "North America", value: "northamerica", desc: "USA, Canada - forests and progressive vibes" }
+                ]
+            },
+            {
+                question: "What's your budget range?",
+                options: [
+                    { title: "Budget-Friendly (Under $300)", value: "budget", desc: "Great value, affordable adventure" },
+                    { title: "Mid-Range ($300-$450)", value: "mid", desc: "Comfortable investment in experience" },
+                    { title: "Premium ($450+)", value: "premium", desc: "All-in transformative experience" }
+                ]
+            }
+        ];
+
+        let currentQuizQuestion = 0;
+        let quizAnswers = {};
+
+        function initializeQuiz() {
+            currentQuizQuestion = 0;
+            quizAnswers = {};
+            showQuizQuestion();
+        }
+
+        function showQuizQuestion() {
+            const questionContainer = document.getElementById('quizQuestion');
+            const progressBar = document.getElementById('quizProgress');
+            const backBtn = document.getElementById('quizBackBtn');
+            const nextBtn = document.getElementById('quizNextBtn');
+
+            if (!questionContainer) return;
+
+            const question = quizQuestions[currentQuizQuestion];
+            const progress = ((currentQuizQuestion + 1) / quizQuestions.length) * 100;
+            progressBar.style.width = progress + '%';
+
+            const optionsHTML = question.options.map((option, index) => `
+                <div class="quiz-option" onclick="selectQuizOption(${index}, '${option.value}')">
+                    <div class="quiz-option-title">${option.title}</div>
+                    <div class="quiz-option-desc">${option.desc}</div>
+                </div>
+            `).join('');
+
+            questionContainer.innerHTML = `
+                <h3>Question ${currentQuizQuestion + 1} of ${quizQuestions.length}</h3>
+                <h3>${question.question}</h3>
+                <div class="quiz-options">
+                    ${optionsHTML}
+                </div>
+            `;
+
+            // Show/hide navigation buttons
+            backBtn.style.display = currentQuizQuestion > 0 ? 'block' : 'none';
+            nextBtn.style.display = 'none'; // Will show after selection
+        }
+
+        function selectQuizOption(optionIndex, value) {
+            // Remove previous selections
+            document.querySelectorAll('.quiz-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+
+            // Mark this option as selected
+            document.querySelectorAll('.quiz-option')[optionIndex].classList.add('selected');
+
+            // Store answer
+            quizAnswers[currentQuizQuestion] = value;
+
+            // Show next button
+            document.getElementById('quizNextBtn').style.display = 'block';
+        }
+
+        function nextQuestion() {
+            if (currentQuizQuestion < quizQuestions.length - 1) {
+                currentQuizQuestion++;
+                showQuizQuestion();
+            } else {
+                // Quiz complete - show result
+                calculateQuizResult();
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuizQuestion > 0) {
+                currentQuizQuestion--;
+                showQuizQuestion();
+
+                // Restore previous selection
+                const previousAnswer = quizAnswers[currentQuizQuestion];
+                if (previousAnswer) {
+                    const question = quizQuestions[currentQuizQuestion];
+                    const optionIndex = question.options.findIndex(opt => opt.value === previousAnswer);
+                    if (optionIndex >= 0) {
+                        setTimeout(() => {
+                            document.querySelectorAll('.quiz-option')[optionIndex].classList.add('selected');
+                            document.getElementById('quizNextBtn').style.display = 'block';
+                        }, 100);
+                    }
+                }
+            }
+        }
+
+        function calculateQuizResult() {
+            if (typeof FESTIVALS_DATA === 'undefined' || !FESTIVALS_DATA.festivals) {
+                return;
+            }
+
+            // Simple matching logic based on answers
+            let matchedFestival = null;
+            let matchReasons = [];
+
+            const festivals = FESTIVALS_DATA.festivals;
+
+            // Match based on music preference
+            if (quizAnswers[0] === 'world') {
+                matchedFestival = festivals.find(f => f.id === 'womad');
+                matchReasons.push("WOMAD celebrates world music with female artists from 6 continents");
+            } else if (quizAnswers[0] === 'electronic' && quizAnswers[2] === 'support') {
+                matchedFestival = festivals.find(f => f.id === 'shambhala');
+                matchReasons.push("Shambhala features incredible bass music with 24/7 mental health support");
+            } else if (quizAnswers[0] === 'electronic' && quizAnswers[2] === 'community') {
+                matchedFestival = festivals.find(f => f.id === 'electric-forest');
+                matchReasons.push("Electric Forest's Her Forest program creates instant community for women");
+            } else if (quizAnswers[0] === 'alternative' && quizAnswers[2] === 'artists') {
+                matchedFestival = festivals.find(f => f.id === 'primavera-sound');
+                matchReasons.push("Primavera Sound pioneered 50/50 gender parity with incredible female headliners");
+            } else if (quizAnswers[2] === 'empowerment') {
+                matchedFestival = festivals.find(f => f.id === 'roskilde');
+                matchReasons.push("Roskilde offers powerful women-in-music panels and empowerment programming");
+            } else if (quizAnswers[1] === 'large') {
+                matchedFestival = festivals.find(f => f.id === 'roskilde');
+                matchReasons.push("Roskilde is one of Europe's largest festivals with epic experiences");
+            } else {
+                matchedFestival = festivals.find(f => f.id === 'glastonbury');
+                matchReasons.push("Glastonbury offers diverse music and is the legendary festival experience");
+            }
+
+            // Add additional match reasons based on other answers
+            if (matchedFestival.womensExperiences) {
+                const we = matchedFestival.womensExperiences;
+                if (we.soloTravelTips && we.soloTravelTips.length > 0) {
+                    matchReasons.push(we.soloTravelTips[0]);
+                }
+                if (we.empowermentPrograms && we.empowermentPrograms.length > 0) {
+                    matchReasons.push(we.empowermentPrograms[0]);
+                }
+                if (we.femaleArtistHighlights && we.femaleArtistHighlights.length > 0) {
+                    matchReasons.push(we.femaleArtistHighlights[0]);
+                }
+            }
+
+            showQuizResult(matchedFestival, matchReasons);
+        }
+
+        function showQuizResult(festival, reasons) {
+            document.getElementById('quizContainer').style.display = 'none';
+            const resultContainer = document.getElementById('quizResult');
+            resultContainer.style.display = 'block';
+
+            const reasonsList = reasons.slice(0, 4).map(r => `<li>${r}</li>`).join('');
+
+            resultContainer.innerHTML = `
+                <h3>🎉 Your Perfect Festival Match!</h3>
+
+                <div class="quiz-result-festival">
+                    <div class="quiz-result-match">95% Match!</div>
+                    <h4>${festival.name}</h4>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">${festival.description}</p>
+                    <p><strong>📍 Location:</strong> ${festival.location}</p>
+                    <p><strong>📅 Dates:</strong> ${festival.dates}</p>
+                    <p><strong>🎫 Ticket Price:</strong> ${festival.ticketPrice}</p>
+
+                    <div class="quiz-result-why">
+                        <h5>Why ${festival.name} is perfect for you:</h5>
+                        <ul>
+                            ${reasonsList}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="quiz-result-actions">
+                    <a href="festival.html#${festival.id}" class="quiz-result-btn quiz-result-btn-primary">
+                        Explore ${festival.name} →
+                    </a>
+                    <button class="quiz-result-btn quiz-result-btn-secondary" onclick="restartQuiz()">
+                        Retake Quiz
+                    </button>
+                </div>
+            `;
+
+            // Scroll to result
+            resultContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function restartQuiz() {
+            document.getElementById('quizContainer').style.display = 'block';
+            document.getElementById('quizResult').style.display = 'none';
+            initializeQuiz();
+            document.getElementById('quizContainer').scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
         // Smooth scrolling for navigation
@@ -526,14 +1428,19 @@
 
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize quiz immediately
+            initializeQuiz();
+
             // Wait for festivals-data.js to load
             if (typeof FESTIVALS_DATA !== 'undefined') {
                 loadFestivals();
+                loadTransformationStories();
             } else {
                 // Retry loading festivals after a short delay
                 setTimeout(() => {
                     if (typeof FESTIVALS_DATA !== 'undefined') {
                         loadFestivals();
+                        loadTransformationStories();
                     } else {
                         document.getElementById('loading').innerHTML = '<p>Please make sure festivals-data.js is loaded correctly.</p>';
                     }

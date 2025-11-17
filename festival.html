@@ -474,6 +474,156 @@
             margin: 2rem 0;
         }
 
+        /* Transformation Stories Styles */
+        .stories-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .story-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .story-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+            border-color: #ff6b9d;
+        }
+
+        .story-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-person {
+            flex: 1;
+        }
+
+        .story-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+
+        .story-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .story-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .story-rating {
+            display: flex;
+            gap: 0.2rem;
+            font-size: 1.3rem;
+        }
+
+        .story-rating .star {
+            color: #ffd700;
+        }
+
+        .story-transformation {
+            margin: 1.5rem 0;
+        }
+
+        .story-before,
+        .story-after {
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .story-before {
+            background: linear-gradient(135deg, #fee, #fdd);
+            border-left: 4px solid #dc3545;
+        }
+
+        .story-before::before {
+            content: "BEFORE";
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: #dc3545;
+            letter-spacing: 1px;
+        }
+
+        .story-after {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border-left: 4px solid #28a745;
+        }
+
+        .story-after::before {
+            content: "AFTER";
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: #28a745;
+            letter-spacing: 1px;
+        }
+
+        .story-before p,
+        .story-after p {
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            font-style: italic;
+        }
+
+        .story-highlight {
+            background: linear-gradient(135deg, #fff3cd, #ffeeba);
+            padding: 1.2rem;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-top: 1.5rem;
+        }
+
+        .story-highlight strong {
+            color: #856404;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .story-highlight p {
+            margin: 0;
+            color: #856404;
+            font-weight: 600;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
         /* Timeline Styles */
         .timeline-section {
             position: relative;
@@ -1035,6 +1185,69 @@
             }
         }
 
+        // Generate transformation stories section
+        function generateTransformationStoriesSection(festival) {
+            if (!festival.womensExperiences || !festival.womensExperiences.transformationStories) {
+                return '';
+            }
+
+            const stories = festival.womensExperiences.transformationStories;
+
+            const storiesHTML = stories.map((story, index) => {
+                const stars = '★'.repeat(story.rating);
+                return `
+                    <div class="story-card">
+                        <div class="story-header">
+                            <div class="story-person">
+                                <div class="story-name">${story.name}</div>
+                                <div class="story-meta">
+                                    <span class="story-tag">${story.type}</span>
+                                    <span class="story-tag">Age ${story.age}</span>
+                                </div>
+                            </div>
+                            <div class="story-rating">
+                                ${Array.from({length: story.rating}, () => '<span class="star">★</span>').join('')}
+                            </div>
+                        </div>
+
+                        <div class="story-transformation">
+                            <div class="story-before">
+                                <p>"${story.before}"</p>
+                            </div>
+                            <div class="story-after">
+                                <p>"${story.after}"</p>
+                            </div>
+                        </div>
+
+                        <div class="story-highlight">
+                            <strong>Key Transformation:</strong>
+                            <p>${story.highlight}</p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            return `
+                <div class="section" style="background: linear-gradient(135deg, #fff5f8, #ffe0ec); border: 3px solid #ff6b9d;">
+                    <h2>💕 Real Women's Transformation Stories</h2>
+                    <p class="section-intro" style="font-size: 1.2rem; font-weight: 600; color: #c2185b;">
+                        These are real transformations from real women who attended ${festival.name}. Their stories of growth, connection, empowerment, and breakthrough are exactly what's possible for you. Read their journeys from doubt to confidence, from isolated to connected, from scared to empowered.
+                    </p>
+
+                    <div class="stories-container">
+                        ${storiesHTML}
+                    </div>
+
+                    <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.9); border-radius: 15px;">
+                        <h3 style="color: #ff6b9d; margin-bottom: 1rem;">Your Story Could Be Next</h3>
+                        <p style="color: #666; line-height: 1.8; max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
+                            Every woman you just read about started exactly where you are now - curious, maybe nervous, wondering if this festival is for them. They took the leap. They showed up. And ${festival.name} transformed their lives. What will your story be?
+                        </p>
+                    </div>
+                </div>
+            `;
+        }
+
         // Generate women's experiences section
         function generateWomensExperiencesSection(festival) {
             if (!festival.womensExperiences) {
@@ -1165,6 +1378,7 @@
                 ${generateQuickFacts(festival)}
                 ${generateEmergencyInfo(festival)}
                 ${generateDayInTheLifeSection(festival)}
+                ${generateTransformationStoriesSection(festival)}
                 ${generateWomensExperiencesSection(festival)}
                 ${generateVenuesSection(festivalId)}
                 ${generateHotelsSection(festivalId)}
