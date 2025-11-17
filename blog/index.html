@@ -9,8 +9,17 @@
     <meta property="og:title" content="Festival Travel Blog | Expert Tips for Women">
     <meta property="og:description" content="Expert festival travel advice for women. Solo travel tips, group strategies, and essential packing guides for safe festival experiences.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.festivaltravel.org/blog.html">
-    <link rel="canonical" href="https://www.festivaltravel.org/blog.html">
+    <meta property="og:url" content="https://www.festivaltravel.org/blog/">
+    <meta property="og:image" content="https://www.festivaltravel.org/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Festival Travel Blog | Expert Tips for Women">
+    <meta name="twitter:description" content="Expert festival travel advice for women. Solo travel tips, group strategies, and essential packing guides for safe festival experiences.">
+    <meta name="twitter:image" content="https://www.festivaltravel.org/assets/images/og-image.jpg">
+    <meta name="theme-color" content="#667eea">
+    <link rel="canonical" href="https://www.festivaltravel.org/blog/">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -308,11 +317,59 @@
 
         /* Footer */
         .footer {
-            background: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section p {
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.85;
+            transition: opacity 0.3s;
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
             text-align: center;
-            padding: 2rem 0;
-            font-size: 0.9rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            opacity: 0.8;
         }
 
         /* Mobile Responsive */
@@ -397,7 +454,7 @@
         <div class="featured-post">
             <h3>🌟 New: Ultimate Safety Guide</h3>
             <p>Our comprehensive, research-backed safety guide is now live! Everything you need to stay safe while having the time of your life at festivals worldwide.</p>
-            <a href="safety.html" class="featured-btn">Read the Guide</a>
+            <a href="../safety-guide.html" class="featured-btn">Read the Guide</a>
         </div>
     </div>
 
@@ -479,7 +536,43 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 FestivalTravel.org. Your guide to safer festival experiences.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FestivalTravel.org</h3>
+                    <p>Empowering women to experience festivals safely and confidently worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#festivals">Festivals</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../safety-guide.html">Safety Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../blog/solo-travel.html">Solo Travel Tips</a></li>
+                        <li><a href="../blog/packing_guide.html">Packing Guide</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency Resources</h4>
+                    <ul>
+                        <li><a href="https://www.unwomen.org/" target="_blank" rel="noopener">UN Women</a></li>
+                        <li><a href="https://www.rainn.org/" target="_blank" rel="noopener">RAINN Hotline</a></li>
+                        <li><a href="https://www.who.int/health-topics/violence-against-women" target="_blank" rel="noopener">WHO Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FestivalTravel.org. Empowering safe festival experiences worldwide.</p>
+            </div>
+        </div>
     </footer>
 
     <script>
