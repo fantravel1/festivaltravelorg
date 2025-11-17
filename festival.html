@@ -807,6 +807,59 @@
             `;
         }
 
+        // Generate women's experiences section
+        function generateWomensExperiencesSection(festival) {
+            if (!festival.womensExperiences) {
+                return '';
+            }
+
+            const exp = festival.womensExperiences;
+
+            const highlightsHTML = exp.highlights ? exp.highlights.map(h => `<li>${h}</li>`).join('') : '';
+            const soloTipsHTML = exp.soloTravelTips ? exp.soloTravelTips.map(t => `<li>${t}</li>`).join('') : '';
+            const empowermentHTML = exp.empowermentPrograms ? exp.empowermentPrograms.map(p => `<li>${p}</li>`).join('') : '';
+            const artistsHTML = exp.femaleArtistHighlights ? exp.femaleArtistHighlights.map(a => `<li>${a}</li>`).join('') : '';
+
+            return `
+                <div class="section" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0); border: 3px solid #e91e63;">
+                    <h2>👑 Amazing Women's Experiences & Empowerment</h2>
+                    <p class="section-intro" style="font-size: 1.2rem; font-weight: 600; color: #880e4f;">
+                        Discover the most incredible ways to experience ${festival.name} as a woman - from empowerment programs to solo travel tips, female artist celebrations, and community connections that will transform your festival experience!
+                    </p>
+                    <div class="grid">
+                        <div class="card" style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); border: 2px solid #ff6f00;">
+                            <h3>✨ Women's Experience Highlights</h3>
+                            <p style="margin-bottom: 1rem; color: #e65100; font-weight: 500;">The best of what makes this festival amazing for women</p>
+                            <ul class="features-list">
+                                ${highlightsHTML}
+                            </ul>
+                        </div>
+                        <div class="card" style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); border: 2px solid #0277bd;">
+                            <h3>🌟 Solo Female Traveler Tips</h3>
+                            <p style="margin-bottom: 1rem; color: #01579b; font-weight: 500;">Insider tips for solo travelers to thrive and connect</p>
+                            <ul class="features-list">
+                                ${soloTipsHTML}
+                            </ul>
+                        </div>
+                        <div class="card" style="background: linear-gradient(135deg, #f3e5f5, #e1bee7); border: 2px solid #7b1fa2;">
+                            <h3>💪 Empowerment Programs</h3>
+                            <p style="margin-bottom: 1rem; color: #4a148c; font-weight: 500;">Workshops, networks, and programs elevating women</p>
+                            <ul class="features-list">
+                                ${empowermentHTML}
+                            </ul>
+                        </div>
+                        <div class="card" style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border: 2px solid #2e7d32;">
+                            <h3>🎤 Female Artist Highlights</h3>
+                            <p style="margin-bottom: 1rem; color: #1b5e20; font-weight: 500;">Celebrating women creating the magic on stage</p>
+                            <ul class="features-list">
+                                ${artistsHTML}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
         // Generate safety features section
         function generateSafetySection(festival) {
             const safetyHTML = festival.safetyFeatures.map(feature => `<li>${feature}</li>`).join('');
@@ -883,6 +936,7 @@
             mainContent.innerHTML = `
                 ${generateQuickFacts(festival)}
                 ${generateEmergencyInfo(festival)}
+                ${generateWomensExperiencesSection(festival)}
                 ${generateVenuesSection(festivalId)}
                 ${generateHotelsSection(festivalId)}
                 ${generateSafetySection(festival)}

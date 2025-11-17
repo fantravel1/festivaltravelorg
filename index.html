@@ -227,6 +227,50 @@
             color: white;
         }
 
+        .empowerment-section {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.2);
+        }
+
+        .empowerment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .empowerment-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .empowerment-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .empowerment-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .empowerment-card h3 {
+            color: #c2185b;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .empowerment-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
         .section-title {
             text-align: center;
             font-size: 2.5rem;
@@ -320,15 +364,62 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Celebrate Safely Worldwide</h1>
-                <p>Discover the most female-friendly festivals with trusted venues, safe accommodations, and inclusive experiences</p>
-                <a href="#festivals" class="cta-button">Explore Festivals</a>
+                <h1>Experience Festivals Your Way - Empowered & Safe</h1>
+                <p>Discover the world's most amazing female-friendly festivals featuring empowerment programs, incredible women artists, solo traveler communities, and experiences designed to celebrate and elevate women. Your adventure, your rules, your power.</p>
+                <a href="#festivals" class="cta-button">Explore Empowering Festivals</a>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="empowerment-section">
+                <h2 style="text-align: center; color: #880e4f; font-size: 2.5rem; margin-bottom: 1rem;">Why These Festivals Empower Women</h2>
+                <p style="text-align: center; font-size: 1.2rem; color: #c2185b; max-width: 800px; margin: 0 auto 2rem; line-height: 1.7;">
+                    Every festival we feature goes beyond just being "safe" - they actively celebrate, uplift, and empower women through incredible programs, communities, and experiences.
+                </p>
+
+                <div class="empowerment-grid">
+                    <div class="empowerment-card">
+                        <div class="empowerment-icon">👑</div>
+                        <h3>Empowerment Programs</h3>
+                        <p>From women-in-music workshops to leadership circles, feminist activism, and networking events - these festivals create spaces where women grow stronger together.</p>
+                    </div>
+
+                    <div class="empowerment-card">
+                        <div class="empowerment-icon">🎤</div>
+                        <h3>Celebrating Female Artists</h3>
+                        <p>50/50 gender lineups, groundbreaking female headliners, and platforms for emerging women talent. Watch history being made on stages worldwide.</p>
+                    </div>
+
+                    <div class="empowerment-card">
+                        <div class="empowerment-icon">🌟</div>
+                        <h3>Solo Traveler Communities</h3>
+                        <p>Join Her Forest, women's meetup groups, morning yoga circles, and instant festival families. Solo becomes social, empowered, and unforgettable.</p>
+                    </div>
+
+                    <div class="empowerment-card">
+                        <div class="empowerment-icon">💪</div>
+                        <h3>Safe Spaces & Support</h3>
+                        <p>Women-only areas, female welfare officers, consent culture training, and 24/7 support systems ensuring you can thrive without fear.</p>
+                    </div>
+
+                    <div class="empowerment-card">
+                        <div class="empowerment-icon">✨</div>
+                        <h3>Transformative Experiences</h3>
+                        <p>Goddess workshops, body positivity celebrations, healing spaces, and connections that change lives. Come for the music, leave transformed.</p>
+                    </div>
+
+                    <div class="empowerment-card">
+                        <div class="empowerment-icon">🌍</div>
+                        <h3>Global Sisterhood</h3>
+                        <p>Connect with women from every continent, share stories, build networks, and create friendships that span the globe. You're never alone.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="festivals" class="container">
-            <h2 class="section-title">Top Female-Friendly Festivals</h2>
-            <p class="section-subtitle">Carefully curated events prioritizing safety, inclusivity, and unforgettable experiences</p>
+            <h2 class="section-title">Top Female-Empowering Festivals Worldwide</h2>
+            <p class="section-subtitle">Carefully curated events celebrating women through empowerment programs, female artists, solo traveler communities, and life-changing experiences. Each festival features unique ways for women to thrive, connect, and be celebrated.</p>
             
             <div id="loading" class="loading">
                 <p>Loading amazing festivals...</p>
@@ -342,7 +433,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 FestivalTravel.org. Empowering women to explore the world safely.</p>
+            <p>&copy; 2025 FestivalTravel.org. Empowering women to experience the world's most amazing festivals with confidence, community, and celebration.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Your adventure, your rules, your power. Festival experiences designed to elevate and celebrate women.</p>
         </div>
     </footer>
 

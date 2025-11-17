@@ -17,6 +17,33 @@ const FESTIVALS_DATA = {
             ticketPrice: '£190-280',
             capacity: 35000,
             founded: 1982,
+            womensExperiences: {
+                highlights: [
+                    'Strong female artist representation across all stages with 50% female-led performances',
+                    'Women in World Music workshops celebrating female musicians from diverse cultures',
+                    'Female-led drumming circles and percussion workshops',
+                    'Safe, well-lit family camping areas perfect for mothers traveling with children',
+                    'Dedicated women\'s wellness and mindfulness spaces'
+                ],
+                soloTravelTips: [
+                    'Join the WOMAD Women\'s Meetup group - organized gatherings throughout the festival',
+                    'Participate in morning yoga sessions - great way to meet other solo travelers',
+                    'The Taste the World area is perfect for solo dining with communal tables',
+                    'Volunteer program offers instant community for solo attendees'
+                ],
+                empowermentPrograms: [
+                    'Women in Music panel discussions featuring international female artists',
+                    'Female entrepreneurship workshops in the World of Words tent',
+                    'Girls\' drumming initiative - empowering young women through music',
+                    'Women\'s global solidarity conversations and cultural exchanges'
+                ],
+                femaleArtistHighlights: [
+                    'Celebrating female artists from 6 continents showcasing diverse musical traditions',
+                    'Female-led world music ensembles and orchestras',
+                    'Rising female stars platform - launching pad for emerging talent',
+                    'Matriarchal music traditions honored and celebrated'
+                ]
+            },
             safetyFeatures: [
                 'Well-lit pathways throughout site',
                 'Dedicated female welfare officers',
@@ -56,6 +83,36 @@ const FESTIVALS_DATA = {
             ticketPrice: '€220-380',
             capacity: 65000,
             founded: 2001,
+            womensExperiences: {
+                highlights: [
+                    'Industry-leading 50/50 gender equality commitment in artist lineups since 2019',
+                    'Women\'s music industry networking events and mentorship programs',
+                    'Female DJ workshops and electronic music production masterclasses',
+                    'Safe dance spaces with visible "Nobody is Normal" support staff',
+                    'Barcelona\'s vibrant feminist cultural scene extends to the festival grounds'
+                ],
+                soloTravelTips: [
+                    'Stay in El Born or Gràcia neighborhoods - safe, female-friendly with great nightlife',
+                    'Join Primavera Women\'s Social Media groups for pre-festival meetups',
+                    'Take advantage of the excellent Barcelona metro system - safe until late',
+                    'Beach yoga sessions in the morning are perfect for meeting other solo travelers',
+                    'Festival\'s diverse international crowd makes solo attendance completely normal'
+                ],
+                empowermentPrograms: [
+                    'Primavera Pro conferences featuring women music industry leaders',
+                    'Feminist activist collaborations and awareness campaigns',
+                    'Women in Electronic Music panel discussions and networking',
+                    'Gender equality workshops and bystander intervention training',
+                    'Support for female-led local community organizations'
+                ],
+                femaleArtistHighlights: [
+                    '50% female headliners and performers across all stages',
+                    'Showcasing groundbreaking female electronic music producers',
+                    'Platform for emerging female artists from Spain and internationally',
+                    'Celebrating feminist punk, riot grrrl, and women-led alternative movements',
+                    'Female sound engineers and production crews prominently featured'
+                ]
+            },
             safetyFeatures: [
                 '"Nobody is Normal" anti-harassment protocol',
                 'Information stands with trained diverse staff',
@@ -95,6 +152,39 @@ const FESTIVALS_DATA = {
             ticketPrice: '€210-320',
             capacity: 130000,
             founded: 1971,
+            womensExperiences: {
+                highlights: [
+                    'Nordic gender equality excellence reflected throughout festival culture',
+                    'Pioneering consent culture campaigns making respectful behavior the norm',
+                    'Soft Spots counseling areas offering professional mental health support',
+                    'Exceptionally high female attendance (near 50/50 gender balance)',
+                    'Safe, progressive Scandinavian culture promotes women\'s freedom and safety',
+                    'Women-led activist organizations and social impact initiatives'
+                ],
+                soloTravelTips: [
+                    'Denmark\'s exceptional safety makes solo travel comfortable and empowering',
+                    'Join the Roskilde women\'s Facebook groups for pre-festival meetups',
+                    'Copenhagen is incredibly solo-female-traveler friendly - explore before/after',
+                    'Camping areas have strong community vibe perfect for meeting people',
+                    'Scandinavian culture of trust and respect creates relaxed atmosphere',
+                    'Public transport is safe, efficient, and runs late - easy independent navigation'
+                ],
+                empowermentPrograms: [
+                    'Consent culture workshops and peer education programs',
+                    'Women in Music industry panels and networking events',
+                    'Activist organizations focusing on women\'s rights and gender equality',
+                    'Volunteer programs building community and leadership skills',
+                    'Bystander intervention training - empowering everyone to create safety',
+                    'Mental health awareness and support services breaking stigma'
+                ],
+                femaleArtistHighlights: [
+                    'Strong commitment to diverse lineups including prominent female headliners',
+                    'Celebrating Nordic female artists and international women performers',
+                    'Platform for emerging female talent across all genres',
+                    'Women festival organizers and production crew visible and celebrated',
+                    'Gender-balanced programming across Rising, Arena, and Orange stages'
+                ]
+            },
             safetyFeatures: [
                 'Pioneering consent campaigns and education',
                 'Crowd safety hosts for navigation assistance',
@@ -136,6 +226,38 @@ const FESTIVALS_DATA = {
             ticketPrice: 'CAD $420-580',
             capacity: 15000,
             founded: 1998,
+            womensExperiences: {
+                highlights: [
+                    'Dedicated Safe Space for women, BIPOC, and LGBTQIA2S+ community members',
+                    'Women-led harm reduction and peer support teams',
+                    'Female DJs and producers prominently featured across all 6 stages',
+                    'Judgment-free zone promoting authentic self-expression and body positivity',
+                    'The Sanctuary offers 24-hour professional support with trauma-informed care',
+                    'River swimming and natural beauty create healing, feminine-energy spaces'
+                ],
+                soloTravelTips: [
+                    'The Safe Space is perfect for solo travelers to connect and find community',
+                    'Join sunrise yoga by the river - magical way to start your day and meet people',
+                    'Shambha-family culture means solo travelers are welcomed and adopted immediately',
+                    'The Sanctuary offers 24/7 support if you ever feel overwhelmed',
+                    'Camp near the Safe Space for a more intentional, connected experience'
+                ],
+                empowermentPrograms: [
+                    'Consent culture workshops and education throughout the festival',
+                    'Women in bass music production workshops and DJ skills sessions',
+                    'Mental health first aid and peer support training',
+                    'Body positivity and self-love programming',
+                    'LGBTQIA2S+ allyship and inclusion workshops',
+                    'Trauma-informed care training for volunteers'
+                ],
+                femaleArtistHighlights: [
+                    'Celebrating women in electronic music - from DJs to producers to visual artists',
+                    'Female-led bass music taking center stage',
+                    'Women sound designers and technical crew prominently featured',
+                    'Platform for emerging female talent in underground electronic music',
+                    'Honoring women who create safe, transformative festival experiences'
+                ]
+            },
             safetyFeatures: [
                 'ShambhaCares comprehensive harm-reduction program',
                 '24-hour Sanctuary with professional counseling',
@@ -175,6 +297,37 @@ const FESTIVALS_DATA = {
             ticketPrice: '$380-650',
             capacity: 50000,
             founded: 2011,
+            womensExperiences: {
+                highlights: [
+                    'Her Forest - dedicated community program for femme-identifying attendees with its own camp area',
+                    'Daily morning Humanity Circles for connection, sharing, and empowerment',
+                    'Women-led art installations and interactive forest experiences',
+                    'Female-focused wellness activities including yoga, meditation, and breathwork',
+                    'Magical forest setting creates safe, nurturing atmosphere for self-expression'
+                ],
+                soloTravelTips: [
+                    'Her Forest Group Camp is THE place for solo female travelers - instant community and lifelong friendships',
+                    'Attend Her Forest welcome brunch on Day 1 to meet your festival family',
+                    'Join morning yoga and wellness sessions to connect with like-minded women',
+                    'Participate in the gift economy and art exchanges - beautiful way to bond',
+                    'The forest at night feels magical and safe with consistent lighting and friendly vibes'
+                ],
+                empowermentPrograms: [
+                    'Her Forest Leadership Program - workshops on empowerment, consent, and community building',
+                    'Women in Electronic Music production workshops and DJ lessons',
+                    'Body positivity and self-love workshops in the forest',
+                    'Female entrepreneurship and creative business panels',
+                    'Mentorship circles connecting veteran festivalgoers with first-timers',
+                    'Community meal sharing and intentional connection exercises'
+                ],
+                femaleArtistHighlights: [
+                    'Strong representation of female DJs and electronic music producers',
+                    'Women-led art installations throughout the enchanted forest',
+                    'Female fire performers and flow artists celebrated',
+                    'Platform for emerging female talent in bass music and house',
+                    'Celebrating women who create the visual and sonic magic of the forest'
+                ]
+            },
             safetyFeatures: [
                 'Her Forest initiative for femme empowerment',
                 'Humanity Circles for connection and support',
@@ -328,6 +481,39 @@ const FESTIVALS_DATA = {
             ticketPrice: '£335-380',
             capacity: 210000,
             founded: 1970,
+            womensExperiences: {
+                highlights: [
+                    'Iconic women-only areas including the Sisterhood sanctuary space',
+                    'Green Fields with goddess workshops, women\'s healing spaces, and feminist activism',
+                    'Legendary female headliners making history on the Pyramid Stage',
+                    'Women\'s rights activism and feminist organizations throughout the site',
+                    'Shangri-La\'s women-led performance art and cabaret shows',
+                    'Mother and baby facilities making it accessible for traveling mums'
+                ],
+                soloTravelTips: [
+                    'The Green Fields are perfect for solo travelers seeking community and connection',
+                    'Join women\'s circles and goddess workshops to meet like-minded festivalgoers',
+                    'Volunteering programs create instant community and lifelong friendships',
+                    'The Acoustic stage offers intimate performances perfect for solo enjoyment',
+                    'Camp near The Park or Green Fields for a quieter, more connected experience'
+                ],
+                empowermentPrograms: [
+                    'Women\'s rights and feminist activism talks in the Leftfield tent',
+                    'Goddess worship and divine feminine workshops in Sacred Space',
+                    'Women in Music panels celebrating female artists and industry pioneers',
+                    'WOW - Women of the World festival programming',
+                    'Environmental activism led by powerful women leaders',
+                    'Body positivity and self-expression celebrations throughout'
+                ],
+                femaleArtistHighlights: [
+                    'History-making female headliners on the Pyramid Stage',
+                    'Celebrating 50+ years of groundbreaking women performers',
+                    'Female-led bands across rock, folk, electronic, and world music',
+                    'Platform for emerging UK female talent on smaller stages',
+                    'Women sound engineers, stage managers, and festival organizers honored',
+                    'Legendary performances by icons like Dolly Parton, Beyoncé, and Adele'
+                ]
+            },
             safetyFeatures: [
                 'Extensive welfare services with decades of experience',
                 'Women-only areas and safe spaces available',
