@@ -19,8 +19,60 @@
     <meta name="twitter:image" content="https://www.festivaltravel.org/assets/images/og-image.jpg">
     <meta name="theme-color" content="#667eea">
     <link rel="canonical" href="https://www.festivaltravel.org/about.html">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-    
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FestivalTravel.org">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- AboutPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About FestivalTravel.org",
+      "description": "Learn about FestivalTravel.org - a curated guide to festivals that prioritize safety, inclusivity, and positive experiences for women travelers.",
+      "url": "https://www.festivaltravel.org/about.html",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "FestivalTravel.org",
+        "description": "The leading platform for female-friendly festival travel guides, safety resources, and empowerment experiences worldwide.",
+        "url": "https://www.festivaltravel.org",
+        "foundingDate": "2024",
+        "knowsAbout": [
+          "Music Festivals",
+          "Female Safety at Events",
+          "Solo Female Travel",
+          "Festival Planning",
+          "Women's Empowerment Programs"
+        ],
+        "slogan": "Experience Festivals Your Way — Safe, Empowered, Unforgettable"
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.festivaltravel.org"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://www.festivaltravel.org/about.html"
+      }]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     
@@ -85,16 +137,28 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%236366f1" width="1920" height="1080"/><circle fill="%23a855f7" cx="400" cy="200" r="100" opacity="0.3"/><circle fill="%23ec4899" cx="1200" cy="400" r="150" opacity="0.2"/><circle fill="%236366f1" cx="800" cy="600" r="120" opacity="0.25"/><circle fill="%23f59e0b" cx="1600" cy="800" r="80" opacity="0.3"/></svg>');
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             min-height: 60vh;
             display: flex;
             align-items: center;
             color: white;
             position: relative;
             margin-top: 80px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/illustrations/hero-about.svg') center center no-repeat;
+            background-size: cover;
+            opacity: 0.2;
         }
 
         .hero-overlay {
@@ -188,9 +252,26 @@
         .simple-card {
             background: white;
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+
+        .simple-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .simple-card-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .simple-card-icon svg {
+            width: 100%;
+            height: 100%;
         }
 
         .simple-card h3 {
@@ -412,15 +493,35 @@
         <div class="container">
             <div class="simple-grid">
                 <div class="simple-card">
-                    <h3>🛡️ Safety First</h3>
+                    <div class="simple-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#4caf50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Safety First</h3>
                     <p>While we research festivals carefully, your safety is ultimately your responsibility. Always trust your instincts, stay aware of your surroundings, and don't hesitate to seek help if you need it.</p>
                 </div>
                 <div class="simple-card">
-                    <h3>📍 Local Research</h3>
+                    <div class="simple-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2196f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Local Research</h3>
                     <p>We encourage you to do additional research about specific locations, check current travel advisories, and familiarize yourself with local emergency services before traveling.</p>
                 </div>
                 <div class="simple-card">
-                    <h3>🤝 Community</h3>
+                    <div class="simple-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#e91e63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Community</h3>
                     <p>Consider connecting with other festival-goers through official forums or social media groups. Having a network can enhance both safety and enjoyment of your experience.</p>
                 </div>
             </div>

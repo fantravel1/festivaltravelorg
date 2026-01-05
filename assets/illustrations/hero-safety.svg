@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="safetyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e9"/>
+      <stop offset="100%" style="stop-color:#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4caf50"/>
+      <stop offset="100%" style="stop-color:#2e7d32"/>
+    </linearGradient>
+    <linearGradient id="innerShield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#81c784"/>
+      <stop offset="100%" style="stop-color:#4caf50"/>
+    </linearGradient>
+    <filter id="shadowSafety">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#safetyBg)"/>
+
+  <!-- Decorative Circles -->
+  <circle cx="100" cy="100" r="60" fill="#a5d6a7" opacity="0.3"/>
+  <circle cx="700" cy="150" r="80" fill="#81c784" opacity="0.2"/>
+  <circle cx="650" cy="500" r="100" fill="#a5d6a7" opacity="0.25"/>
+  <circle cx="150" cy="450" r="70" fill="#81c784" opacity="0.2"/>
+
+  <!-- Main Shield -->
+  <g transform="translate(300, 100)" filter="url(#shadowSafety)">
+    <path d="M100 0 L200 40 L200 120 C200 180 150 230 100 260 C50 230 0 180 0 120 L0 40 Z"
+          fill="url(#shieldGrad)"/>
+    <path d="M100 20 L180 52 L180 115 C180 165 140 205 100 230 C60 205 20 165 20 115 L20 52 Z"
+          fill="url(#innerShield)"/>
+
+    <!-- Checkmark -->
+    <path d="M60 130 L90 160 L150 100"
+          stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Supporting Icons -->
+  <!-- Heart Icon -->
+  <g transform="translate(120, 200)">
+    <circle cx="40" cy="40" r="40" fill="#fff" filter="url(#shadowSafety)"/>
+    <path d="M40 60 C20 45 15 30 25 22 C35 14 40 25 40 25 C40 25 45 14 55 22 C65 30 60 45 40 60Z"
+          fill="#e91e63" transform="translate(0, 5)"/>
+  </g>
+
+  <!-- Location Pin -->
+  <g transform="translate(580, 180)">
+    <circle cx="40" cy="40" r="40" fill="#fff" filter="url(#shadowSafety)"/>
+    <path d="M40 15 C28 15 18 25 18 37 C18 52 40 70 40 70 C40 70 62 52 62 37 C62 25 52 15 40 15Z"
+          fill="#2196f3"/>
+    <circle cx="40" cy="36" r="8" fill="#fff"/>
+  </g>
+
+  <!-- Users/Community -->
+  <g transform="translate(100, 350)">
+    <circle cx="50" cy="50" r="50" fill="#fff" filter="url(#shadowSafety)"/>
+    <circle cx="35" cy="40" r="10" fill="#7c4dff"/>
+    <circle cx="65" cy="40" r="10" fill="#7c4dff"/>
+    <path d="M20 75 C20 60 28 52 35 52 C42 52 48 60 50 65 C52 60 58 52 65 52 C72 52 80 60 80 75"
+          fill="#7c4dff"/>
+  </g>
+
+  <!-- Phone/Contact -->
+  <g transform="translate(600, 380)">
+    <circle cx="45" cy="45" r="45" fill="#fff" filter="url(#shadowSafety)"/>
+    <rect x="25" y="20" width="40" height="55" rx="5" fill="#ff9800"/>
+    <rect x="30" y="27" width="30" height="35" fill="#fff"/>
+    <circle cx="45" cy="67" r="4" fill="#fff"/>
+  </g>
+
+  <!-- First Aid Cross -->
+  <g transform="translate(350, 400)">
+    <circle cx="50" cy="50" r="50" fill="#fff" filter="url(#shadowSafety)"/>
+    <rect x="42" y="25" width="16" height="50" rx="2" fill="#f44336"/>
+    <rect x="25" y="42" width="50" height="16" rx="2" fill="#f44336"/>
+  </g>
+
+  <!-- Decorative Lines/Connections -->
+  <g stroke="#4caf50" stroke-width="2" stroke-dasharray="5,5" opacity="0.4">
+    <line x1="200" y1="240" x2="280" y2="200"/>
+    <line x1="500" y1="200" x2="560" y2="220"/>
+    <line x1="200" y1="400" x2="320" y2="420"/>
+    <line x1="460" y1="430" x2="550" y2="420"/>
+    <line x1="380" y1="360" x2="380" y2="390"/>
+  </g>
+
+  <!-- Small floating elements -->
+  <g fill="#4caf50" opacity="0.3">
+    <circle cx="250" cy="500" r="8"/>
+    <circle cx="550" cy="100" r="6"/>
+    <circle cx="450" cy="550" r="10"/>
+    <circle cx="700" cy="300" r="7"/>
+    <circle cx="50" cy="300" r="9"/>
+  </g>
+</svg>

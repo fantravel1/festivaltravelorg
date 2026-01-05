@@ -19,7 +19,8 @@
     <meta name="twitter:image" content="https://www.festivaltravel.org/assets/images/og-image.jpg">
     <meta name="theme-color" content="#667eea">
     <link rel="canonical" href="https://www.festivaltravel.org/blog/">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/apple-touch-icon.svg">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -85,7 +86,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%23e74c3c" width="1920" height="1080"/><circle fill="%23c0392b" cx="400" cy="200" r="100" opacity="0.3"/><circle fill="%23e67e22" cx="1200" cy="400" r="150" opacity="0.2"/><circle fill="%23e74c3c" cx="800" cy="600" r="120" opacity="0.25"/><circle fill="%23f39c12" cx="1600" cy="800" r="80" opacity="0.3"/></svg>');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1920&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -191,6 +192,19 @@
             color: white;
             font-size: 3rem;
             font-weight: bold;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .blog-card:hover .blog-image img {
+            transform: scale(1.08);
         }
 
         .blog-content {
@@ -466,11 +480,13 @@
             
             <div class="blog-grid">
                 <article class="blog-card">
-                    <div class="blog-image">👥</div>
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&q=80" alt="Group of friends at festival" loading="lazy">
+                    </div>
                     <div class="blog-content">
                         <div class="blog-meta">January 24, 2025 • 8 min read</div>
                         <h3 class="blog-title">
-                            <a href="blog/group-travel-guide.html">The Ultimate Guide to Festival Group Travel: How to Keep Everyone Safe and Happy</a>
+                            <a href="group-travel.html">The Ultimate Guide to Festival Group Travel: How to Keep Everyone Safe and Happy</a>
                         </h3>
                         <p class="blog-excerpt">
                             Traveling to festivals with friends can be incredible, but it requires smart planning and clear communication. Learn the strategies that keep groups together, safe, and having amazing experiences.
@@ -480,16 +496,18 @@
                             <span class="tag">Safety Tips</span>
                             <span class="tag">Planning</span>
                         </div>
-                        <a href="blog/group-travel-guide.html" class="read-more">Read Full Article</a>
+                        <a href="group-travel.html" class="read-more">Read Full Article</a>
                     </div>
                 </article>
 
                 <article class="blog-card">
-                    <div class="blog-image">🚶‍♀️</div>
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800&q=80" alt="Solo traveler at music festival" loading="lazy">
+                    </div>
                     <div class="blog-content">
                         <div class="blog-meta">January 24, 2025 • 7 min read</div>
                         <h3 class="blog-title">
-                            <a href="blog/solo-travel-guide.html">Solo Festival Travel: The Complete Guide to Going Alone and Loving Every Minute</a>
+                            <a href="solo-travel.html">Solo Festival Travel: The Complete Guide to Going Alone and Loving Every Minute</a>
                         </h3>
                         <p class="blog-excerpt">
                             Solo festival travel can be liberating and transformative. Discover how to plan, stay safe, meet amazing people, and have the adventure of a lifetime on your own terms.
@@ -499,16 +517,18 @@
                             <span class="tag">Independence</span>
                             <span class="tag">Confidence</span>
                         </div>
-                        <a href="blog/solo-travel-guide.html" class="read-more">Read Full Article</a>
+                        <a href="solo-travel.html" class="read-more">Read Full Article</a>
                     </div>
                 </article>
 
                 <article class="blog-card">
-                    <div class="blog-image">🎒</div>
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80" alt="Festival essentials and packing" loading="lazy">
+                    </div>
                     <div class="blog-content">
                         <div class="blog-meta">January 24, 2025 • 6 min read</div>
                         <h3 class="blog-title">
-                            <a href="blog/packing-guide.html">10 Essential Items Every Strong, Independent Woman Needs at Any Concert Venue</a>
+                            <a href="packing_guide.html">10 Essential Items Every Strong, Independent Woman Needs at Any Concert Venue</a>
                         </h3>
                         <p class="blog-excerpt">
                             From safety essentials to comfort items, these 10 carefully chosen items will help you feel confident, prepared, and ready for anything at any music venue or festival.
@@ -518,7 +538,28 @@
                             <span class="tag">Essentials</span>
                             <span class="tag">Preparation</span>
                         </div>
-                        <a href="blog/packing-guide.html" class="read-more">Read Full Article</a>
+                        <a href="packing_guide.html" class="read-more">Read Full Article</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80" alt="Festival consent and safety culture" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">January 24, 2025 • 10 min read</div>
+                        <h3 class="blog-title">
+                            <a href="consent_culture.html">Festival Consent Culture: Why It Matters and How to Support It</a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Understanding consent culture at music festivals is essential for creating safer, more inclusive spaces. Learn how festivals are leading the way and how you can contribute.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Consent Culture</span>
+                            <span class="tag">Safety</span>
+                            <span class="tag">Inclusion</span>
+                        </div>
+                        <a href="consent_culture.html" class="read-more">Read Full Article</a>
                     </div>
                 </article>
             </div>

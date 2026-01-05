@@ -19,7 +19,8 @@
     <meta name="theme-color" content="#667eea">
 
     <link rel="canonical" id="canonical-url" href="https://www.festivaltravel.org/festival">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
@@ -1067,11 +1068,21 @@
             return hash || queryParam || 'womad'; // Default fallback
         }
 
-        // Generate hero section
+        // Generate hero section with dynamic background image
         function generateHeroSection(festival) {
             const heroInfo = document.getElementById('hero-info');
+            const heroSection = document.querySelector('.hero');
             const stars = '★'.repeat(festival.safetyRating) + '☆'.repeat(5 - festival.safetyRating);
-            
+
+            // Set dynamic background image from festival-images.js
+            if (typeof getFestivalImage === 'function') {
+                const heroImageUrl = getFestivalImage(festival.id, 'hero');
+                heroSection.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('${heroImageUrl}')`;
+                heroSection.style.backgroundSize = 'cover';
+                heroSection.style.backgroundPosition = 'center';
+                heroSection.style.backgroundAttachment = 'fixed';
+            }
+
             heroInfo.innerHTML = `
                 <div class="hero-card">
                     <h3>🎵 ${festival.tags[0]}</h3>
@@ -1748,7 +1759,8 @@
         };
     </script>
 
-    <!-- Load festival data -->
+    <!-- Load festival data and images -->
     <script src="assets/js/festivals-data.js"></script>
+    <script src="assets/js/festival-images.js"></script>
 </body>
 </html>

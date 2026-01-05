@@ -19,9 +19,68 @@
     <meta name="twitter:image" content="https://www.festivaltravel.org/assets/images/og-image.jpg">
     <meta name="theme-color" content="#667eea">
     <link rel="canonical" href="https://www.festivaltravel.org">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FestivalTravel.org">
 
-    <!-- FAQ Schema -->
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FestivalTravel.org",
+      "alternateName": "Festival Travel",
+      "url": "https://www.festivaltravel.org",
+      "logo": "https://www.festivaltravel.org/assets/favicon.svg",
+      "description": "The leading platform for female-friendly festival travel guides, safety resources, and empowerment experiences worldwide.",
+      "foundingDate": "2024",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://www.festivaltravel.org/contact.html",
+        "availableLanguage": "English"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "knowsAbout": [
+        "Music Festivals",
+        "Female Safety at Events",
+        "Solo Female Travel",
+        "Festival Planning",
+        "Women's Empowerment Programs"
+      ]
+    }
+    </script>
+
+    <!-- WebSite Schema with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FestivalTravel.org",
+      "url": "https://www.festivaltravel.org",
+      "description": "Discover female-friendly festivals worldwide with safety ratings, empowerment programs, and solo traveler communities.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "FestivalTravel.org"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.festivaltravel.org/#festivals?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- FAQ Schema - Expanded -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -61,12 +120,80 @@
           "@type": "Answer",
           "text": "Transformation stories are real testimonials from women who attended these festivals and experienced personal growth - from doubt to confidence, isolated to connected, scared to empowered. These stories showcase the life-changing impact of attending female-empowering festivals with strong communities and support systems."
         }
+      }, {
+        "@type": "Question",
+        "name": "How much do festival tickets typically cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Festival ticket prices vary widely based on location and experience level. Budget-friendly options like Tramlines and Montreal Jazz Festival start around $100-200. Mid-range festivals like Electric Forest and Primavera Sound range $300-450. Premium experiences like Glastonbury and Coachella can cost $450-600+. Many festivals offer payment plans and early bird discounts."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What safety features should I look for at a music festival?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key safety features include: 24/7 medical and welfare teams, designated safe spaces for women, trained anti-harassment teams (like Guardian Angels), well-lit pathways and camping areas, consent culture training for staff, anonymous reporting systems, female-only camping options, and partnerships with organizations like UN Women or RAINN."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What should I pack for a music festival?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Essential festival items include: portable phone charger (10,000mAh+), collapsible water bottle, anti-theft crossbody bag, high-quality earplugs, backup ID and emergency cash, personal safety alarm, hand sanitizer, basic first aid kit, rain jacket, and offline maps with emergency contacts. See our complete packing guide for detailed recommendations."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Are these festivals accessible for people with disabilities?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! All featured festivals offer accessibility features including wheelchair-accessible viewing platforms, accessible camping areas, accessible toilets, sign language interpreters, audio description services, quiet spaces for sensory needs, and dedicated accessibility teams. Contact festivals directly for specific accommodation requests."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do I meet other women at festivals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Join official women's programs like Her Forest (Electric Forest), women's circles at Shambhala, or Roskilde's networking events. Look for morning yoga sessions, women-in-music workshops, or solo traveler meetups. Many festivals have dedicated Facebook groups and apps for connecting before the event. Don't hesitate to introduce yourself at camp - festival communities are incredibly welcoming!"
+        }
       }]
     }
     </script>
 
+    <!-- ItemList Schema for Featured Festivals -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Top Female-Friendly Festivals Worldwide",
+      "description": "Curated list of the world's best festivals for women, featuring safety ratings, empowerment programs, and solo traveler communities.",
+      "numberOfItems": 15,
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "WOMAD Festival", "url": "https://www.festivaltravel.org/festival.html#womad"},
+        {"@type": "ListItem", "position": 2, "name": "Primavera Sound", "url": "https://www.festivaltravel.org/festival.html#primavera-sound"},
+        {"@type": "ListItem", "position": 3, "name": "Roskilde Festival", "url": "https://www.festivaltravel.org/festival.html#roskilde"},
+        {"@type": "ListItem", "position": 4, "name": "Shambhala Music Festival", "url": "https://www.festivaltravel.org/festival.html#shambhala"},
+        {"@type": "ListItem", "position": 5, "name": "Electric Forest", "url": "https://www.festivaltravel.org/festival.html#electric-forest"},
+        {"@type": "ListItem", "position": 6, "name": "Tramlines Festival", "url": "https://www.festivaltravel.org/festival.html#tramlines"},
+        {"@type": "ListItem", "position": 7, "name": "Osheaga Festival", "url": "https://www.festivaltravel.org/festival.html#osheaga"},
+        {"@type": "ListItem", "position": 8, "name": "Coachella", "url": "https://www.festivaltravel.org/festival.html#coachella"},
+        {"@type": "ListItem", "position": 9, "name": "Glastonbury Festival", "url": "https://www.festivaltravel.org/festival.html#glastonbury"},
+        {"@type": "ListItem", "position": 10, "name": "Tomorrowland", "url": "https://www.festivaltravel.org/festival.html#tomorrowland"},
+        {"@type": "ListItem", "position": 11, "name": "Fuji Rock Festival", "url": "https://www.festivaltravel.org/festival.html#fuji-rock"},
+        {"@type": "ListItem", "position": 12, "name": "Montreal Jazz Festival", "url": "https://www.festivaltravel.org/festival.html#montreal-jazz"},
+        {"@type": "ListItem", "position": 13, "name": "Flow Festival", "url": "https://www.festivaltravel.org/festival.html#flow-festival"},
+        {"@type": "ListItem", "position": 14, "name": "Splendour in the Grass", "url": "https://www.festivaltravel.org/festival.html#splendour"},
+        {"@type": "ListItem", "position": 15, "name": "Latitude Festival", "url": "https://www.festivaltravel.org/festival.html#latitude"}
+      ]
+    }
+    </script>
+
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+
+    <!-- Preload key assets -->
+    <link rel="preload" href="assets/icons/icons.svg" as="image" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -76,12 +203,25 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
+
+        /* SVG Icon Utility Classes */
+        .svg-icon {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .svg-icon-sm { width: 16px; height: 16px; }
+        .svg-icon-md { width: 32px; height: 32px; }
+        .svg-icon-lg { width: 48px; height: 48px; }
+        .svg-icon-xl { width: 64px; height: 64px; }
 
         .container {
             max-width: 1200px;
@@ -155,18 +295,67 @@
             text-align: center;
             padding: 4rem 0;
             color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/illustrations/hero-festival.svg') center center no-repeat;
+            background-size: cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
         }
 
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
 
         .hero p {
             font-size: 1.3rem;
             margin-bottom: 2rem;
-            opacity: 0.9;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+        }
+
+        .hero-feature svg {
+            width: 20px;
+            height: 20px;
         }
 
         .cta-button {
@@ -209,7 +398,7 @@
 
         .festival-image {
             width: 100%;
-            height: 200px;
+            height: 220px;
             background: linear-gradient(45deg, #667eea, #764ba2);
             display: flex;
             align-items: center;
@@ -217,6 +406,68 @@
             color: white;
             font-size: 3rem;
             font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .festival-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .festival-card:hover .festival-image img {
+            transform: scale(1.05);
+        }
+
+        .festival-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60%;
+            background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .festival-image .festival-location-badge {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(255,255,255,0.95);
+            color: #333;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .festival-image .festival-location-badge svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .festival-image-fallback {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .festival-image-fallback svg {
+            width: 80px;
+            height: 80px;
+            color: white;
+            opacity: 0.8;
         }
 
         .festival-content {
@@ -286,6 +537,20 @@
             padding: 3rem 2rem;
             margin: 3rem 0;
             box-shadow: 0 10px 30px rgba(233, 30, 99, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .empowerment-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: url('assets/illustrations/pattern-music.svg') no-repeat;
+            background-size: contain;
+            opacity: 0.1;
         }
 
         .empowerment-grid {
@@ -301,22 +566,40 @@
             border-radius: 15px;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
         .empowerment-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
 
         .empowerment-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .empowerment-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .empowerment-icon-emoji {
             font-size: 3rem;
-            margin-bottom: 1rem;
         }
 
         .empowerment-card h3 {
             color: #c2185b;
             margin-bottom: 1rem;
             font-size: 1.3rem;
+            font-weight: 700;
         }
 
         .empowerment-card p {
@@ -941,6 +1224,24 @@
             <div class="container">
                 <h1>Experience Festivals Your Way - Empowered & Safe</h1>
                 <p>Discover the world's most amazing female-friendly festivals featuring empowerment programs, incredible women artists, solo traveler communities, and experiences designed to celebrate and elevate women. Your adventure, your rules, your power.</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        <span>Safety Rated</span>
+                    </div>
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <span>15 Festivals</span>
+                    </div>
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span>Women Empowered</span>
+                    </div>
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <span>Global Community</span>
+                    </div>
+                </div>
                 <a href="#quiz" class="cta-button">Find Your Perfect Festival</a>
             </div>
         </section>
@@ -983,37 +1284,49 @@
 
                 <div class="empowerment-grid">
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">👑</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-workshop.svg" alt="Empowerment Workshop">
+                        </div>
                         <h3>Empowerment Programs</h3>
                         <p>From women-in-music workshops to leadership circles, feminist activism, and networking events - these festivals create spaces where women grow stronger together.</p>
                     </div>
 
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">🎤</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-expression.svg" alt="Female Artists">
+                        </div>
                         <h3>Celebrating Female Artists</h3>
                         <p>50/50 gender lineups, groundbreaking female headliners, and platforms for emerging women talent. Watch history being made on stages worldwide.</p>
                     </div>
 
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">🌟</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-community.svg" alt="Solo Traveler Community">
+                        </div>
                         <h3>Solo Traveler Communities</h3>
                         <p>Join Her Forest, women's meetup groups, morning yoga circles, and instant festival families. Solo becomes social, empowered, and unforgettable.</p>
                     </div>
 
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">💪</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-safety.svg" alt="Safe Spaces">
+                        </div>
                         <h3>Safe Spaces & Support</h3>
                         <p>Women-only areas, female welfare officers, consent culture training, and 24/7 support systems ensuring you can thrive without fear.</p>
                     </div>
 
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">✨</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-wellness.svg" alt="Transformative Experiences">
+                        </div>
                         <h3>Transformative Experiences</h3>
                         <p>Goddess workshops, body positivity celebrations, healing spaces, and connections that change lives. Come for the music, leave transformed.</p>
                     </div>
 
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">🌍</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-mentor.svg" alt="Global Sisterhood">
+                        </div>
                         <h3>Global Sisterhood</h3>
                         <p>Connect with women from every continent, share stories, build networks, and create friendships that span the globe. You're never alone.</p>
                     </div>
@@ -1112,15 +1425,33 @@
         function createFestivalCard(festival) {
             const stars = '★'.repeat(festival.safetyRating) + '☆'.repeat(5 - festival.safetyRating);
             const tags = festival.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('');
-            
+
+            // Get festival image from FESTIVAL_IMAGES
+            const imageUrl = typeof getFestivalImage === 'function'
+                ? getFestivalImage(festival.id, 'card')
+                : 'assets/illustrations/hero-festival.svg';
+
+            // Music SVG icon (fallback)
+            const musicIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
+
+            // Location SVG icon
+            const locationIcon = `<svg style="width:16px;height:16px;vertical-align:middle;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
+
+            // Location pin for badge
+            const pinIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
+
             return `
                 <div class="festival-card" onclick="goToFestival('${festival.id}')">
                     <div class="festival-image">
-                        🎵
+                        <img src="${imageUrl}" alt="${festival.name} - ${festival.location}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'festival-image-fallback\\'>${musicIcon}</div>'">
+                        <div class="festival-location-badge">
+                            ${pinIcon}
+                            <span>${festival.country}</span>
+                        </div>
                     </div>
                     <div class="festival-content">
                         <h3 class="festival-title">${festival.name}</h3>
-                        <p class="festival-location">📍 ${festival.location}</p>
+                        <p class="festival-location">${locationIcon} ${festival.location}</p>
                         <p class="festival-description">${festival.description.substring(0, 150)}...</p>
                         <div class="safety-rating">
                             <span class="stars">${stars}</span>
@@ -1693,7 +2024,8 @@
         });
     </script>
 
-    <!-- Load festival data -->
+    <!-- Load festival data and images -->
     <script src="assets/js/festivals-data.js"></script>
+    <script src="assets/js/festival-images.js"></script>
 </body>
 </html>

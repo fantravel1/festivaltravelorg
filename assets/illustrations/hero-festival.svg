@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <!-- Gradient Definitions -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="stageGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#7209b7"/>
+    </linearGradient>
+    <linearGradient id="lightBeam1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#ff6b9d;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="lightBeam2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7209b7;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#7209b7;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="lightBeam3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4cc9f0;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#4cc9f0;stop-opacity:0"/>
+    </linearGradient>
+    <radialGradient id="crowdGlow" cx="50%" cy="100%" r="60%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect width="800" height="600" fill="url(#skyGradient)"/>
+
+  <!-- Stars -->
+  <g fill="#fff" opacity="0.6">
+    <circle cx="50" cy="50" r="1.5"/>
+    <circle cx="150" cy="80" r="1"/>
+    <circle cx="200" cy="30" r="1.2"/>
+    <circle cx="300" cy="60" r="1"/>
+    <circle cx="400" cy="40" r="1.5"/>
+    <circle cx="500" cy="70" r="1"/>
+    <circle cx="600" cy="45" r="1.2"/>
+    <circle cx="700" cy="55" r="1"/>
+    <circle cx="750" cy="90" r="1.5"/>
+    <circle cx="100" cy="120" r="1"/>
+    <circle cx="250" cy="100" r="1.2"/>
+    <circle cx="450" cy="95" r="1"/>
+    <circle cx="550" cy="110" r="1.5"/>
+    <circle cx="650" cy="85" r="1"/>
+  </g>
+
+  <!-- Light Beams from Stage -->
+  <polygon points="400,300 100,0 150,0" fill="url(#lightBeam1)" opacity="0.5"/>
+  <polygon points="400,300 300,0 350,0" fill="url(#lightBeam2)" opacity="0.5"/>
+  <polygon points="400,300 450,0 500,0" fill="url(#lightBeam3)" opacity="0.5"/>
+  <polygon points="400,300 600,0 650,0" fill="url(#lightBeam1)" opacity="0.4"/>
+  <polygon points="400,300 700,0 750,0" fill="url(#lightBeam2)" opacity="0.4"/>
+
+  <!-- Main Stage Structure -->
+  <rect x="200" y="250" width="400" height="200" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+  <rect x="220" y="270" width="360" height="160" fill="#0f0f1a"/>
+
+  <!-- Stage Screen -->
+  <rect x="240" y="285" width="320" height="120" fill="url(#stageGlow)" opacity="0.8" rx="5"/>
+
+  <!-- Stage Lighting Rigs -->
+  <rect x="180" y="230" width="440" height="15" fill="#2a2a4a"/>
+  <g fill="#e94560">
+    <circle cx="220" cy="237" r="5" filter="url(#glow)"/>
+    <circle cx="280" cy="237" r="5" filter="url(#glow)"/>
+    <circle cx="340" cy="237" r="5" filter="url(#glow)"/>
+    <circle cx="400" cy="237" r="5" filter="url(#glow)"/>
+    <circle cx="460" cy="237" r="5" filter="url(#glow)"/>
+    <circle cx="520" cy="237" r="5" filter="url(#glow)"/>
+    <circle cx="580" cy="237" r="5" filter="url(#glow)"/>
+  </g>
+
+  <!-- Side Speakers -->
+  <rect x="150" y="300" width="40" height="100" fill="#1a1a2e" rx="3"/>
+  <rect x="610" y="300" width="40" height="100" fill="#1a1a2e" rx="3"/>
+  <g fill="#333">
+    <circle cx="170" cy="325" r="12"/>
+    <circle cx="170" cy="360" r="15"/>
+    <circle cx="170" cy="385" r="8"/>
+    <circle cx="630" cy="325" r="12"/>
+    <circle cx="630" cy="360" r="15"/>
+    <circle cx="630" cy="385" r="8"/>
+  </g>
+
+  <!-- Stage Floor -->
+  <rect x="180" y="450" width="440" height="20" fill="#2a2a4a"/>
+
+  <!-- Crowd Silhouettes -->
+  <ellipse cx="400" cy="600" rx="400" ry="150" fill="url(#crowdGlow)"/>
+
+  <!-- Front Row Crowd -->
+  <g fill="#1a1a2e">
+    <!-- Row of people silhouettes -->
+    <ellipse cx="100" cy="550" rx="25" ry="40"/>
+    <ellipse cx="150" cy="540" rx="22" ry="35"/>
+    <ellipse cx="195" cy="555" rx="24" ry="38"/>
+    <ellipse cx="240" cy="545" rx="23" ry="36"/>
+    <ellipse cx="285" cy="560" rx="25" ry="40"/>
+    <ellipse cx="330" cy="550" rx="22" ry="35"/>
+    <ellipse cx="375" cy="545" rx="24" ry="38"/>
+    <ellipse cx="420" cy="555" rx="23" ry="36"/>
+    <ellipse cx="465" cy="548" rx="25" ry="40"/>
+    <ellipse cx="510" cy="560" rx="22" ry="35"/>
+    <ellipse cx="555" cy="545" rx="24" ry="38"/>
+    <ellipse cx="600" cy="555" rx="23" ry="36"/>
+    <ellipse cx="645" cy="550" rx="25" ry="40"/>
+    <ellipse cx="690" cy="545" rx="22" ry="35"/>
+    <ellipse cx="735" cy="560" rx="24" ry="38"/>
+  </g>
+
+  <!-- Raised Hands -->
+  <g stroke="#1a1a2e" stroke-width="3" stroke-linecap="round">
+    <path d="M120 510 L125 480 M125 480 L128 470"/>
+    <path d="M180 500 L178 465 M178 465 L180 455"/>
+    <path d="M260 515 L255 475 M255 475 L258 465"/>
+    <path d="M350 505 L355 470 M355 470 L352 458"/>
+    <path d="M420 510 L418 472 M418 472 L420 462"/>
+    <path d="M500 508 L505 468 M505 468 L502 458"/>
+    <path d="M580 512 L578 475 M578 475 L580 465"/>
+    <path d="M660 505 L665 468 M665 468 L662 456"/>
+    <path d="M720 515 L718 480 M718 480 L720 470"/>
+  </g>
+
+  <!-- Musical Notes floating -->
+  <g fill="#ff6b9d" opacity="0.7">
+    <path d="M150 200 c0-20 15-30 15-30 v40 c-8 0-15 5-15 12 s7 12 15 12 s15-5 15-12 v-35" transform="scale(0.8)"/>
+    <path d="M750 180 c0-20 15-30 15-30 v40 c-8 0-15 5-15 12 s7 12 15 12 s15-5 15-12 v-35" transform="scale(0.6)"/>
+  </g>
+  <g fill="#4cc9f0" opacity="0.6">
+    <path d="M680 150 c0-20 15-30 15-30 v40 c-8 0-15 5-15 12 s7 12 15 12 s15-5 15-12 v-35" transform="scale(0.7)"/>
+  </g>
+
+  <!-- Confetti/Particles -->
+  <g opacity="0.8">
+    <rect x="120" y="180" width="4" height="10" fill="#ff6b9d" transform="rotate(30 122 185)"/>
+    <rect x="680" y="200" width="4" height="10" fill="#4cc9f0" transform="rotate(-20 682 205)"/>
+    <rect x="300" y="150" width="4" height="10" fill="#7209b7" transform="rotate(45 302 155)"/>
+    <rect x="500" y="170" width="4" height="10" fill="#ff6b9d" transform="rotate(-30 502 175)"/>
+    <rect x="220" y="200" width="4" height="10" fill="#4cc9f0" transform="rotate(15 222 205)"/>
+    <rect x="580" y="160" width="4" height="10" fill="#7209b7" transform="rotate(-45 582 165)"/>
+  </g>
+</svg>

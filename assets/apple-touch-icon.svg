@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="touchIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Square Background -->
+  <rect width="180" height="180" rx="40" fill="url(#touchIconGrad)"/>
+
+  <!-- Tent/Festival Icon -->
+  <path d="M90 35 L140 125 L40 125 Z" fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M90 35 L90 125" stroke="#fff" stroke-width="4"/>
+  <path d="M65 125 L90 90 L115 125" fill="none" stroke="#fff" stroke-width="4"/>
+
+  <!-- Musical Note -->
+  <g transform="translate(108, 45)">
+    <ellipse cx="12" cy="36" rx="10" ry="8" fill="#fff"/>
+    <rect x="19" y="0" width="5" height="36" fill="#fff"/>
+    <path d="M24 0 Q40 -3 40 14 Q40 28 24 24" fill="none" stroke="#fff" stroke-width="4"/>
+  </g>
+
+  <!-- Stars -->
+  <path d="M38 55 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z" fill="#ffc107"/>
+  <path d="M55 140 l1.5 4 4 1.5 -4 1.5 -1.5 4 -1.5 -4 -4 -1.5 4 -1.5z" fill="#ffc107"/>
+  <path d="M145 85 l1.5 4 4 1.5 -4 1.5 -1.5 4 -1.5 -4 -4 -1.5 4 -1.5z" fill="#ffc107"/>
+
+  <!-- Festival Text Area -->
+  <text x="90" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" opacity="0.9">FESTIVAL</text>
+</svg>
