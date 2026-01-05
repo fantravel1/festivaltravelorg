@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="aboutBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce4ec"/>
+      <stop offset="100%" style="stop-color:#f8bbd0"/>
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e91e63"/>
+      <stop offset="100%" style="stop-color:#c2185b"/>
+    </linearGradient>
+    <linearGradient id="globeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c4dff"/>
+      <stop offset="100%" style="stop-color:#651fff"/>
+    </linearGradient>
+    <filter id="shadowAbout">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#aboutBg)"/>
+
+  <!-- Decorative Shapes -->
+  <circle cx="50" cy="50" r="30" fill="#f48fb1" opacity="0.4"/>
+  <circle cx="750" cy="80" r="50" fill="#ce93d8" opacity="0.3"/>
+  <circle cx="700" cy="550" r="80" fill="#f48fb1" opacity="0.25"/>
+  <circle cx="80" cy="500" r="60" fill="#ce93d8" opacity="0.3"/>
+
+  <!-- Central Globe -->
+  <g transform="translate(300, 180)" filter="url(#shadowAbout)">
+    <circle cx="100" cy="100" r="100" fill="url(#globeGrad)"/>
+
+    <!-- Globe lines -->
+    <ellipse cx="100" cy="100" rx="100" ry="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+    <ellipse cx="100" cy="100" rx="100" ry="70" fill="none" stroke="#fff" stroke-width="2" opacity="0.4"/>
+    <line x1="100" y1="0" x2="100" y2="200" stroke="#fff" stroke-width="2" opacity="0.5"/>
+    <path d="M30 50 Q100 80 170 50" fill="none" stroke="#fff" stroke-width="2" opacity="0.4"/>
+    <path d="M30 150 Q100 120 170 150" fill="none" stroke="#fff" stroke-width="2" opacity="0.4"/>
+
+    <!-- Heart in center -->
+    <path d="M100 130 C70 105 60 80 80 65 C95 52 100 70 100 70 C100 70 105 52 120 65 C140 80 130 105 100 130Z"
+          fill="#fff"/>
+  </g>
+
+  <!-- Surrounding People/Community -->
+  <!-- Person 1 - Top Left -->
+  <g transform="translate(150, 120)">
+    <circle cx="30" cy="30" r="30" fill="#fff" filter="url(#shadowAbout)"/>
+    <circle cx="30" cy="25" r="12" fill="#e91e63"/>
+    <path d="M10 55 C10 42 18 35 30 35 C42 35 50 42 50 55" fill="#e91e63"/>
+  </g>
+
+  <!-- Person 2 - Top Right -->
+  <g transform="translate(560, 100)">
+    <circle cx="35" cy="35" r="35" fill="#fff" filter="url(#shadowAbout)"/>
+    <circle cx="35" cy="28" r="14" fill="#7c4dff"/>
+    <path d="M10 65 C10 48 20 40 35 40 C50 40 60 48 60 65" fill="#7c4dff"/>
+  </g>
+
+  <!-- Person 3 - Bottom Left -->
+  <g transform="translate(100, 380)">
+    <circle cx="40" cy="40" r="40" fill="#fff" filter="url(#shadowAbout)"/>
+    <circle cx="40" cy="32" r="15" fill="#ff9800"/>
+    <path d="M12 72 C12 52 24 42 40 42 C56 42 68 52 68 72" fill="#ff9800"/>
+  </g>
+
+  <!-- Person 4 - Bottom Right -->
+  <g transform="translate(600, 400)">
+    <circle cx="35" cy="35" r="35" fill="#fff" filter="url(#shadowAbout)"/>
+    <circle cx="35" cy="28" r="13" fill="#4caf50"/>
+    <path d="M10 62 C10 47 20 38 35 38 C50 38 60 47 60 62" fill="#4caf50"/>
+  </g>
+
+  <!-- Person 5 - Left Middle -->
+  <g transform="translate(60, 250)">
+    <circle cx="30" cy="30" r="30" fill="#fff" filter="url(#shadowAbout)"/>
+    <circle cx="30" cy="24" r="11" fill="#2196f3"/>
+    <path d="M10 52 C10 40 18 32 30 32 C42 32 50 40 50 52" fill="#2196f3"/>
+  </g>
+
+  <!-- Person 6 - Right Middle -->
+  <g transform="translate(660, 260)">
+    <circle cx="32" cy="32" r="32" fill="#fff" filter="url(#shadowAbout)"/>
+    <circle cx="32" cy="26" r="12" fill="#f44336"/>
+    <path d="M8 58 C8 44 18 35 32 35 C46 35 56 44 56 58" fill="#f44336"/>
+  </g>
+
+  <!-- Connection Lines -->
+  <g stroke="#e91e63" stroke-width="2" opacity="0.3">
+    <line x1="180" y1="180" x2="300" y2="230"/>
+    <line x1="595" y1="170" x2="500" y2="220"/>
+    <line x1="140" y1="420" x2="300" y2="330"/>
+    <line x1="635" y1="435" x2="500" y2="340"/>
+    <line x1="90" y1="310" x2="300" y2="280"/>
+    <line x1="692" y1="325" x2="500" y2="290"/>
+  </g>
+
+  <!-- Floating Hearts -->
+  <g fill="#e91e63" opacity="0.5">
+    <path d="M250 80 C240 70 235 55 245 48 C252 42 255 50 255 50 C255 50 258 42 265 48 C275 55 270 70 255 85Z" transform="scale(0.6)"/>
+    <path d="M750 400 C740 390 735 375 745 368 C752 362 755 370 755 370 C755 370 758 362 765 368 C775 375 770 390 755 405Z" transform="scale(0.5)"/>
+    <path d="M200 550 C190 540 185 525 195 518 C202 512 205 520 205 520 C205 520 208 512 215 518 C225 525 220 540 205 555Z" transform="scale(0.7)"/>
+  </g>
+
+  <!-- Stars/Sparkles -->
+  <g fill="#ffd54f">
+    <path d="M720 180 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+    <path d="M100 180 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+    <path d="M400 500 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
+    <path d="M550 520 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+    <path d="M250 420 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+  </g>
+
+  <!-- Bottom Text Area Placeholder Wave -->
+  <path d="M0 550 Q200 520 400 550 Q600 580 800 550 L800 600 L0 600 Z" fill="#fff" opacity="0.3"/>
+</svg>

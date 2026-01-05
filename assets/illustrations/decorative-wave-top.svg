@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="waveTopGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="50%" style="stop-color:#764ba2"/>
+      <stop offset="100%" style="stop-color:#667eea"/>
+    </linearGradient>
+  </defs>
+  <path d="M0,60 C240,0 480,120 720,60 C960,0 1200,120 1440,60 L1440,0 L0,0 Z" fill="url(#waveTopGrad)"/>
+</svg>

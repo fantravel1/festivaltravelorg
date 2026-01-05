@@ -19,8 +19,9 @@
     <meta name="twitter:image" content="https://www.festivaltravel.org/assets/images/og-image.jpg">
     <meta name="theme-color" content="#667eea">
     <link rel="canonical" href="https://www.festivaltravel.org/contact.html">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-    
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     
@@ -86,16 +87,28 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%2328a745" width="1920" height="1080"/><circle fill="%2320c997" cx="400" cy="200" r="100" opacity="0.3"/><circle fill="%2317a2b8" cx="1200" cy="400" r="150" opacity="0.2"/><circle fill="%2328a745" cx="800" cy="600" r="120" opacity="0.25"/><circle fill="%236f42c1" cx="1600" cy="800" r="80" opacity="0.3"/></svg>');
+            background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             min-height: 50vh;
             display: flex;
             align-items: center;
             color: white;
             position: relative;
             margin-top: 80px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/illustrations/hero-contact.svg') center center no-repeat;
+            background-size: cover;
+            opacity: 0.2;
         }
 
         .hero-overlay {

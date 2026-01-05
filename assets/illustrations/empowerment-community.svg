@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="communityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c4dff"/>
+      <stop offset="100%" style="stop-color:#651fff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#ede7f6"/>
+
+  <!-- Central Heart -->
+  <path d="M100 130 C60 100 50 70 70 55 C85 42 100 60 100 60 C100 60 115 42 130 55 C150 70 140 100 100 130Z"
+        fill="url(#communityGrad)" opacity="0.3"/>
+
+  <!-- Circle of People -->
+  <!-- Top Person -->
+  <g fill="#e91e63">
+    <circle cx="100" cy="35" r="12"/>
+    <ellipse cx="100" cy="60" rx="14" ry="18"/>
+  </g>
+
+  <!-- Top Right Person -->
+  <g fill="#7c4dff">
+    <circle cx="150" cy="60" r="11"/>
+    <ellipse cx="150" cy="82" rx="13" ry="16"/>
+  </g>
+
+  <!-- Right Person -->
+  <g fill="#4caf50">
+    <circle cx="165" cy="110" r="11"/>
+    <ellipse cx="165" cy="132" rx="13" ry="16"/>
+  </g>
+
+  <!-- Bottom Right Person -->
+  <g fill="#ff9800">
+    <circle cx="140" cy="155" r="11"/>
+    <ellipse cx="140" cy="177" rx="13" ry="16"/>
+  </g>
+
+  <!-- Bottom Left Person -->
+  <g fill="#2196f3">
+    <circle cx="60" cy="155" r="11"/>
+    <ellipse cx="60" cy="177" rx="13" ry="16"/>
+  </g>
+
+  <!-- Left Person -->
+  <g fill="#f44336">
+    <circle cx="35" cy="110" r="11"/>
+    <ellipse cx="35" cy="132" rx="13" ry="16"/>
+  </g>
+
+  <!-- Top Left Person -->
+  <g fill="#00bcd4">
+    <circle cx="50" cy="60" r="11"/>
+    <ellipse cx="50" cy="82" rx="13" ry="16"/>
+  </g>
+
+  <!-- Connecting Lines (Community) -->
+  <g stroke="#7c4dff" stroke-width="2" opacity="0.3" stroke-dasharray="4,2">
+    <line x1="100" y1="55" x2="140" y2="75"/>
+    <line x1="140" y1="75" x2="155" y2="110"/>
+    <line x1="155" y1="120" x2="135" y2="150"/>
+    <line x1="125" y1="155" x2="75" y2="155"/>
+    <line x1="65" y1="150" x2="45" y2="120"/>
+    <line x1="45" y1="110" x2="60" y2="75"/>
+    <line x1="60" y1="75" x2="100" y2="55"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#ffc107">
+    <path d="M100 95 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"/>
+  </g>
+</svg>

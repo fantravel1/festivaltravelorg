@@ -66,7 +66,12 @@
     </script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+
+    <!-- Preload key assets -->
+    <link rel="preload" href="assets/icons/icons.svg" as="image" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -76,12 +81,25 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
+
+        /* SVG Icon Utility Classes */
+        .svg-icon {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .svg-icon-sm { width: 16px; height: 16px; }
+        .svg-icon-md { width: 32px; height: 32px; }
+        .svg-icon-lg { width: 48px; height: 48px; }
+        .svg-icon-xl { width: 64px; height: 64px; }
 
         .container {
             max-width: 1200px;
@@ -155,18 +173,67 @@
             text-align: center;
             padding: 4rem 0;
             color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/illustrations/hero-festival.svg') center center no-repeat;
+            background-size: cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
         }
 
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
 
         .hero p {
             font-size: 1.3rem;
             margin-bottom: 2rem;
-            opacity: 0.9;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+        }
+
+        .hero-feature svg {
+            width: 20px;
+            height: 20px;
         }
 
         .cta-button {
@@ -217,6 +284,29 @@
             color: white;
             font-size: 3rem;
             font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .festival-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/illustrations/hero-festival.svg') center center no-repeat;
+            background-size: cover;
+            opacity: 0.3;
+        }
+
+        .festival-image svg {
+            width: 80px;
+            height: 80px;
+            color: white;
+            position: relative;
+            z-index: 1;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
         }
 
         .festival-content {
@@ -286,6 +376,20 @@
             padding: 3rem 2rem;
             margin: 3rem 0;
             box-shadow: 0 10px 30px rgba(233, 30, 99, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .empowerment-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: url('assets/illustrations/pattern-music.svg') no-repeat;
+            background-size: contain;
+            opacity: 0.1;
         }
 
         .empowerment-grid {
@@ -301,22 +405,40 @@
             border-radius: 15px;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
         .empowerment-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
 
         .empowerment-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .empowerment-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .empowerment-icon-emoji {
             font-size: 3rem;
-            margin-bottom: 1rem;
         }
 
         .empowerment-card h3 {
             color: #c2185b;
             margin-bottom: 1rem;
             font-size: 1.3rem;
+            font-weight: 700;
         }
 
         .empowerment-card p {
@@ -941,6 +1063,24 @@
             <div class="container">
                 <h1>Experience Festivals Your Way - Empowered & Safe</h1>
                 <p>Discover the world's most amazing female-friendly festivals featuring empowerment programs, incredible women artists, solo traveler communities, and experiences designed to celebrate and elevate women. Your adventure, your rules, your power.</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        <span>Safety Rated</span>
+                    </div>
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <span>15 Festivals</span>
+                    </div>
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span>Women Empowered</span>
+                    </div>
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <span>Global Community</span>
+                    </div>
+                </div>
                 <a href="#quiz" class="cta-button">Find Your Perfect Festival</a>
             </div>
         </section>
@@ -983,37 +1123,49 @@
 
                 <div class="empowerment-grid">
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">👑</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-workshop.svg" alt="Empowerment Workshop">
+                        </div>
                         <h3>Empowerment Programs</h3>
                         <p>From women-in-music workshops to leadership circles, feminist activism, and networking events - these festivals create spaces where women grow stronger together.</p>
                     </div>
 
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">🎤</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-expression.svg" alt="Female Artists">
+                        </div>
                         <h3>Celebrating Female Artists</h3>
                         <p>50/50 gender lineups, groundbreaking female headliners, and platforms for emerging women talent. Watch history being made on stages worldwide.</p>
                     </div>
 
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">🌟</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-community.svg" alt="Solo Traveler Community">
+                        </div>
                         <h3>Solo Traveler Communities</h3>
                         <p>Join Her Forest, women's meetup groups, morning yoga circles, and instant festival families. Solo becomes social, empowered, and unforgettable.</p>
                     </div>
 
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">💪</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-safety.svg" alt="Safe Spaces">
+                        </div>
                         <h3>Safe Spaces & Support</h3>
                         <p>Women-only areas, female welfare officers, consent culture training, and 24/7 support systems ensuring you can thrive without fear.</p>
                     </div>
 
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">✨</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-wellness.svg" alt="Transformative Experiences">
+                        </div>
                         <h3>Transformative Experiences</h3>
                         <p>Goddess workshops, body positivity celebrations, healing spaces, and connections that change lives. Come for the music, leave transformed.</p>
                     </div>
 
                     <div class="empowerment-card">
-                        <div class="empowerment-icon">🌍</div>
+                        <div class="empowerment-icon">
+                            <img src="assets/illustrations/empowerment-mentor.svg" alt="Global Sisterhood">
+                        </div>
                         <h3>Global Sisterhood</h3>
                         <p>Connect with women from every continent, share stories, build networks, and create friendships that span the globe. You're never alone.</p>
                     </div>
@@ -1112,15 +1264,21 @@
         function createFestivalCard(festival) {
             const stars = '★'.repeat(festival.safetyRating) + '☆'.repeat(5 - festival.safetyRating);
             const tags = festival.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('');
-            
+
+            // Music SVG icon
+            const musicIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
+
+            // Location SVG icon
+            const locationIcon = `<svg style="width:16px;height:16px;vertical-align:middle;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
+
             return `
                 <div class="festival-card" onclick="goToFestival('${festival.id}')">
                     <div class="festival-image">
-                        🎵
+                        ${musicIcon}
                     </div>
                     <div class="festival-content">
                         <h3 class="festival-title">${festival.name}</h3>
-                        <p class="festival-location">📍 ${festival.location}</p>
+                        <p class="festival-location">${locationIcon} ${festival.location}</p>
                         <p class="festival-description">${festival.description.substring(0, 150)}...</p>
                         <div class="safety-rating">
                             <span class="stars">${stars}</span>
