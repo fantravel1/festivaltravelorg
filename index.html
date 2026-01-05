@@ -19,9 +19,68 @@
     <meta name="twitter:image" content="https://www.festivaltravel.org/assets/images/og-image.jpg">
     <meta name="theme-color" content="#667eea">
     <link rel="canonical" href="https://www.festivaltravel.org">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FestivalTravel.org">
 
-    <!-- FAQ Schema -->
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FestivalTravel.org",
+      "alternateName": "Festival Travel",
+      "url": "https://www.festivaltravel.org",
+      "logo": "https://www.festivaltravel.org/assets/favicon.svg",
+      "description": "The leading platform for female-friendly festival travel guides, safety resources, and empowerment experiences worldwide.",
+      "foundingDate": "2024",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://www.festivaltravel.org/contact.html",
+        "availableLanguage": "English"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "knowsAbout": [
+        "Music Festivals",
+        "Female Safety at Events",
+        "Solo Female Travel",
+        "Festival Planning",
+        "Women's Empowerment Programs"
+      ]
+    }
+    </script>
+
+    <!-- WebSite Schema with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FestivalTravel.org",
+      "url": "https://www.festivaltravel.org",
+      "description": "Discover female-friendly festivals worldwide with safety ratings, empowerment programs, and solo traveler communities.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "FestivalTravel.org"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.festivaltravel.org/#festivals?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- FAQ Schema - Expanded -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -61,7 +120,70 @@
           "@type": "Answer",
           "text": "Transformation stories are real testimonials from women who attended these festivals and experienced personal growth - from doubt to confidence, isolated to connected, scared to empowered. These stories showcase the life-changing impact of attending female-empowering festivals with strong communities and support systems."
         }
+      }, {
+        "@type": "Question",
+        "name": "How much do festival tickets typically cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Festival ticket prices vary widely based on location and experience level. Budget-friendly options like Tramlines and Montreal Jazz Festival start around $100-200. Mid-range festivals like Electric Forest and Primavera Sound range $300-450. Premium experiences like Glastonbury and Coachella can cost $450-600+. Many festivals offer payment plans and early bird discounts."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What safety features should I look for at a music festival?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key safety features include: 24/7 medical and welfare teams, designated safe spaces for women, trained anti-harassment teams (like Guardian Angels), well-lit pathways and camping areas, consent culture training for staff, anonymous reporting systems, female-only camping options, and partnerships with organizations like UN Women or RAINN."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What should I pack for a music festival?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Essential festival items include: portable phone charger (10,000mAh+), collapsible water bottle, anti-theft crossbody bag, high-quality earplugs, backup ID and emergency cash, personal safety alarm, hand sanitizer, basic first aid kit, rain jacket, and offline maps with emergency contacts. See our complete packing guide for detailed recommendations."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Are these festivals accessible for people with disabilities?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! All featured festivals offer accessibility features including wheelchair-accessible viewing platforms, accessible camping areas, accessible toilets, sign language interpreters, audio description services, quiet spaces for sensory needs, and dedicated accessibility teams. Contact festivals directly for specific accommodation requests."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do I meet other women at festivals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Join official women's programs like Her Forest (Electric Forest), women's circles at Shambhala, or Roskilde's networking events. Look for morning yoga sessions, women-in-music workshops, or solo traveler meetups. Many festivals have dedicated Facebook groups and apps for connecting before the event. Don't hesitate to introduce yourself at camp - festival communities are incredibly welcoming!"
+        }
       }]
+    }
+    </script>
+
+    <!-- ItemList Schema for Featured Festivals -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Top Female-Friendly Festivals Worldwide",
+      "description": "Curated list of the world's best festivals for women, featuring safety ratings, empowerment programs, and solo traveler communities.",
+      "numberOfItems": 15,
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "WOMAD Festival", "url": "https://www.festivaltravel.org/festival.html#womad"},
+        {"@type": "ListItem", "position": 2, "name": "Primavera Sound", "url": "https://www.festivaltravel.org/festival.html#primavera-sound"},
+        {"@type": "ListItem", "position": 3, "name": "Roskilde Festival", "url": "https://www.festivaltravel.org/festival.html#roskilde"},
+        {"@type": "ListItem", "position": 4, "name": "Shambhala Music Festival", "url": "https://www.festivaltravel.org/festival.html#shambhala"},
+        {"@type": "ListItem", "position": 5, "name": "Electric Forest", "url": "https://www.festivaltravel.org/festival.html#electric-forest"},
+        {"@type": "ListItem", "position": 6, "name": "Tramlines Festival", "url": "https://www.festivaltravel.org/festival.html#tramlines"},
+        {"@type": "ListItem", "position": 7, "name": "Osheaga Festival", "url": "https://www.festivaltravel.org/festival.html#osheaga"},
+        {"@type": "ListItem", "position": 8, "name": "Coachella", "url": "https://www.festivaltravel.org/festival.html#coachella"},
+        {"@type": "ListItem", "position": 9, "name": "Glastonbury Festival", "url": "https://www.festivaltravel.org/festival.html#glastonbury"},
+        {"@type": "ListItem", "position": 10, "name": "Tomorrowland", "url": "https://www.festivaltravel.org/festival.html#tomorrowland"},
+        {"@type": "ListItem", "position": 11, "name": "Fuji Rock Festival", "url": "https://www.festivaltravel.org/festival.html#fuji-rock"},
+        {"@type": "ListItem", "position": 12, "name": "Montreal Jazz Festival", "url": "https://www.festivaltravel.org/festival.html#montreal-jazz"},
+        {"@type": "ListItem", "position": 13, "name": "Flow Festival", "url": "https://www.festivaltravel.org/festival.html#flow-festival"},
+        {"@type": "ListItem", "position": 14, "name": "Splendour in the Grass", "url": "https://www.festivaltravel.org/festival.html#splendour"},
+        {"@type": "ListItem", "position": 15, "name": "Latitude Festival", "url": "https://www.festivaltravel.org/festival.html#latitude"}
+      ]
     }
     </script>
 
