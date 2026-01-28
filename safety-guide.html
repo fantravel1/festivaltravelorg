@@ -275,7 +275,8 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%23dc2626" width="1920" height="1080"/><circle fill="%23ea580c" cx="400" cy="200" r="100" opacity="0.4"/><circle fill="%23d97706" cx="1200" cy="400" r="150" opacity="0.3"/><circle fill="%23dc2626" cx="800" cy="600" r="120" opacity="0.35"/><circle fill="%23b91c1c" cx="1600" cy="800" r="80" opacity="0.4"/></svg>');
+            background: linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)),
+                        url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1920&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -293,7 +294,105 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+        }
+
+        /* Section Image Banners */
+        .section-image-banner {
+            position: relative;
+            min-height: 250px;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 3rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .section-image-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%);
+        }
+
+        .section-image-banner .banner-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 800px;
+        }
+
+        .section-image-banner h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .section-image-banner p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin: 0;
+        }
+
+        /* Feature Image Grid */
+        .feature-image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-image-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            transition: all 0.4s ease;
+        }
+
+        .feature-image-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .feature-image-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .feature-image-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .feature-image-item .image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+            color: white;
+            padding: 2rem 1rem 1rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .section-image-banner {
+                background-attachment: scroll;
+                min-height: 200px;
+            }
         }
 
         .container {
@@ -850,6 +949,14 @@
             </div>
         </div>
 
+        <!-- Image Banner: Preparation -->
+        <div class="section-image-banner" style="background-image: url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1920&q=80');">
+            <div class="banner-content">
+                <h3>Preparation is Your Superpower</h3>
+                <p>The more you prepare, the more freedom you have to enjoy the experience fully.</p>
+            </div>
+        </div>
+
         <!-- Arrival & Setup -->
         <div class="content-section" id="arrival-setup">
             <h2>🏕️ Arrival & Setup: First Impressions Matter</h2>
@@ -906,6 +1013,14 @@
             <div class="highlight-box">
                 <h4>📱 Digital Safety Setup</h4>
                 <p>Download offline maps, save emergency contacts, enable location sharing with trusted friends, and take photos of your accommodation/campsite for easy identification.</p>
+            </div>
+        </div>
+
+        <!-- Image Banner: Camping -->
+        <div class="section-image-banner" style="background-image: url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1920&q=80');">
+            <div class="banner-content">
+                <h3>Your Safe Space Awaits</h3>
+                <p>Smart camping setup is the foundation of a worry-free festival experience.</p>
             </div>
         </div>
 
@@ -989,6 +1104,14 @@
             </div>
         </div>
 
+        <!-- Image Banner: Crowd -->
+        <div class="section-image-banner" style="background-image: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1920&q=80');">
+            <div class="banner-content">
+                <h3>Navigate Like a Pro</h3>
+                <p>Understanding crowd dynamics keeps you safe while having the time of your life.</p>
+            </div>
+        </div>
+
         <!-- Personal Security -->
         <div class="content-section" id="personal-security">
             <h2>🔒 Personal Security: Protecting Yourself & Your Belongings</h2>
@@ -1047,6 +1170,33 @@
                     <li>File a police report if needed for insurance claims</li>
                     <li>Contact your country's embassy if passport was stolen</li>
                 </ol>
+            </div>
+        </div>
+
+        <!-- Image Banner: Security -->
+        <div class="section-image-banner" style="background-image: url('https://images.unsplash.com/photo-1516726817505-f5ed825624d8?w=1920&q=80');">
+            <div class="banner-content">
+                <h3>Strength in Community</h3>
+                <p>The festival community looks out for each other. You're never alone.</p>
+            </div>
+        </div>
+
+        <!-- Feature Image Grid -->
+        <div class="content-section">
+            <h2>Festival Safety in Action</h2>
+            <div class="feature-image-grid">
+                <div class="feature-image-item">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Friends enjoying festival safely" loading="lazy">
+                    <div class="image-caption">Safety in Numbers</div>
+                </div>
+                <div class="feature-image-item">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80" alt="Festival crowd celebration" loading="lazy">
+                    <div class="image-caption">Positive Experiences</div>
+                </div>
+                <div class="feature-image-item">
+                    <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600&q=80" alt="Travel planning" loading="lazy">
+                    <div class="image-caption">Smart Planning</div>
+                </div>
             </div>
         </div>
 
