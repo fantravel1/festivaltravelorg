@@ -483,6 +483,35 @@
                 padding: 1.5rem;
             }
         }
+
+        /* In-content images */
+        .content-image {
+            width: 100%;
+            margin: 2rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .content-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .content-image figcaption {
+            background: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -530,6 +559,11 @@
                 <span class="stat-label">of attendees feel safer at festivals with visible consent campaigns</span>
             </div>
         </div>
+
+                <figure class="content-image">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="Diverse group of friends supporting each other at a festival" loading="lazy">
+            <figcaption>Consent culture creates environments where everyone looks out for each other. Photo: Unsplash</figcaption>
+        </figure>
 
         <h2>What is Consent Culture at Festivals?</h2>
 
