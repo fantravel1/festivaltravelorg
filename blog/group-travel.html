@@ -340,6 +340,35 @@
                 padding: 1.5rem;
             }
         }
+
+        /* In-content images */
+        .content-image {
+            width: 100%;
+            margin: 2rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .content-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .content-image figcaption {
+            background: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -370,6 +399,11 @@
     <!-- Article Content -->
     <article class="article-content">
         <p>Festival group travel can be absolutely magical—sharing incredible music moments, having built-in safety buddies, and creating memories that will last a lifetime. But it can also turn into a logistical nightmare if you don't plan properly. After years of experience and countless festival adventures, here's your complete guide to mastering group festival travel.</p>
+
+                <figure class="content-image">
+            <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&q=80" alt="Group of friends enjoying a festival together" loading="lazy">
+            <figcaption>Festival group travel creates bonds and memories that last a lifetime. Photo: Unsplash</figcaption>
+        </figure>
 
         <h2>Pre-Festival Planning: Setting Your Group Up for Success</h2>
 

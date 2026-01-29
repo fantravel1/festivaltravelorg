@@ -572,6 +572,35 @@
                 padding: 1.5rem;
             }
         }
+
+        /* In-content images */
+        .content-image {
+            width: 100%;
+            margin: 2rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .content-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .content-image figcaption {
+            background: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -604,6 +633,11 @@
         <p>Whether you're heading to an intimate club show or a massive festival, being prepared isn't just about comfort—it's about confidence. These 10 essential items have been battle-tested by thousands of music-loving women who refuse to let poor planning diminish their concert experience.</p>
 
         <p>This isn't your typical "bring a phone charger" list. These are the items that separate prepared, confident concert-goers from those scrambling for help when things go sideways. Because when you're truly prepared, you're free to lose yourself in the music.</p>
+
+        <figure class="content-image">
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80" alt="Festival backpack with essential items laid out for packing" loading="lazy">
+            <figcaption>Smart packing is the foundation of a stress-free festival experience. Photo: Unsplash</figcaption>
+        </figure>
 
         <h2>The 10 Non-Negotiable Festival Essentials</h2>
 

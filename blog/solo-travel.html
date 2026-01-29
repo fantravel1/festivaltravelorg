@@ -354,6 +354,52 @@
                 padding: 1.5rem;
             }
         }
+
+        /* In-content images */
+        .content-image {
+            width: 100%;
+            margin: 2rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .content-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .content-image figcaption {
+            background: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .image-grid .content-image {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -409,6 +455,11 @@
             <li><strong>Budget control:</strong> Spend exactly what you want on what matters to you</li>
         </ul>
 
+        <figure class="content-image">
+            <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=800&q=80" alt="Solo female traveler with backpack overlooking scenic view" loading="lazy">
+            <figcaption>Solo travel opens doors to self-discovery and unforgettable experiences. Photo: Unsplash</figcaption>
+        </figure>
+
         <h2>Pre-Festival Planning for Solo Travelers</h2>
 
         <h3>Choosing Your First Solo Festival</h3>
@@ -463,6 +514,11 @@
                 <li>Look for well-lit parking or easy public transport access</li>
             </ul>
         </div>
+
+                <figure class="content-image">
+            <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800&q=80" alt="Travel planning with map and notebook" loading="lazy">
+            <figcaption>Careful planning is the foundation of successful solo festival travel. Photo: Unsplash</figcaption>
+        </figure>
 
         <h2>Safety Strategies Specific to Solo Festival Travel</h2>
 
